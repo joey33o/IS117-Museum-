@@ -1,0 +1,76 @@
+NASANASA's flagship mission for X-ray astronomy.NASA
+search button image
+Home
+About Chandra
+Learning
+Field Guide
+Photo Album
+Press Room
+Resources & Multimedia
+Video Series
+Blog
+Research
+Chandra Mission
+Mission Overview
+Where's Chandra
+Tracking Chandra
+Top 10 Facts
+Naming Chandra
+The CXC
+Mission Milestones
+Launch/Deployment
+Hardware
+Chandra Hardware
+Telescope System
+Science Instruments
+Spacecraft
+Interactive Chandra
+Chandra Specs
+Who's Who
+Web ShortcutsOpen and close menu tab
+Chandra Blog
+RSS Feed
+Image Use Policy
+Questions & Answers
+Glossary of Terms
+More Information
+Details of Chandra Specifications [pdf | html]
+Mirror Comparison
+X-rays ricochet off mirrors.
+Java enhanced version
+Telescope SystemMirrors look more like barrels.
+Mirror Comparison Movie
+The Chandra telescope system consists of four pairs of mirrors and their support structure.
+
+X-ray telescopes must be very different from optical telescopes. Because of their high-energy, X-ray photons penetrate into a mirror in much the same way that bullets slam into a wall. Likewise, just as bullets ricochet when they hit a wall at a grazing angle, so too will X-rays ricochet off mirrors.
+
+The mirrors have to be exquisitely shaped and aligned nearly parallel to incoming X-rays. Thus they look more like glass barrels than the familiar dish shape of optical telescopes.
+
+Imagine making the surface of the Earth so smooth that the highest mountain was less than two meters (78 inches) tall! On a much smaller scale, the scientists and engineers at Raytheon Optical Systems in Danbury, Connecticut accomplished an equivalent feat when they polished and ground the four pairs of Chandra mirrors to the smoothness of a few atoms.
+
+Not to be outdone, the scientists and engineers at Optical Coating Laboratories, Inc., in Santa Rosa, California also surpassed expectations. After the mirrors were carefully moved to California via an air-ride moving van, they were painstakingly cleaned--to the equivalent of at most one speck of dust on an area the size of your computer screen. Then they were coated with the highly reflective rare metal, iridium.
+
+Iridium-coated mirrors
+Coating the mirrors at Optical Coating Laboratories, Inc.
+
+The successful grinding, polishing and coating of the Chandra mirrors were historic technical accomplishments. They are the smoothest and cleanest mirrors ever made.
+
+The mirrors were moved again across the country--same moving van, same husband/wife driving team and three support vehicles--to Eastman Kodak Company in Rochester, New York, where they were assembled into a support structure called the high resolution mirror assembly and aligned with exquisite precision. The alignment of the mirrors from one end of the mirror assembly to the other (2.7 meters or 9 feet) is accurate to 1.3 micrometers (50 millionths of an inch) or about one fiftieth the width of a human hair! The successful completion of the high resolution mirror assembly at Eastman Kodak in September 1996, was one of the major accomplishments in the development of Chandra.
+
+plus
+
+CXC Home | Search | Help | Image Use Policy | Latest Images | Privacy | Accessibility | Glossary | Q&A
+RSS Feed Photo | RSS Feed Press | Blog Icon Image Blog | Blog More Feeds
+[News by email: Chandra Digest]
+[Contact us: cxcpub@cfa.harvard.edu]
+Harvard-Smithsonian Center for Astrophysics
+60 Garden Street, Cambridge, MA 02138 USA
+Phone: 617.496.7941 Fax: 617.495.7356
+
+Image Map for NASA's, Smithsonian and Chandra's Home Pages
+Operated for NASA by SAO
+This site was developed with funding from NASA under Contract NAS8-03060.
+
+Revised: May 13, 2012
+
+

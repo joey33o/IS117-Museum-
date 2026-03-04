@@ -1,0 +1,147 @@
+Explore
+Search
+Search...
+NASA Logo
+
+News & Events
+
+Multimedia
+NASA+
+…
+James Webb Space Telescope
+Fact Sheet
+Webb
+
+News
+
+Overview
+
+Science
+
+Observatory
+
+Multimedia
+
+Team
+
+More
+ 
+The James Webb Space Telescope (sometimes called JWST or Webb) is an orbiting infrared observatory that will complement and extend the discoveries of the Hubble Space Telescope, with longer wavelength coverage and greatly improved sensitivity. The longer wavelengths enable Webb to look much closer to the beginning of time and to hunt for the unobserved formation of the first galaxies, as well as to look inside dust clouds where stars and planetary systems are forming today.
+
+Key Facts
+Mission Goals
+Instruments
+Major Innovations
+Key Facts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Key Facts
+Launch Date	December 25, 2021 07:20am EST (2021-12-25 12:20 GMT/UTC)
+Launch Vehicle	Ariane 5 ECA
+Mission Duration	5 - 10 years
+Total Payload Mass	Approx 6200 kg, including observatory, on-orbit consumables and launch vehicle adaptor.
+Diameter of Primary Mirror	6.5 m (21.3 ft) approximately
+Clear Aperture of Primary Mirror	25 m2
+Primary Mirror Material	beryllium coated with gold
+Mass of Primary Mirror	705 kg
+Mass of a Single Primary Mirror Segment	20.1 kg for a single beryllium mirror, 39.48 kg for one entire primary mirror segment assembly (PMSA).
+Focal Length	131.4 meters
+Number of Primary Mirror Segments	18
+Optical Resolution	~0.1 arc-seconds
+Wavelength Coverage	0.6 - 28.5 microns
+Size of Sun Shield	21.197 m x 14.162 m (69.5 ft x 46.5 ft)
+Temperature of Sun Shield Layers	Layer 1:
+Max temperature 383K = approx 231F
+
+Layer 5:
+Max temperature 221K = approx -80F
+Min temperature 36K = approx -394F
+Orbit	1.5 million km from Earth orbiting the L2 Point
+Operating Temperature	under 50 K (-370 °F)
+Gold Coating	Thickness of gold coating = 100 x 10-9 meters (1000 angstroms). Surface area = 25 m2. Using these numbers plus the density of gold at room temperature (19.3 g/cm3), the coating is calculated to use 48.25g of gold, about equal to the mass of a golf ball. (A golf ball has a mass of 45.9 grams. Note mass does not equal size!)
+Mission Goals
+Early Universe : Search for the first galaxies or luminous objects formed after the Big Bang
+Galaxies Over Time: Determine how galaxies evolved from their formation until now
+Star Lifecycle: Observe the formation of stars from their initial stages to the formation of planetary systems.
+Other Worlds : Measure the physical and chemical properties of planetary systems, including our own Solar System, and investigate the potential for life in those systems
+Instruments
+Near Infrared Camera (NIRCam)
+Near Infrared Spectrograph (NIRSpec)
+Mid Infrared Instrument (MIRI)
+Fine Guidance Sensors/Near Infrared Imager and Slitless Spectrograph (FGS/NIRISS)
+Major Innovations
+MIRRORS - Folding segmented mirror: The Webb Telescope team also decided to build the mirror in segments on a structure which folds up, like the leaves of a drop-leaf table, so that it can fit into a rocket. 
+MIRRORS - Lightweight optics: NASA set out to research new ways to build mirrors for telescopes. The Advanced Mirror System Demonstrator (AMSD) program was a four-year partnership between NASA, the National Reconnaissance Office and the US Air Force to study ways to build lightweight mirrors. 
+MIRRORS - Cryogenic actuators & mirror control: Lee Feinberg, Webb Optical Telescope Element Manager at NASA Goddard explains, "Aligning the primary mirror segments as though they are a single large mirror means each mirror is aligned to 1/10,000th the thickness of a human hair. What's even more amazing is that the engineers and scientists working on the Webb telescope literally had to invent how to do this."
+MIRRORS - Wave Front Sensing: Wavefront sensing and control was developed to sense and correct any errors in the telescope's optics. This is essential to making the 18 mirror segments work together as a single giant mirror.
+Webb's Sunshield: The sunshield reduces the temperature between the hot and cold side of the spacecraft by almost 600 degrees Fahrenheit in the span of its 5 layer, 4.8m height - from approximately 185F (85C) on the hot side to approximately -388F (-233C) on the cold side.
+Sunshield coatings: Webb deployed a tennis-court sized Sunshield made of five thin layers of Kapton E with aluminum and doped-silicon coatings to reflect the sun's heat back into space.
+Improved Detectors: Webb has extended the state of the art for infrared detectors by producing arrays that are lower noise, larger format, and longer lasting than their predecessors.
+Micro-shutters: Microshutters are tiny windows with shutters that each measure 100 by 200 microns, or about the size of a bundle of only a few human hairs. The microshutter device can select many objects in one viewing for simultaneous high-resolution observation which means much more scientific investigation can get done in less time.
+Cryocooler: Webb's MIRI instrument carries detectors that need to be at a temperature of less than 7 kelvin to operate properly. This temperature is not possible on Webb by passive means alone, so Webb carries an innovative "cryocooler" that is dedicated to cooling MIRI's detectors
+Backplane: The backplane must carry more than 2400kg (2 1/2 tons) of hardware. It is required to be essentially motionless so the mirrors can see far into deep space. To meet this requirement, the backplane was engineered to be steady down to 32 nanometers, which is 1/10,000 the diameter of a human hair.
+Cryogenic Data Acquisition ASIC: "A-to-D" conversion is nothing new, but the technical challenge that Webb faced was doing it at the observatory's super-cold cryogenic operating temperatures in an Application-Specific Integrated Circuit (ASIC).
+NASA Logo
+National Aeronautics and Space Administration
+NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+
+About NASA's Mission
+Join Us 
+Home
+News & Events
+Multimedia
+NASA+
+Missions
+Humans in Space
+Earth
+The Solar System
+The Universe
+Science
+Aeronautics
+Technology
+Learning Resources
+About NASA
+NASA en Español
+Follow NASA
+More NASA Social Accounts
+NASA Newsletters
+Sitemap
+ 
+For Media
+ 
+Privacy Policy
+ 
+FOIA
+ 
+No FEAR Act
+ 
+Office of the IG
+ 
+Budget & Annual Reports
+ 
+Agency Financial Reports
+ 
+Contact NASA
+ 
+Accessibility
+Page Last Updated:
+Aug 22, 2024
+ 
+Page Editor:
+Marty McCoy
+ 
+Responsible NASA Official for Science:
+Diana Logreira
