@@ -1,0 +1,22 @@
+:root {
+  --bg-color: #F1E7D0;
+  --text-color: #2B2622;
+  --font-primary: 'Crimson Text', serif;
+  --nav-blur: blur(4px);
+  --img-filter: sepia(0.5) contrast(0.9);
+}
+
+body.is-space-era {
+  --bg-color: #000000;
+  --text-color: #FFFFFF;
+  --font-primary: 'Inter', sans-serif;
+  --nav-blur: blur(0px);
+  --img-filter: brightness(1.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  transition: background-color 0.8s ease, color 0.3s ease;
+}
