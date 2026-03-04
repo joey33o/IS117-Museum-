@@ -1,58 +1,83 @@
-This is a great way to kickstart the project. By giving an AI coding agent (like Cursor, Replit, or GitHub Copilot) a clear "Design Persona" and technical constraints upfront, you'll get much cleaner code.
-
-Here is a structured prompt you can copy and paste. I’ve organized it to emphasize the **Adaptive UI** and the **Astro/GSAP** stack we discussed.
+This specification is designed to be pasted directly into a coding agent (like Cursor, Claude Engineer, or Replit Agent). It provides a strict technical roadmap to ensure the "Adaptive UI" and "Grunge-to-Swiss" transition are built correctly without unnecessary bloat.
 
 ---
 
-### 📝 Instruction Letter for AI Coding Agent
+# Technical Specification: "The Celestial Eye" Museum Website
 
-**Subject:** Development of "The Celestial Eye" – A Transition-Based Telescope Museum Website
+## 1. Project Overview
 
-**Project Overview:**
-I am building a telescope museum website that serves as a visual metaphor for the history of optics. The site must transition from a "Grunge/Terrestrial" aesthetic (early history) to a "Swiss/Celestial" aesthetic (modern space exploration) based on the user's scroll position.
+A single-page, scroll-driven Astro application that visually transitions from a "Terrestrial/Grunge" aesthetic to a "Celestial/Swiss" aesthetic.
 
-**Technical Stack:**
+### Core Tech Stack
 
-- **Framework:** Astro (Static Site Generator)
-- **Styling:** Tailwind CSS (or standard CSS modules)
-- **Animation Engine:** GSAP with ScrollTrigger plugin
-- **Hosting:** GitHub Pages (keep assets optimized for static hosting)
-
-**The Design Transition Requirements:**
-
-1. **Phase 1: The Grunge Era (Scroll 0% - 40%)**
-
-- **Background:** `#F1E7D0` (Aged Parchment) with subtle distressed textures.
-- **Typography:** Serif fonts (e.g., 'Crimson Text') and "ink-stamped" headers.
-- **Layout:** Overlapping elements, organic borders, and a "mechanical" feel.
-- **Effect:** Apply a subtle "Atmospheric Blur" or grain filter to images.
-
-2. **Phase 2: The Breakout (Scroll 40% - 50%)**
-
-- Using GSAP ScrollTrigger, create a "clearing" effect where the background transitions from cream to `#000000` (Pure Black).
-- The "atmospheric" blur filter on images should transition to `blur(0)` and high sharpness.
-
-3. **Phase 3: The Swiss Era (Scroll 50% - 100%)**
-
-- **Background:** `#000000`.
-- **Typography:** Bold, clean Sans-Serif (e.g., 'Inter' or 'Helvetica').
-- **Layout:** High negative space, rigid grid system, no overlapping elements.
-- **UI:** Adaptive Navigation that shifts from a solid brass-textured bar to a transparent, 1px line-based minimalist nav.
-
-**Specific Functional Constraints:**
-
-- **Navigation:** The UI must be "Adaptive." Use a global state or class toggle (`.is-space-era`) triggered by GSAP to swap font families and UI colors.
-- **Cursor:** Do NOT use a custom cursor; keep the default system pointer.
-- **Interactions:** In the Grunge section, use "Refraction" logic (lens-like distortions). In the Swiss section, use "Reflection" logic (hexagonal grids, sharp lines).
-
-**Initial Task:**
-Please scaffold the Astro project structure. Create a `MainLayout.astro` that includes the GSAP ScrollTrigger setup to toggle a `.is-space-era` class on the body tag. Then, create a homepage with two large sections: `#earth-era` and `#space-era` to demonstrate the color and font transition.
+- **Framework:** Astro (Static)
+- **Animation:** GSAP + ScrollTrigger
+- **Styling:** Tailwind CSS + CSS Variables
+- **Deployment:** GitHub Pages (via GitHub Actions)
 
 ---
 
-### How to use this with your AI agent:
+## 2. Global Styling & State (Unambiguous)
 
-1. **Create a new folder** for your project.
-2. **Open your AI coding tool** (e.g., Cursor or VS Code with an AI extension).
-3. **Paste the letter above** into the chat and hit enter.
-4. It will likely start by giving you the terminal commands to install **Astro** and **GSAP**.
+The site must use CSS variables to manage the theme. A global class `.is-space-era` on the `<body>` will toggle these variables via a GSAP ScrollTrigger.
+
+| Variable         | Terrestrial (Default)      | Celestial (`.is-space-era`) |
+| ---------------- | -------------------------- | --------------------------- |
+| `--bg-color`     | `#F1E7D0` (Parchment)      | `#000000` (OLED Black)      |
+| `--text-color`   | `#2B2622` (Ink)            | `#FFFFFF` (White)           |
+| `--font-primary` | `'Crimson Text', serif`    | `'Inter', sans-serif`       |
+| `--nav-blur`     | `blur(4px)`                | `blur(0px)`                 |
+| `--img-filter`   | `sepia(0.5) contrast(0.9)` | `brightness(1.1) sharp`     |
+
+---
+
+## 3. Modular Component Architecture
+
+1. **`Hero.astro`**: Contains the Grunge-style landing and the transition trigger point.
+2. **`TelescopeEntry.astro`**: A reusable component that takes `title`, `description`, and `image` as props.
+3. **`AdaptiveNav.astro`**: A sticky header that morphs from a textured bar to a transparent line.
+4. **`TransitionTrigger.js`**: A standalone GSAP script to handle class toggling.
+
+---
+
+## 4. Page Requirements & Acceptance Criteria (Testable)
+
+### Page 1: The Home Scroll (index.astro)
+
+- **AC 1.1:** Initial load displays `#F1E7D0` background and serif typography.
+- **AC 1.2:** Images in the top 40% of the page have a subtle "atmospheric grain" overlay.
+- **AC 1.3:** At 50% scroll height, the `<body>` background color must animate to `#000000` over 0.8 seconds.
+- **AC 1.4:** In the "Space" section (50%+), all serif fonts must swap to clean sans-serif instantly or via fade.
+
+### Component: The Adaptive Nav
+
+- **AC 2.1:** Nav remains sticky at the top of the viewport.
+- **AC 2.2:** Nav background opacity drops to 0% when `.is-space-era` is active.
+- **AC 2.3:** Nav border-bottom changes from "brass" hex to a 1px white line in Space mode.
+
+---
+
+## 5. Deployment & CI/CD
+
+- **Step 1:** Configure `astro.config.mjs` with `site: 'https://<username>.github.io/<repo-name>/'`.
+- **Step 2:** Include a `.github/workflows/deploy.yml` using the official `withastro/action`.
+- **Acceptance Criteria:**
+- Build succeeds with `npm run build`.
+- Site is accessible via the GitHub Pages URL with all GSAP triggers functional.
+
+---
+
+## 6. Non-Goals (Preventing Scope Creep)
+
+- **No Custom Cursor:** Use the standard system pointer only.
+- **No External Database:** All telescope data should be stored in a local JSON or Markdown file within the `src/content` folder.
+- **No 3D Rendering:** Do not use Three.js; stick to high-quality 2D imagery and CSS/GSAP transforms.
+- **No User Accounts:** The site is a read-only museum experience.
+
+---
+
+## 7. Implementation Prompt for Agent
+
+> "Using the specification above, initialize an Astro project. Start by setting up the global CSS variables in `base.css` and the GSAP ScrollTrigger logic in a `Layout.astro` file. Ensure the background color and typography swap are perfectly synced to the scroll position."
+
+**Would you like me to generate the `astro.config.mjs` and the `deploy.yml` code for you to ensure the GitHub Pages setup is plug-and-play?**
