@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const { title, description, image } = Astro.props;
+---
+
+<article class="telescope-entry">
+  <div class="entry-image">
+    <img src={image} alt={title} />
+  </div>
+  <div class="entry-body">
+    <h2>{title}</h2>
+    <p>{description}</p>
+  </div>
+</article>
+
+<style>
+  .telescope-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--text-color);
+    opacity: 0.15;
+    transition: border-color 0.8s ease;
+  }
+
+  .entry-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .entry-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: var(--img-filter);
+    transition: filter 0.8s ease;
+  }
+
+  .entry-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+    transition: color 0.3s ease;
+  }
+</style>
