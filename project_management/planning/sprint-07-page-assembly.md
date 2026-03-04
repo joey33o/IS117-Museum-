@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** All project files for this sprint are created inside `docs/`. Run every `npm` command from inside `docs/`. Never create Astro project files at the repo root.
+
 ---
 
 ## Goal
@@ -33,7 +35,7 @@ Wire all components together on `src/pages/index.astro`. Fetch the telescope ent
 
 | File | Action |
 |---|---|
-| `src/pages/index.astro` | Edit — full page assembly |
+| `docs/src/pages/index.astro` | Edit — full page assembly |
 
 ---
 

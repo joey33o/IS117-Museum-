@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** All project files for this sprint are created inside `docs/`. Run every `npm` command from inside `docs/`. Never create Astro project files at the repo root.
+
 ---
 
 ## Goal
@@ -14,12 +16,12 @@ Initialize the Astro project with Tailwind CSS, set up global CSS variables for 
 
 ## Tasks
 
-1. Run `npm create astro@latest` (or use the existing repo root) and install dependencies.
+1. Run `npm create astro@latest` inside the `docs/` folder and install dependencies.
 2. Install and configure Tailwind CSS via the official Astro integration (`@astrojs/tailwind`).
-3. Create `src/styles/base.css` and declare all five CSS variable pairs (default + `.is-space-era` overrides).
-4. Import `base.css` into `src/layouts/Layout.astro`; scaffold the basic HTML shell with `<html>`, `<head>`, `<body>`, `<slot>`.
+3. Create `docs/src/styles/base.css` and declare all five CSS variable pairs (default + `.is-space-era` overrides).
+4. Import `base.css` into `docs/src/layouts/Layout.astro`; scaffold the basic HTML shell with `<html>`, `<head>`, `<body>`, `<slot>`.
 5. Add Google Fonts `<link>` tags for **Crimson Text** and **Inter** to `<head>`.
-6. Verify `npm run dev` starts without errors and the page background is `#F1E7D0`.
+6. Verify `npm run dev` (from inside `docs/`) starts without errors and the page background is `#F1E7D0`.
 
 ---
 
@@ -27,11 +29,11 @@ Initialize the Astro project with Tailwind CSS, set up global CSS variables for 
 
 | File | Action |
 |---|---|
-| `astro.config.mjs` | Create / confirm base config (no `site` URL yet — that is Sprint 08) |
-| `tailwind.config.mjs` | Create with `content` glob pointing at `src/**/*.{astro,ts,js}` |
-| `src/styles/base.css` | Create — CSS variable declarations only |
-| `src/layouts/Layout.astro` | Create — HTML shell + font links + base.css import |
-| `package.json` | Confirm `astro`, `@astrojs/tailwind`, `tailwindcss` are listed |
+| `docs/astro.config.mjs` | Create / confirm base config (no `site` URL yet — that is Sprint 08) |
+| `docs/tailwind.config.mjs` | Create with `content` glob pointing at `src/**/*.{astro,ts,js}` |
+| `docs/src/styles/base.css` | Create — CSS variable declarations only |
+| `docs/src/layouts/Layout.astro` | Create — HTML shell + font links + base.css import |
+| `docs/package.json` | Confirm `astro`, `@astrojs/tailwind`, `tailwindcss` are listed |
 
 ---
 

@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** All project files for this sprint are created inside `docs/`. Run every `npm` command from inside `docs/`. Never create Astro project files at the repo root.
+
 ---
 
 ## Goal
@@ -41,10 +43,10 @@ Read both history files, then write copy using these anchor points:
 
 | File | Action |
 |---|---|
-| `src/components/Hero.astro` | Create |
-| `src/pages/index.astro` | Edit — import and render `<Hero />` |
-| `public/images/blackhole.jpg` | Copy from `references/blackhole.jpg` — use as hero image |
-| `public/images/grain.png` | Add — noise/grain texture (tileable PNG, ~200×200px) |
+| `docs/src/components/Hero.astro` | Create |
+| `docs/src/pages/index.astro` | Edit — import and render `<Hero />` |
+| `docs/public/images/blackhole.jpg` | Copy from `references/blackhole.jpg` — use as hero image |
+| `docs/public/images/grain.png` | Add — noise/grain texture (tileable PNG, ~200×200px) |
 
 ---
 

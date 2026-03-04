@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** All project files for this sprint are created inside `docs/`. Run every `npm` command from inside `docs/`. Never create Astro project files at the repo root.
+
 ---
 
 ## Goal
@@ -28,8 +30,8 @@ Build `AdaptiveNav.astro` — a sticky header that reads CSS variables for all v
 
 | File | Action |
 |---|---|
-| `src/components/AdaptiveNav.astro` | Create |
-| `src/layouts/Layout.astro` | Edit — import and render `<AdaptiveNav />` |
+| `docs/src/components/AdaptiveNav.astro` | Create |
+| `docs/src/layouts/Layout.astro` | Edit — import and render `<AdaptiveNav />` |
 
 ---
 

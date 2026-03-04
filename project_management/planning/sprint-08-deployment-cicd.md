@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** The Astro project lives in `docs/`. `npm` commands run from `docs/`. The `.github/workflows/deploy.yml` is the one exception — it lives at the repo root as GitHub requires it there.
+
 ---
 
 ## Goal
@@ -26,8 +28,8 @@ Configure `astro.config.mjs` with the GitHub Pages URL and create the GitHub Act
 
 | File | Action |
 |---|---|
-| `astro.config.mjs` | Edit — add `site` and `base` values |
-| `.github/workflows/deploy.yml` | Create |
+| `docs/astro.config.mjs` | Edit — add `site` and `base` values |
+| `.github/workflows/deploy.yml` | Create — at repo root (GitHub requires this location) |
 
 ---
 
@@ -76,11 +78,14 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: docs/package-lock.json
       - run: npm ci
+        working-directory: ./docs
       - run: npm run build
+        working-directory: ./docs
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./docs/dist
 
   deploy:
     needs: build

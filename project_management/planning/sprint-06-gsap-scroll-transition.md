@@ -4,6 +4,8 @@
 
 > **Lifecycle:** Move this file to `project_management/active/` when you start the first task. Move it to `project_management/complete/` once every AC checkbox is checked and `npm run build` passes.
 
+> **Working Directory:** All project files for this sprint are created inside `docs/`. Run every `npm` command from inside `docs/`. Never create Astro project files at the repo root.
+
 ---
 
 ## Goal
@@ -14,12 +16,12 @@ Implement `TransitionTrigger.js` — the single GSAP ScrollTrigger script that t
 
 ## Tasks
 
-1. Install GSAP: `npm install gsap`.
-2. Create `src/scripts/TransitionTrigger.js`.
+1. Install GSAP from inside `docs/`: `npm install gsap`.
+2. Create `docs/src/scripts/TransitionTrigger.js`.
 3. Register the `ScrollTrigger` plugin and write the trigger targeting `id="transition-trigger"`.
 4. On trigger enter: animate `body` background to `#000000` over 0.8s **and** add `.is-space-era` class.
 5. On trigger leave-back (scroll up): animate back to `#F1E7D0` and remove `.is-space-era`.
-6. Add `<script>` tag importing `TransitionTrigger.js` into `src/layouts/Layout.astro`.
+6. Add `<script>` tag importing `TransitionTrigger.js` into `docs/src/layouts/Layout.astro`.
 7. Verify the full Terrestrial → Celestial visual swap working end-to-end.
 
 ---
@@ -28,9 +30,9 @@ Implement `TransitionTrigger.js` — the single GSAP ScrollTrigger script that t
 
 | File | Action |
 |---|---|
-| `src/scripts/TransitionTrigger.js` | Create |
-| `src/layouts/Layout.astro` | Edit — add `<script src="../scripts/TransitionTrigger.js">` |
-| `package.json` | Edit — `gsap` added as dependency after `npm install` |
+| `docs/src/scripts/TransitionTrigger.js` | Create |
+| `docs/src/layouts/Layout.astro` | Edit — add `<script src="../scripts/TransitionTrigger.js">` |
+| `docs/package.json` | Edit — `gsap` added as dependency after `npm install` |
 
 ---
 

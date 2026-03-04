@@ -17,6 +17,27 @@ All sprints are designed to be completable in **1–3 hours** each. Complete the
 
 ---
 
+## Working Directory Rule
+
+**All Astro project files live inside `docs/`.** This applies to every sprint.
+
+```
+Museum/                         ← repo root
+├── docs/                       ← ALL Astro work goes here
+│   ├── package.json
+│   ├── astro.config.mjs
+│   ├── tailwind.config.mjs
+│   ├── src/
+│   └── public/
+├── .github/workflows/          ← deploy.yml only (GitHub requires repo root)
+├── references/                 ← source material (read-only)
+└── project_management/         ← sprint files
+```
+
+Never create `package.json`, `src/`, or `public/` at the repo root. Run all `npm` commands from inside `docs/`.
+
+---
+
 ## Sprint Lifecycle
 
 Each sprint file moves through three folders as work progresses.
