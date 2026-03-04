@@ -1,8 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import TelescopeEntry from '../components/TelescopeEntry.astro';
+import { getCollection } from 'astro:content';
+
+const telescopes = await getCollection('telescopes');
 ---
 
 <Layout title="The Celestial Eye">
   <Hero />
+
+  <section id="space-collection">
+    <h2>The Collection</h2>
+    {telescopes.map((entry) => (
+      <TelescopeEntry
+        title={entry.data.title}
+        description={entry.data.description}
+        image={entry.data.image}
+      />
+    ))}
+  </section>
 </Layout>
+
+<style>
+  #space-collection {
+    padding: 6rem 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 600;
+    margin-bottom: 3rem;
+    transition: color 0.3s ease, font-family 0.3s ease;
+  }
+</style>
