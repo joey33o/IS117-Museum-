@@ -1,5 +1,6 @@
 ---
 import '../styles/base.css';
+import AdaptiveNav from '../components/AdaptiveNav.astro';
 
 interface Props {
   title: string;
@@ -22,6 +23,7 @@ const { title } = Astro.props;
     />
   </head>
   <body>
+    <AdaptiveNav />
     <slot />
   </body>
 </html>
