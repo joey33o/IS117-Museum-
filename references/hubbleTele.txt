@@ -1,0 +1,240 @@
+Explore
+Search
+Search...
+NASA Logo
+
+News & Events
+
+Multimedia
+NASA+
+…
+Hubble Overview
+About Hubble
+Hubble Home
+
+Overview
+
+Impact & Benefits
+
+Science
+
+Observatory
+
+Team
+
+Multimedia
+
+News
+
+More
+ 
+About Hubble
+Orbiting 300 miles (483 km) above Earth’s surface, Hubble avoids the distorting effects of our atmosphere, enabling its clear vision of the cosmos.
+
+Photograph of the Hubble Space Telescope orbiting Earth
+Hubble pioneers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction
+Named in honor of the trailblazing astronomer Edwin Hubble, the Hubble Space Telescope is a large, space-based observatory that has changed our understanding of the cosmos since its launch and deployment by the space shuttle Discovery in 1990.
+
+Hubble is not just a satellite. It’s a symbol of humanity’s quest for knowledge.
+John Grunsfeld
+John Grunsfeld
+
+Hubble servicing mission astronaut and astronomer
+
+Hubble’s capabilities have grown immensely in its more than 35 years of operation. This is because new, cutting-edge scientific instruments have been added to the telescope over the course of five astronaut servicing missions. By replacing and upgrading aging parts, these servicing missions have greatly extended the telescope’s lifetime.
+
+Telescopes have a particular range of light that they can detect. Hubble’s domain extends from the ultraviolet through the visible (which our eyes see) and into the near-infrared. This range has allowed Hubble to deliver stunning images of stars, galaxies, and other astronomical objects that have inspired people around the world.
+
+Hubble has made more than 1.7 million observations over the course of its lifetime. Over 22,000 peer-reviewed science papers have been published on its discoveries, and every current astronomy textbook includes contributions from the observatory. The telescope has tracked interstellar objects as they soared through our solar system, watched a comet collide with Jupiter, and discovered moons around Pluto. It has found dusty disks and stellar nurseries throughout the Milky Way that may one day become fully fledged planetary systems and studied the atmospheres of planets that orbit other stars. Hubble has peered back into our universe’s distant past, to locations more than 13.4 billion light-years from Earth, capturing galaxies merging, probing the supermassive black holes that lurk in their depths, and helping us better understand the history of the expanding universe.
+
+In its more than 30 years of operation, Hubble has made observations that have captured humanity’s imaginations and deepened our knowledge of the cosmos. It will continue to do so for years to come.
+
+Hubble Servicing Missions
+Astronaut Kathryn Thornton works on Hubble during Servicing Mission 1.
+NASA
+
+The universe is a wild and wonderful place. ✨ Hubble has shown us that the cosmos is more colorful and often stranger than we ever could have imagined.
+NASA
+Facts
+The facts and figures of the Hubble Space Telescope paint a picture of the telescope in orbit and provide a glimpse of the engineering prowess behind the observatory.
+
+To see a more comprehensive list of Hubble facts, visit our Hubble by the Numbers page.
+
+Size
+
+Length	43.5 feet (13.2 m)
+Weight (at launch)	about 24,000 pounds (10,800 kg)
+Weight (post-SM4)	about 27,000 pounds (12,200 kg)
+Diameter (at widest point)	14 feet (4.3 m)
+Spaceflight Statistics
+
+Low-Earth Orbit	altitude of about 300 miles (261 nautical miles,
+or 483 km), inclined 28.5 degrees to the
+equator
+Time to Complete One Orbit	about 95 minutes
+Speed	about 17,000 mph (27,000 kph)
+Optical Capabilities
+
+Sensitivity to Light
+ultraviolet through infrared (115–2500
+nanometers)
+Hubble's Mirrors
+
+Primary Mirror Diameter	94.5 inches (2.4 m)
+Primary Mirror Weight	1,825 pounds (828 kg)
+Composition	Ultra-Low Expansion Glass
+Reflective Coating	4 millionths (0.000004) of an inch (0.1 μm) of aluminum under 1-millionth (0.000001) of an inch (0.025 μm) of magnesium fluoride
+Secondary Mirror Diameter	12.2 inches (0.3 m)
+Secondary Mirror Weight	27.4 pounds (12.4 kg)
+Pointing Control
+
+Actuators	Based upon information from the sensors, Hubble's actuators physically adjust the telescope's position and orientation. They consist of four reaction wheels and four magnetic torquer bars.
+Sensors	Six gyroscopes, five Sun sensors, two magnetometers, three fixed-head star trackers, three fine guidance sensors
+Accuracy	In order to take images of distant, faint objects, Hubble must be extremely steady and accurate. The telescope is able to lock onto a target without deviating more than 7 thousandths (0.007) of an arcsecond, equivalent to shining a laser on a human hair one mile away
+Energy Source	the Sun
+Mechanism	two 8 x 24.75-foot (2.44 x 7.54-meter) gallium-arsenide solar panels
+Power Generation (in sunlight)	about 5,500 watts
+Power Storage
+
+Batteries	six nickel-hydrogen (NiH)
+Storage Capacity	equal to about 22 average car batteries
+
+This 360-degree video tour of the Hubble Space Telescope in orbit highlights the location and purpose of the telescope's instruments, mirrors, and other major components.
+Credits: Eric Anderson and Benjamin Gavares (Northrop Grumman Space Systems); Scott Wiessinger (USRA)
+
+Current Instruments
+Advanced Camera for Surveys (ACS)
+ACS is a third-generation imaging camera. This camera is optimized to perform surveys or broad imaging campaigns.
+Cosmic Origins Spectrograph (COS)
+COS focuses exclusively on ultraviolet (UV) light and is the most sensitive ultraviolet spectrograph ever, increasing Hubble's sensitivity at least 10 times in the UV spectrum and up to 70 times when looking at extremely faint objects. It is best at observing points of light, like stars and quasars.
+Space Telescope Imaging Spectrograph (STIS)
+STIS is a second-generation imager/spectrograph. STIS is used to obtain high-resolution spectra of resolved objects and has the special ability to simultaneously obtain spectra from many different points along a target.
+Wide Field Camera 3 (WFC3)
+Wide Field Camera 3 is the main imager on the telescope. It has a camera that records visible and ultraviolet (UV) wavelengths of light and is 35 times more sensitive in the UV wavelengths than its predecessor, Wide Field and Planetary Camera 2. A second camera that is built to view infrared (IR) light increases Hubble's IR resolution from 65,000 to 1 million pixels. Its combination of field-of-view, sensitivity and low detector improves 15-20 times over Hubble's previous IR camera.
+Fine Guidance Sensor (FGS)
+The FGS provides pointing information for the spacecraft by locking onto guide stars. The FGS can also function as a scientific instrument by precisely measuring the relative positions of stars, detecting rapid changes in a star’s brightness, and resolving double-star systems that appear as point sources even to Hubble’s cameras. Hubble has three FGSs.
+Near Infrared Camera and Multi-Object Spectrometer (NICMOS)
+NICMOS has the ability to obtain images and spectroscopic observations of astronomical targets at near-infrared wavelengths. Although NICMOS is currently inactive, most of its functionality is replaced by Hubble’s other science instruments.
+Servicing Missions
+Hubble was designed to be repaired and upgraded in orbit by spacewalking astronauts. Space shuttle crews made five trips to Hubble, keeping the telescope in top condition and at the cutting edge of scientific technology.
+
+Learn More
+Hubble Space Shuttle Missions
+64 Images
+Go To Gallery
+
+
+
+
+
+
+
+
+
+
+Timeline
+Hubble's history is littered with firsts, scientific discoveries, failures, and triumphs. Explore Hubble milestones, missions, discoveries, and more.
+
+
+More Things Hubble
+nearly spherical gathering of white stars at center top. Blue gas cloud extends from top left to center bottom
+Hubble Science Highlights
+Hubble’s most notable scientific discoveries reflect the broad range of research and the breakthroughs it has achieved.
+
+Upper left: "Hubble Focus" opening of the telescope is the "O" Center: bright-white star, Center Bottom: Orange-red planet with cloud bands, Center: small, bright-white star and very small red-orange dwarf star
+Hubble E-books
+Investigate the mysteries of the universe with Hubble. Learn Hubble's history. E-books dive deeper into Hubble discoveries and more.
+
+Hubble Observatory - Diagram
+Observatory Design
+Hubble is the first space-based observatory specifically designed for servicing while in orbit. Learn more about its systems and design.
+
+
+Hubble Online Activities
+Find your Hubble birthday image, take interactive tours, play games and more.
+
+Explore More
+
+3 min read
+Two Observatories, One Cosmic Eye: Hubble and Euclid View Cat’s Eye Nebula
+Article
+1 day ago
+
+7 min read
+Young ‘Sun’ Caught Blowing Bubbles by NASA’s Chandra
+For the first time, a much younger version of the Sun has been caught red-handed…
+
+Article
+1 week ago
+
+4 min read
+NASA’s Webb Telescope Locates Former Star That Exploded as Supernova
+Article
+1 week ago
+NASA Logo
+National Aeronautics and Space Administration
+NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+
+About NASA's Mission
+Join Us 
+Home
+News & Events
+Multimedia
+NASA+
+Missions
+Humans in Space
+Earth
+The Solar System
+The Universe
+Science
+Aeronautics
+Technology
+Learning Resources
+About NASA
+NASA en Español
+Follow NASA
+More NASA Social Accounts
+NASA Newsletters
+Sitemap
+ 
+For Media
+ 
+Privacy Policy
+ 
+FOIA
+ 
+No FEAR Act
+ 
+Office of the IG
+ 
+Budget & Annual Reports
+ 
+Agency Financial Reports
+ 
+Contact NASA
+ 
+Accessibility
+Page Last Updated:
+Nov 25, 2025
+ 
+Page Editor:
+Andrea Gianopoulos
+ 
+Responsible NASA Official for Science:
+Diana Logreira

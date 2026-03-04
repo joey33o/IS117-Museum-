@@ -1,0 +1,370 @@
+Carnegie Mellon University logo
+Home
+About
+Browse
+Contact
+Encyclopedia of the History of Science
+Telescope
+Robert Smith – University of Alberta
+"Telescope" by Robert Smith is licensed under a Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+The telescope as a working device was invented in the opening decade of the seventeenth century. Through its use and for the first time, novel phenomena were quickly revealed that had previously been invisible. While instruments had long been central to the practice of astronomy, the science was highly mathematical and directed to measuring and calculating the positions of celestial bodies. The telescope therefore initially had little to offer to astronomy as it was conventionally understood around 1610. In time, however, the device so changed the field that the history of astronomy falls into two main periods, one before the telescope’s invention and one after. In the first period, observations of the heavens were restricted to what could be detected with the naked eye, while in the second the telescope provided the means to examine familiar objects in new and more detailed ways, as well as to observe astronomical bodies too faint to register on the human eye. Instruments, it has been argued, determine what can be done, and “they also determine to some extent what can be thought. Often the instrument provides a possibility; it is an initiator of investigation."1 The ways in which astronomers and natural philosophers viewed and thought about the universe were transformed through the telescope’s use, and its invention brought about a profound social change as the practice of astronomy was no longer restricted to the learned.
+
+The notion of what counted as a telescope expanded as the devices grew enormously over time in variety, size, capabilities and expense. The history of the telescope has been fundamentally important for the ways in which the material world of astronomers has also been continually transformed since the early seventeenth century. In the mid and late-nineteenth century, the addition of photographic plates and spectroscopes to telescopes to analyze the light of distant objects in effect extended the capabilities of, and remade, the telescope so that by the end of the century astronomers rarely put their eye to a telescope eyepiece. By the late twentieth century, astronomers were also routinely able to escape the obscuring layers of the Earth’s atmosphere by launching telescopes into space. Many thousands of people, for example, labored to build, operate, and maintain the orbiting Hubble Space Telescope (launched into space in 1990), and to date it has cost over $25 billion, making it not only a leading example of the very largest sort of large-scale science, but also the most famous telescope of all.
+
+The history of the telescope is often presented as a narrative of unbroken triumphs in which ever more capable or inventive instruments have followed inevitably from the weaknesses of their predecessors. However compelling the lure of linear progress, there was nothing preordained about the way telescopes have developed, as quickly becomes obvious when detailed studies are made of individual or groups of telescopes—innovative telescopes have sometimes performed poorly. Moreover, the history of telescopes requires moving beyond “internal” technical histories and paying close attention to both the users and to broader social, political, economic and cultural factors, including the role of non-astronomers in developing telescopes and the allure of the prestige bestowed by a powerful new scientific tool.
+
+Invention
+The rise in popularity of natural magic in the sixteenth century led to numerous speculations on the remarkable observations that could be achieved with mirrors and lenses.2 Some writers have even pointed to the assertions of a number of sixteenth century magi of miraculous optical devices as evidence of telescopes in this period, but these claims have now been widely rejected.3 What, nevertheless, puzzled historians for a long time was why the invention of the telescope took so long to come about, given that the earliest telescopes were combinations of a convex lens and a concave lens and that both sorts of lenses were readily available across Europe by around 1500 because of the spectacle trade. Further, by the late sixteenth century, lenses were being used in Italy in various combinations for different applications and information on the techniques of Italian glassworkers was available in the Netherlands as well as throughout Europe.4
+
+The optical quality of the lenses, however, while sufficiently good for spectacles by the early seventeenth century, produced blurred images of objects at a distance because of small irregularities in the curvature of the lenses across their surfaces. There was, it turned out, a simple way to deal with this problem, though it was counterintuitive. The crucial move was made, historian Albert Van Helden has noted, when someone restricted “the opening of the objective lens to just the central area, where the curvature [of the lens] was most even. When the aperture of the primary receptor was stopped down to about half an inch, a sharply defined and magnified image was produced by a combination of a weak convex and a strong concave lens.”5 That is, the telescope was born by cutting down the amount of light admitted to the pair of lenses.
+
+Hans Lipperhey, a spectacle-maker of Middleburg in the Netherlands, journeyed in September 1608, to the Hague to seek a patent from the national government of the Dutch Republic for such a device. His “spyglass” magnified an image a few times, but Lipperhey was not granted a patent because, while his contrivance was deemed useful, it was simple to copy. Indeed, other claimants to the invention quickly came forward. Skilled spectacle makers in fact had little trouble fabricating their own spyglasses even without sight of a working instrument, and examples were on sale in Paris within months.6
+
+"extensive Landscape with View of the Castle of Mariemont," by Jan Breughel the Elder (1609-1611) The first painting depicting a Dutch spyglass. Several figures in the lower left overlook a vista of trees and fields, with a red structure in the middle distance.
+
+Figure 1: Jan Breughel the Elder’s “Extensive Landscape with View of the Castle of Mariemont” (1609-1611), the first painting of a Dutch spyglass (figure in lower left). Completed about three years after Lipperhey sought a patent for his spyglass. Source: Virginia Museum of Fine Art.
+
+In May 1609, Galileo Galilei, then a mathematics professor at the University of Padua, heard a rumor of the remarkable new device that enabled distant objects to be viewed as if they were close by. When news arrived confirming the rumor, Galileo threw himself into constructing such a device. Before long he had lenses that magnified around twenty times and in fall 1609, he applied his telescopes seriously to the observation of the heavens. He was not the first to do so—Thomas Harriot, for example, had observed the Moon from London in July 1609 with a six-power telescope he had fabricated himself—but what distinguished Galileo’s use of the telescope was that he made a string of astonishing discoveries.7 Fearful of being “scooped,” Galileo rushed his findings into print in March 1610 with Sidereus Nuncius (Sidereal Messenger or Starry Messenger) and in so doing attacked the dominant Aristotelian notions of the cosmos and challenged the foundations of European thought.
+
+Galilean telescope A replica of an early 17th century Galilean telescope. It appears as a thin brown rod approximately 2 feet, 8 inches long.
+
+Figure 2: Replica of an early Galilean telescope. Its length is 2 feet, 8 ½ inches. Source: Science Museum Group Collection Online.
+
+Galileo explained in Sidereus Nuncius that he saw the Moon pitted with craters and mountains and concluded it was quite earth-like. It was definitely not the perfect sphere Aristotelians had claimed it to be. When he turned to Jupiter, he spotted four companions to the planet. These were moons of Jupiter, known to us as Io, Europa, Ganymede and Callisto, and Galileo eagerly exploited them as “gifts” to be exchanged for patronage from the Grand Duke of Tuscany. Galileo’s telescopes also displayed many more stars than are visible to the naked eye. When Galileo announced in Sidereus Nuncius a novel set of phenomena discovered by an instrument it was an unprecedented event in the history of science.8
+
+Initially, Galileo’s observations were hotly contested. For example, Galileo visited Bologna shortly after the publication of the Sidereus Nuncius to demonstrate the satellites of Jupiter to a number of other astronomers. A few days later one of them wrote that while Galileo’s telescope was fine for observations of earthly objects, it did not disclose the phenomena in the heavens that Galileo supposed. G.A. Magini, Professor of Mathematics at Bologna, insisted the instrument deceived. Shortly after, Martin Horky (Magini’s assistant) published A very short excursion against the Sidereus Nuncius. The chief philosophers at Padua and Pisa also refused to believe Galileo.
+
+Two pages from Galileo's sidereus nuncius framing two drawings of the moon, showing it half in shadow and half in light, set in the midst of Latin text.
+
+Figure 3: Two pages from Galileo’s Sidereus Nuncius (1610), showing his moon observations. Source: Smithsonian Collection, via Internet Archive.
+
+Other astronomers armed with telescopes (some of them made by Galileo himself), were corroborating his finds. Christopher Clavius was the foremost mathematician of the Jesuit Order and his opinions and those of the other mathematicians in the Collegio Romano carried great weight in the Catholic world. So, when by the end of 1610, Clavius and his colleagues had confirmed the satellites of Jupiter, this was important news. In April of the following year, the highly placed Catholic official Cardinal Bellarmine asked Clavius and three of his colleagues at the Collegio Romano to report on Galileo’s claimed discoveries. Although they did not always agree with Galileo’s interpretations of the observations, they received his discoveries positively. One of them even delivered an oration in praise of the Sidereus Nuncius when Galileo visited Rome and met the Jesuits of the Collegio Romano. On the same visit, Galileo was inducted into what would soon become a famous scientific society, the Lincean Academy, and a banquet was held in his honor.9
+
+Long Refractors
+The astronomer Johannes Kepler was a key supporter of Galileo’s claims in Sidereus Nuncius. Encouraged by Galileo’s findings, Kepler also developed a mathematical theory of lenses and in the Dioptrice (1611) he proposed a new kind of refracting telescope.10 In a Keplerian telescope the eyepiece is composed of a convex lens instead of the concave eyepiece used by Galileo. This type of refractor gradually displaced the Galilean, and—in what would later become important—Keplerian telescopes could be used with an eyepiece micrometer or as a telescopic sight on a measuring instrument.
+
+But the resolution or image detail of Kepler’s sort of telescope, as for the Galilean kind, was severely limited, due in part to “spherical aberration.” In the seventeenth century, makers were able to fashion only spherical lenses, that is, lenses that had a spherical curvature (though producing a uniform spherical curvature was beyond makers at this time). Spherical lenses, however, do not bring the light striking them at different places to a common focus, and so form a somewhat blurred image. In addition, astronomers knew that when observing, say, a star through a telescope, it would produce a colored appearance that again meant a loss of sharpness of the final image. This problem became known as “chromatic aberration” and was the result of different colors reaching their focal points at different distances after passage through a lens. By the middle of the seventeenth century astronomers had learnt the benefits of long focal lengths (and so long telescopes) in mitigating both spherical and chromatic aberration. Telescopes therefore grew in length, and by the middle of the seventeenth century good ones could be 30 feet or more meaning observers usually employed masts and pulleys to direct the long refractors to different parts of the sky. In time, astronomers accepted that all telescopes exhibit various kinds of imperfections and concluded that an aberration-free telescope was impossible to construct.
+
+These physical changes had concrete consequences for the understanding of astronomical phenomena. Galileo, for example, had found that Saturn’s appearance mysteriously varied over time. When he observed the planet in July 1610, it seemed to consist of three bodies arranged in a line, a central larger one with two smaller ones at its side. Two years later the two smaller bodies had disappeared. Later, to Galileo’s surprise, the appendages reappeared. Over the following decades, Christian Huygens’ significant improvements in lens grinding and his use of long refractors meant he soon had better instruments than those used by Galileo and Galileo’s contemporaries. In 1655, for example, Huygens had discovered Titan, Saturn’s largest moon, with a telescope that had an aperture of a little over two inches but a focal length of 12 feet.11 It was only with these new constructions that nearly fifty years after Galileo’s Sidereus Nuncius, Huygens could conclude in his Systema Saturnium (1659) that Saturn’s changing appearance was the result of a thin, flat ring that surrounded the planet.12
+
+One avid reader of Huygens’s Systema Saturnium book was the Danzig brewer and accomplished astronomer Johannes Hevelius. Hevelius was inspired to emulate Huygens, and he built successful telescopes and instruments, as well as his own observatory across the roofs of three neighboring houses. He is now generally remembered for his map of the Moon. His biggest and most famous telescope, however, was a flop. It had a focal length of 150 feet and had to be suspended from a mast 90 feet high. This gigantic instrument was hobbled by numerous practical difficulties, and in the opinion of Edmond Halley, who visited Danzig, the 150-foot telescope was effectively useless. This was not to be the last time a telescope maker pressed the available technology too far. It is also important to note that for twenty years, Hevelius observed the skies together with his second wife Elisabetha who was a skilled collaborator and widely recognized for her labor.13 As was to be generally the case until the late nineteenth century for astronomically-skilled women, Elisabetha had secured access to state-of-the-art instruments via the “domestic sphere.”
+
+Image showing a crowd gathered to witness a large tower holding a telescope, with two men at the bottom right gathered near the base of the telescope. There are also figures with ladders and carriages and a city is visible in the background.
+
+Figure 4: An image of Johannes Hevelius’s 140 foot telescope, from his book Machina Coelestis (1673). Source: Wikimedia Commons.
+
+Technical Innovation
+When Hevelius died in 1687, the development of the telescope followed two distinct paths over the subsequent century. The first concerned reflecting telescopes that employed mirrors while the second involved improvements in the refractor. In 1668, Isaac Newton, then a Fellow of Trinity College, Cambridge in England, made the first successful reflector. Newton was not the first to conceive of the notion of such an instrument, but he was the first to produce a working version of one and his success made Newton’s reputation at the Royal Society.14
+
+Newton’s novel telescope emerged out of his researches into light. In the face of established opinion, Newton argued that white light is made up of different colors, and that each color is refracted by a slightly different amount when it passes through a lens. While Newton had not wholly despaired of refracting telescopes,15 he believed refractors would be limited by chromatic aberration. In Newton’s telescope design, a two-inch diameter primary mirror of speculum metal (an alloy of copper and tin) sat at the bottom of a tube. Inserted into the tube near its top was a flat secondary mirror tilted so as to direct the light that had been reflected from the primary mirror to an eyepiece on the side of the tube. This type of optical configuration became known as a “Newtonian” reflector. As his telescope relied only on mirrors, which would not split the incoming light into colors, Newton had deftly avoided the problem of chromatic aberration.
+
+Shortly after Newton’s death in 1727, however, Chester Moor Hall, a London barrister who pursued optical experiments and devices as a hobby, conceived the idea that a compound lens composed of two lenses of different sorts of glass with different refractive properties could significantly reduce the colored fringes and blurring due to chromatic aberration without resorting to mirrors. By 1733, Hall had approached two London instrument makers to provide a convex lens of crown glass and a concave lens of flint glass. The combination of the two lenses greatly reduced the spurious colors. Hall did not patent his invention, but John Dollond, one of the leading London instrument makers of the eighteenth century, took out a patent on this idea in 1759 and placed achromatic lenses into general production. Dollond died in 1761, but his son Peter vigorously defended the patent in lawsuits, and Dollond-built achromatics became popular among astronomers.16
+
+The choice of telescope machinery was also a matter of cost. In the late eighteenth century, state-of-the-art refractors were expensive. For independent astronomers who were not rich or employed at an observatory, the only realistic option was to build their own reflecting telescope. One such ambitious astronomer was William Herschel. Born in Hanover in 1738, Herschel joined his father’s military band and the close links at the time between Britain and Hanover (King George III was also Duke and Prince-elector of Brunswick-Lüneburg and later became King of Hanover in 1814) led to William moving permanently to England to pursue a musical career. In 1774, he became the organist to the Octagon Chapel in Bath in the southwest of England in order to increase his income as a composer and conductor as well as a teacher of music.
+
+Herschel’s life was transformed by the events of 13 March 1781. That night, employing a fine reflector of 7-foot focal length that he had built, he came upon an object that was, in Herschel’s words, “a curious either Nebulous Star or perhaps a Comet.” It proved to be a planet, what would later be known as Uranus. Other astronomers had observed Herschel’s object before, but had not noticed anything odd about it. In contrast, such was the quality of Herschel’s telescope that he had immediately recognized it was not star-like. It was the first planet to be found in recorded history and its discovery caused a sensation. Herschel became famous and King George III granted him a royal pension. He promptly abandoned his musical career and devoted himself to astronomical endeavors, including the construction of telescopes. Herschel’s sister Caroline became a successful astronomer in her own right. Her discovery of 8 comets, for example, is indicative of the ways she was not simply an indefatigable assistant but a crucial collaborator. As was the case for Elisabetha Hevelius, for Caroline Herschel, access to state-of-the-art telescopes was gained through leveraging familial connections.17
+
+Herschel’s initial drive to build big telescopes came in part from his desires to try to detect evidence of life on the Moon and to determine directly the distance to a star by measuring stellar diameters, both goals that would have been dismissed by professional astronomers. Searching for signs of intelligent life on the Moon was just not the sort of astronomy professional astronomers did or regarded as legitimate, and trying to measure the diameter of a star was, in their view, technically impossible. By the early 1780s, Herschel had become particularly intrigued by nebulae (misty clouds of light among the stars) and star clusters, objects that had previously drawn little attention from astronomers, and he knew that to detect and examine these generally dim objects he needed instruments that gathered as much light as possible. He therefore needed to fashion telescopes with large mirrors. Herschel’s finest instrument had a 20-foot focal length and a primary mirror 18.7 inches in diameter. Herschel devised a mount for the telescope that kept it stable but enabled it to be easily and promptly directed to any part of the sky. In 1833, his son John transported the 20-foot reflector to the Cape of Good Hope so that he could sweep the southern skies as his father had swept the northern heavens.18
+
+Black and white print of Herschel's twenty-foot reflecting telescope, 1794. Two men stand to the left of the apparatus, which is a large A-frame supporting a diagonal cylinder.
+
+Figure 5: A 1794 print of William Herschel's Twenty-Foot Reflecting Telescope. Source: University of Cambridge Digital Collections.
+
+William, however, as he confided to his son John, had overreached himself when he built a reflector with a primary mirror of 48-inches and a focal length of 40-feet. Completed in 1789, it was by far the largest reflector attempted to that time but suffered from many problems. Among other issues, the 40-foot was extremely cumbersome to use and its speculum metal mirrors tarnished rapidly and had to be polished frequently. It was a grand failure, but as its construction had been financed by thousands of pounds from George III, William felt unable to concede this point in public.19 Determining which innovations would prove useful in advance was difficult for even experienced astronomers like Hershel.
+
+The period of Herschel’s work on reflecting telescopes, from the 1780s until the 1860s, is very much in line with the early Industrial Revolution in Britain. That nearly all of these big speculum metal reflectors were built in Great Britain and Ireland speaks not only to Herschel’s influence, but also the links between telescope makers and new industrial developments. Herschel himself was a frequent visitor to ironworks, factories, and steam engines, as well as a keen student of all kinds of machines.20
+
+William Parson, third Earl of Rosse, was also fascinated by machines and worked in the tradition of building large, speculum metal reflectors. By 1839, Rosse, a major landholder in central Ireland, had constructed a 36-inch reflector at his family seat at Parsonstown (now Birr). This telescope in general conception owed much to Herschel. Rosse, however, already harbored still bolder plans for a reflector with a primary mirror an unprecedented 72-inches in diameter whose design was quite different from any telescope built by Herschel. Great efforts were put in train at Parsonstown to this end. Visitors were awed by the scale of the work. As one of them put it, “Whatever met the eye was on a gigantic scale: telescopic tubes, through which the tallest man could walk upright; telescopic mirrors whose weights are estimated not by pounds but by tons, polished by steam power with almost inconceivable ease and rapidity, and with a certainty, accuracy and delicacy exceeding the most perfect production of the most perfect manipulation; structures of solid masonry for the support of the telescope and its machinery more lofty and massive than those of a Norman keep….”21
+
+The monster telescope—it was known as the `Leviathan of Parsonstown’--was completed in 1845 and became one of the scientific wonders of the age. It was, however, handicapped by the Irish climate and its location next to a bog so that the number of clear nights on which it could be usefully employed was small. The Leviathan was also so massive that Rosse’s solution to mounting the telescope was to sling it between twin piers of masonry. This scheme, however, meant it could be pointed to only a limited part of the sky.22 Large reflectors were also idiosyncratic machines. Big reflectors needed the coaxing of experienced observers to bring out the best in them, and in the middle of the nineteenth century their unreliability meant they were not the instruments of choice for professional astronomers who prized precision, reliability and stability.
+
+Professional astronomers who were based in private, university or state run observatories did not follow Newton and Herschel in building reflectors as they sought instead to employ instruments to determine as accurately as possible the positions and motions of celestial bodies and then to interpret them in terms of Newton’s law of universal gravitation. These efforts were shaped by state and imperial interests as they were directly relevant to surveying, geography and practical navigation. Observatories established by national or local governments or universities often served important symbolic functions as advanced scientific institutions that employed cutting edge instruments. They were a means to secure prestige, and their scientific programs often lacked a clear theoretical aim.23 The telescopes at these observatories needed to be reliable and precise rather than command a large light grasp. Refractors, then, were the telescopes of choice.
+
+In the early 1800s, Germany was the world leader for optical sciences and became the chief center for the manufacture of refractors. The leading makers were Joseph von Utzschneider and Joseph Fraunhofer who ran an optical shop in Munich. Advances in practical glassmaking led to better quality glass, and, when allied to Fraunhofer’s deep knowledge of optical techniques, enabled them to fashion superior objectives to those of their competitors. What other astronomers regarded as Fraunhofer’s finest achievement was his 9.6-inch refractor for the Russian Imperial Observatory in Dorpat. It was completed in 1824 and set the pattern for refractors for decades to come. The German firm of Merz and Mahler (the successors to Fraunhofer and Utzschneider) later built a 15-inch refractor that was close in design to Fraunhofer’s for the newly established observatory at Pulkovo near St. Petersburg.24
+
+The sizes of the largest refractors increased steadily during the nineteenth century. Fraunhofer also built a 6 ½ inch heliometer that was employed by F.W. Bessel at Königsberg. In this type of telescope, the object glass was cut along a diameter into two semi-circles so that the semicircles could be displaced sideways to each other to enable an astronomer to measure the separation of two objects on the sky. With his Fraunhofer-built heliometer, Bessel measured the distance of the star 61 Cygni, a result which he announced in 1838, and which was widely received as a triumph of precision astronomy.25
+
+Refractors or Reflectors?
+Refractors grew bigger and more capable in the second half of the nineteenth century. But not all attempts to push the state-of-the-art were successful. A 24-inch refractor built for the Reverend John Craig, a vicar of Leamington in England, was completed in 1852, and was the largest ever attempted. The objective was held in a 75-foot metal tube shaped like a cigar, and the three-ton tube itself was held by chains that hung from a brick tower 64 feet high that weighed over 200 tons. No less an authority on optics than David Brewster called the telescope a “beautiful specimen of art.”26 But the telescope’s observing life lasted for only a couple of years, it was very cumbersome to use, was badly sited on Wandsworth Common in London, and the quality of the objective was poor. Overall, the telescope was a failure.27
+
+Other big refractors were far more successful and there even emerged a “telescope race” in which builders, funded by patrons seeking fame or prestige, sought to beat in size the largest existing instrument. This race culminated in the great refractor built for the Yerkes Observatory of the University of Chicago that was completed in 1897 and possessed a 40-inch objective.28 It was funded to the tune of over $500,000 (around $16,000,000 in current value) by Charles T. Yerkes, who had secured his fortune through the manipulation of streetcar and railroad franchises in various cities, and who is a striking example of the “robber barons” who thrived on corruption and accumulated great fortunes in the late nineteenth century United States.
+
+A group of individuals, including Albert Einstein, who is just to the right of center, standing for a formal portrait in front of the Yerkes Telescope, within the dome.
+
+Figure 6: Albert Einstein and the staff of the Observatory in front of the 40-inch Refractor, Yerkes Observatory, Williams Bay, Wisconsin, on May 6, 1921. Source: Yerkes Observatory via Wikimedia Commons.
+
+A still larger refractor was constructed for the Paris Universal Exhibition of 1900 by the leading French optician of the second half of the nineteenth century, Paul Gautier. The aim was to build a double refractor, that is, with one designed for visual observations and one for photographic work, but only the photographic part was finished. This instrument contained a 1.25-meter objective that had a focal length of some 60 meters, was mounted horizontally, and it received light from a huge siderostat that contained a 2-meter mirror weighing seven tons. The giant instrument provided a grand spectacle but was soon dismantled as it was judged to be too unwieldy for serious observations.29
+
+The 40-inch Yerkes refractor is now generally regarded as the high point for refractors and no larger one was attempted in the twentieth century. Reflectors were better suited to, and also helped to shape, the newer sorts of questions astronomers were tackling by the last decades of the nineteenth century. Astronomers increasingly centered their researches on astrophysics, the study of the chemical and physical composition of celestial bodies. In addition, rather than observe these bodies by placing an eye next to a telescope’s eyepiece, by the early twentieth century astronomers generally took photographs of them or attached spectroscopes to their telescopes and then photographed the light of an object after it had been split into its component colors by a prism or diffraction grating. By the end of the twentieth century the photographic plates would themselves be replaced by electronic light detectors, which, like photography, both extended the capabilities of, and in so doing remade, the telescope. For these purposes, astronomers strongly preferred reflectors, particularly after the optician George Ritchey had constructed a record 24-inch reflector for the Yerkes Observatory.30
+
+Manufacturers of telescope mirrors had also abandoned the problematic speculum metal mirrors by the late nineteenth century. Through advances in chemistry, astronomers now used glass mirrors as glass was easier to grind and polish to the correct shape than speculum metal. A very thin layer of silver was then deposited on the front surface of glass to reflect the incoming light (in the 1930s, aluminum would replace silver for this job). Such mirrors were lighter and reflected considerably more of the light incident on them than equivalent speculum metal mirrors. Given only a very thin silver layer was required, their cost was not regarded by makers as extravagant. The first large silver-on-glass reflector built had had a 47-inch mirror, but it proved to be “comparatively useless.”31 The first successful big silver-on-glass reflector was made by the sanitary engineer and skilled telescope builder A.A. Commons, underlining again that in the nineteenth century major developments in reflectors were generally made by those outside the ranks of professional astronomers.
+
+Hale’s Ambitions
+The history of the telescope is not simply a technical one, however. The key figure in securing Yerkes’s donation for the 40-inch refractor, for example, was George Ellery Hale.32 He ranks as one of the leading promoters and fundraisers in the history of astronomy and he shaped these roles in the modern era through pushing for bigger telescopes and seizing new opportunities. Hale was the crucial actor in the establishment of three observatories— each of which would at one time possess the world’s most powerful telescope, and Hale had quickly grasped that philanthropic foundations could be hugely important for “pure” research.
+
+Hale would, as a benefactor rather than as a scientist or instrument-maker, become the “pivotal figure” shifting the management, organization, and direction of American astronomy.33 Hale left Yerkes in 1902 and set about founding what became the Mount Wilson Observatory in California. By this time, Hale and increasing numbers of his colleagues recognized the major advantages to be gained by employing telescopes thousands of feet above sea level, and so above a good fraction of the troublesome atmosphere. Among other instruments Hale was intent on building a large reflector on Mount Wilson. Supported by what was by the standards of the time remarkably lavish private philanthropy of the Carnegie Institution of Washington—established by another robber baron, the steel magnate Andrew Carnegie—a 60-inch reflector was completed in 1908. In 1919, a yet bigger reflector with a primary mirror 100-inches in diameter followed. It would be the biggest in the world for thirty years. Use of the giant reflector, however, was limited almost entirely to Mount Wilson astronomers as the Carnegie Institution of Washington was a private research organization. Early twentieth century astronomy was far from a republic of science and even in the U.S. few astronomers had access to such formidable research tools.
+
+A man in the center is seated on a platform with his hand on a giant telescope that takes up the majority of the image, shot from below looking up.
+
+Figure 7: “Edwin P. Hubble seated on the elevating platform at the Hooker 100-inch reflecting telescope,” circa 1940. Source: Observatories of the Carnegie Institution for Science Collection at the Huntington Library, San Marino, California.
+
+Hale, however, was not done. Despite incapacitating bouts of ill health, he obtained funds for what would become for many years the largest telescope in the world, the 200-inch reflector on Palomar Mountain in California. Hale died in 1938 and so he did not live to see his finest creation come into operation eleven years later. Initially it suffered from major problems, but its performance later improved. Since then, fueled by the willingness of national governments (and, in the United States, private patrons), to support costly astronomical projects, there has been a surge of telescope building that has seen instruments with mirrors that dwarf the 200-inch regularly put into service on mountain tops around the world. For example, in 1991, atop Mauna Kea in Hawaii, the 10-meter Keck Telescope went into operation, which was shortly followed thereafter at the same site by the 8.3-meter Japanese Subaru telescope. Numerous very large telescopes are currently under construction, including the E-ELT (European Extremely Large Telescope), which is being built in the Atacama Desert in Chile, which sits at an altitude of over 3,000 meters. The E-ELT will have a mirror over 39 meters across.34
+
+Beyond Visible Light
+Until the 1930s, almost all the information astronomers secured about the universe came from observations of visible light. But visible light forms only one small part of the electromagnetic spectrum that extends from radio waves at long wavelengths to gamma rays at very short wavelengths. Although there were attempts to observe radio emissions from the Sun around 1900, it was not until 1930 that Karl Jansky, a radio engineer working for Bell Telephone, accidentally discovered radio waves from an extraterrestrial source.
+
+World War II both spawned new technologies and saw the rapid evolution of existing ones that would be central for radio astronomy. After 1945, physicists who had grown skilled in various electronic techniques during the War as well as some astronomers excited at the prospect of detecting radio waves from astronomical objects, put radio astronomy onto a new footing by exploiting these various war-time technological advances. Physicists with new technical skills and knowledge thereby expanded the astronomical community from the previous narrow group of optical astronomers.35
+
+New sources of support were vital too. By the 1950s, Cold War-inspired funds were flowing from national governments to scientific enterprises as never before. Some of this money drove the building of radio telescopes. These included a number with enormous steerable dishes to collect and focus radio waves. A leading example was the Mark I radio telescope at Jodrell Bank in England with a dish diameter of 250 feet.36 The rapid development of radio astronomy was crucial in reshaping astronomers thinking about the nature of the universe as astronomers pieced together the evidence from the new radio telescopes in a way that painted a much more violent and tumultuous picture than the one drawn from observations with optical telescopes alone.
+
+The study of the universe in other regions of the electromagnetic spectrum also took off, literally and metaphorically, after the war. Some astronomers were persuaded by war-time developments in electronics, light detectors and rocketry, particularly in Germany, to experiment with flying instruments and telescopes above the Earth’s atmosphere.37 This effort opened up the prospect of observing electromagnetic radiation unable to penetrate the Earth’s atmosphere, and enabled the move beyond the range of optical wavelengths (3x10⁻⁷ m to 10x10⁻⁷ m), to an enormously larger range (over twelve orders of magnitude) from gamma rays to long wavelength radio waves (from 10⁻¹² m to beyond 10 m). Observational astronomy was thus refashioned in the decades after World War II as infrared astronomy, ultraviolet astronomy, x-ray astronomy and gamma ray astronomy. Technology of the “space age” completely transformed astronomy.
+
+The example of radio astronomy illustrates the nature of the transformation. The Earth’s atmosphere prevents x-rays from celestial bodies arriving at the ground and so to detect these radiations x-ray astronomers must launch their instruments into space. While the early x-ray instruments contained relatively crude means of “seeing” x-rays, in the early 1960s Riccardo Giacconi, who was a staff member of the American Science and Engineering company worked to focus x-rays from a large collector onto a small detector. Using a conventional mirror to focus the x-rays, Giacconi knew, was hopeless as the x-rays would penetrate the surface rather than be reflected. To overcome this problem, Giacconi and his colleague Bruno Rossi devised a way of forming x-ray images by “nesting” several mirrors in concentric cylinders so that incoming x-rays would hit the mirrors at very small angles and so not penetrate the surface but be reflected, thereby extending what was understood by a “telescope.” The Einstein Observatory, launched into orbit in 1978, became the first large x-ray telescope observatory, and the involvement of a range of disciplinary experts from many different institutions underlined that space astronomy projects depended on the assembly and linkage of laboratories/observatories in technical, managerial and political terms to make them both technically and politically feasible.38 (See "The Laboratory ”) In 2002, Giacconi became the first space astronomer to be awarded the Nobel Prize for Physics.
+
+Optical telescopes were also launched into space. In 1946, the American astronomer Lyman Spitzer Jr., wrote a report on the “Astronomical Advantages of an Extra-Terrestrial Observatory.” More than a decade before the first human built satellite (Sputnik I) shot into orbit and at a time when the majority of his colleagues were highly skeptical of pursuing astronomy from space vehicles, Spitzer advocated a huge space telescope, one with a mirror perhaps 200 to 600 inches in diameter. As he himself emphasized, “Most astronomical problems could be investigated more rapidly and effectively with such a hypothetical instrument than with present equipment. However, there are many problems which could be investigated only with such a large telescope of very high resolving power…. It should be emphasized, however, that the chief contribution of such a radically new and more powerful instrument would be, not to supplement our present ideas of the universe we live in, but rather to uncover new phenomena not yet imagined, and perhaps modify profoundly our basic concepts of space and time.”39 Spitzer’s argument for bigger telescopes echoed that of Galileo made centuries earlier: to uncover phenomena “not yet imagined.”
+
+The best-known space telescope is also arguably the most famous telescope of all: the Hubble Space Telescope (HST). Although astronomers such as Spitzer had speculated on the possibilities of a large telescope in space much earlier, the HST was launched into orbit in 1990 by the Space Shuttle Discovery and is a joint enterprise of NASA and the European Space Agency (at the time of writing, HST is still a functioning space observatory) and is a completely automated observatory. For it to come into being required the efforts of hundreds of astronomers not only in building instruments and planning the science to be performed with the completed instrument, but also through political efforts to convince the U.S. Congress to back the project, often working within the framework of a large coalition of supporters that involved many non-astronomers. Never before had there been such a large-scale lobbying campaign in order to win approval of a new telescope. The Hubble Telescope thereby helped to remake the American astronomical community and reconstitute the astronomical enterprise as astronomers learned to lobby en masse for government monies in the 1970s.40
+
+Hubble works principally in the visible and ultraviolet regions of the spectrum although an infrared instrument was added to the observatory in 1997. At the heart of HST is a primary mirror 2.4 meters in diameter that collects light for the telescope’s battery of scientific instruments. While this mirror is relatively small by the standards of the biggest telescopes on the ground, the HST’s position in space and above the Earth’s atmosphere has more than compensated for this during its lifetime. A joint project of NASA and the European Space Agency, engineers and scientists designed HST to be updated over time. Before the final repair mission to the telescope in 2009, Space Shuttle astronauts had visited the telescope on a regular basis in order to replace, among other things, old instruments with newer and more capable ones thereby enhancing the Telescope’s performance. Thousands of people have worked on and used the HST, which cost around $2 billion to build, and its time in orbit has added many more billions more to its cost. It is probably the single most costly scientific instrument ever devised, as well as arguably the most productive telescope ever.
+
+Hubble’s early history is also linked to the history of the Cold War via the connection to the U.S. photoreconnaissance satellite program. One of the products of this program was the KH-9 (Key Hole 9) satellite, also known as Hexagon. The prime contractor for Hexagon was Lockheed, with Perkin-Elmer the contractor for its telescope system. The KH-9 was reportedly followed a few years later by the KH-11, another photoreconnaissance satellite and again with Lockheed and Perkin-Elmer as the major industrial contractors. The two lead contractors for the Hubble Space Telescope were also Lockheed and Perkin-Elmer. Telescopes in space that scrutinize the surface of the Earth pose distinctly different problems for their designers than space telescopes, which—for HST—required it to be directed towards and locked onto exceedingly dim objects for many hours. In contrast, reconnaissance satellites observe sources on the Earth for short times, and these sources are, by astronomical standards, very bright. But as President Ronald Reagan’s science advisor, George Keyworth, remarked in 1985, there is “no question that it would have been a very much more difficult task [to build the Space Telescope] if we had not already acquired considerable expertise in both talent and industrial manufacturing. The [Hubble Space Telescope] is new, but it draws on technologies used in military systems.”41 Hubble’s history therefore underlines Richard Hirsch’s quip that space astronomy and space telescopes are a “gift” of the Cold War.
+
+Hubble satellite in outer space, showing its shiny exterior against the backdrop of Earth's atmosphere below and dark space above. 
+
+Figure 8: The Hubble Telescope in Orbit. Source: NASA.
+
+In telescope building success begets success, and Hubble’s success opened the way for its more complex successor, the James Webb Space Telescope (JWST), construction of which began in 2001.42 A joint project of NASA, the European Space Agency and the Canadian Space Agency, at the time of writing the final testing of JWST is underway and its launch to a position in space beyond the Moon will follow shortly thereafter. At the heart of JWST, which had been designed to work in the infrared region of the spectrum, is a primary mirror made up of eighteen segments that in total reach across a diameter of more than 6 meters. By the time of its launch it will have cost around $10 billion, and like Hubble, it has run perilously close to cancellation at different times.
+
+Conclusion
+The telescope transformed natural philosophy in the seventeenth century and quickly become central to the development of astronomy, despite the technical challenges the instrument posed. Its recent history has also been remarkable, with national governments willing to spend tens of billions of dollars to build and operate orbiting telescopes. Even moderate sized ground-based telescopes cost tens of millions of dollars, and thereby testify to the extremely high premium placed on scientific research by many modern societies, as well as the striking political success of astronomers working in broad-based coalitions to secure new instruments and the ability of these new instruments to secure impressive scientific results.
+
+Historiographical Note
+Until relatively recently the proper study of the history of science was widely taken to be the study of the history of theories and concepts, with the presumption that instruments and apparatuses like the telescope were sidelined. Instruments, according to this line of argument, emerged as topics in their own right in the late 1970s for two main reasons.43 First, some historians, philosophers, and others interested in modern science, especially in the sociology of scientific knowledge, turned to the study of the experimental process. In so doing, they set out to examine the working practices and day-to-day activities of scientists, rather than what scientists imply or claim they do in scientific papers and monographs. Second, instruments also became a focus of attention in science policy. This growing interest was fueled by the steeply rising cost of certain classes of instruments. For example, when the Hubble Space Telescope was launched into orbit in 1990, approximately $2 billion (1990 dollars) had been spent to make this feasible. Such contemporary instruments and the often heated debates swirling around them helped to concentrate the attention of more historians of science on the history of instruments in general.
+
+This story of the rise of instruments in the history of science is nevertheless unconvincing when we try to apply it to the history of astronomy. Indeed, given the centrality of the telescope to astronomy, it is hard to imagine how it could have been otherwise. The history of the telescope generated an extensive literature before the mid-twentieth century, including Andr é Danjon’s and André Couder’s 1935 Lunettes et telescopes, 44 but Henry King’s 1955 The History of the Telescope marked a major advance in detail and range. King began his account with a short discussions of naked eye observations and optics from antiquity to the early seventeenth century. He adopted a largely chronological approach for his narrative which, for professional instruments, he ended with the Palomar Mountain 200-inch reflector. Shortly after King’s book was published, Rolf Riekher, in 1957, published Fernrohre und ihre Meister. An expanded second edition followed in 1990 in which Riekher, a professional optician, extended his coverage to very large ground- based telescopes as well as the Hubble Space Telescope. Although King and Riekher drew solely on published materials in their works, their breadth and reliability means their books are still major resources for anyone interested in the development of optical telescopes to the middle of the twentieth century.
+
+The 1960s and 1970s saw the publication of a number of significant archivally based work on telescopes. Among these were a sophisticated examination of the design and construction of William Herschel’s telescopes by J.A. Bennett and Deborah Warner’s impressively researched monograph on Alvan Clark and Sons, the leading telescope builders in the United States in the late nineteenth and early twentieth centuries.45 These works were markers on the way to increasing scholarship on individual telescopes or groups of telescopes contrasted with books covering the entire history of the telescope becoming the province of popular or semi-popular writing.46
+
+The main foci of historians of the telescope continue to be the seventeenth century and the period after World War II. Many of the links between the telescope, astronomical ideas, astronomical practice and the cultural contexts in which the instrument has been embedded, however, remain to be explored. A particularly promising recent approach to making such explorations emphasizes the networks around the telescope and the makers and users of telescopes, as well as the importance of place to the history of the telescope.47 The 30-meter telescope under construction atop the mountain of Maunakea in Hawaii has underlined the importance of place too. It is an excellent location for a state-of-the-art telescope, but building a telescope at that location has been strongly opposed by some native Hawaiians who regard the site to be sacred so that it should be visited only for very specific purposes.48 Telescopes are always embedded objects.
+
+Bibliography
+Agar, Jon. Science and Spectacle: The Work of Jodrell Bank in Post-war British Culture. Amsterdam: Harwood, 1998. (Link to IsisCB)
+
+Andriesse, C.D. Huygens: The Man Behind the Principle. Translated by Sally Miedema. Cambridge: Cambridge University Press, 2005. (Link to IsisCB)
+
+Batten, Alan H. Resolute and Undertaking Characters: The Lives of Wilhelm and Otto Struve. Dordrecht: D. Reidel, 1988. (Link to IsisCB)
+
+Bennett, J.A. “On the Power of Penetrating into Space: The Telescopes of William Herschel.” Journal for the History of Astronomy 7 (1976): 75-108. (Link to IsisCB)
+
+Bennett, J.A. The Divided Circle: A History of Instruments for Astronomy, Navigation and Surveying. Oxford: Phaidon-Christies, 1987. (Link to IsisCB)
+
+Bennett, J.A. Church, State, and Astronomy in Ireland: 200 Years of Armagh Observatory. Armagh: Queens University of Belfast Press, 1990. (Link to IsisCB)
+
+Bloom, Terrie. “Borrowed Perceptions: Harriot’s Maps of the Moon.” Journal for the History of Astronomy 9 (1978): 117-122. (Link to IsisCB)
+
+Brewster, David. Treatise on Optics. London: Longman, Brown, Green & Longman's, 1853.
+
+Bucciantini, Massimo, Michele Camerota, and Franco Giudice. Galileo’s Telescope: A European Story. Translated by Catherine Bolton. Cambridge, Mass.: Harvard University Press, 2015. (Link to IsisCB)
+
+Caspar, Max. Kepler. Translated and edited by C. Doris Hellman. With a new introduction and references by Owen Gingerich. New York: Dover Publications, 1993. (Link to IsisCB)
+
+Danjon, André, and André Couder. Lunettes et télescopes. Paris: Editions de la Revue d'Optique theorique et instrumentale, 1935.
+
+Cunningham, Clifford J., ed. The Scientific Legacy of William Herschel. New York: Springer, 2018. (Link to IsisCB)
+
+DeVorkin, David. Science with a Vengeance: How the US Military Created the US Space Sciences after World War II. Springer-Verlag: New York, 1992. (Link to IsisCB)
+
+DeVorkin, David. Henry Norris Russell: Dean of American Astronomers. Princeton: Princeton University Press, 2000. (Link to IsisCB)
+
+Fara, Patricia. Pandora’s Breeches: Women, Power and Science in the Enlightenment. London: Pimlico, 2004. (Link to IsisCB)
+
+Galilei, Galileo. Sidereus Nuncius or The Sidereal Messenger. Translated with an introduction, conclusion and notes by Albert Van Helden. Chicago: The University of Chicago Press, 1989.
+
+Herschel, John. “An Address delivered at the Annual General Meeting of the Society, February 12, 1841, on presenting the Honorary Medal to M. Bessel.” Memoirs of the Royal Astronomical Society 12 (1842): 442-454.
+
+Hirsh, Richard F. Glimpsing an Invisible Universe: The Emergence of X-Ray Astronomy. New York: Cambridge University Press, 1983. (Link to IsisCB)
+
+Hoskin, Michael. Discoverers of the Universe: William and Caroline Herschel. Princeton and Oxford: Princeton University Press, 2011. (Link to IsisCB)
+
+Jackson, Myles. Spectrum of Belief: Joseph von Fraunhofer and the Craft of Precision Optics. Cambridge, Mass.: MIT Press, 2000. (Link to IsisCB)
+
+King, Henry C. The History of the Telescope. High Wycombe: Charles Griffin and Company, 1955. Reprint. New York: Dover, 1979.
+
+Launay, Françoise. “The Great Paris Exhibition Telescope.” Journal for the History of Astronomy, 38 (2007): 459-475. (Link to IsisCB)
+
+Learner, Richard. Astronomy Through the Telescope. Van Nostrand Reinhold Company: Scarborough, Ontario, 1981.
+
+McCray, Patrick. Giant Telescopes: Astronomical Ambition and the Promise of Technology. Cambridge, Mass.: Harvard University Press, 2006. (Link to IsisCB)
+
+Mollan, Charles, ed. William Parsons, 3rdEarl of Rosse. Manchester: Manchester University Press, 2014. (Link to IsisCB)
+
+Morrison-Low, Alison D., Sven Dupré, Stephen Johnston, and Giorgio Strano, eds. From Earth-Bound to Satellite: Telescopes, Skills and Networks. Leiden: Brill, 2012.
+
+Osterbrock, Donald E. The Prince and the Pauper: Ritchey, Hale and Big American Telescopes. Tucson: University of Arizona Press,1993. (Link to IsisCB)
+
+Osterbrock, Donald. Yerkes Observatory, 1892-1950: The Birth, Near Death, And Resurrection of a Scientific Research Institution. Chicago: University of Chicago Press, 1997. (Link to IsisCB)
+
+Peacock, George. “Address,” xxxi-xlvi. Report of the Fourteenth Meeting of the British Association for the Advancement of Science. Held at York 1844. London: John Murray, 1845.
+
+Reeves, Eileen. Galileo’s Glassworks: The Telescope and the Mirror. Cambridge, Mass.: Harvard University Press, 2008. (Link to IsisCB)
+
+Smith, Robert W. The Expanding Universe: Astronomy’s ‘Great Debate’ 1900- 1931. Cambridge: Cambridge University Press, 1982. (Link to IsisCB)
+
+Smith, Robert W., with contributions by Paul Hanle, Robert Kargon, and Joseph N. Tatarewicz. The Space Telescope: A Study of NASA, Science, Technology and Politics. Expanded paperback edition. Cambridge and New York: Cambridge University Press, 1993. (Link to IsisCB)
+
+Smith, Robert W. “Raw Power: Nineteenth Century Speculum Metal Reflecting Telescopes.” In Cosmology: Historical, Literary, Religious, and Scientific Perspectives, edited by Norriss Hetherington, 289-299. New York: Garland, 1993. (Link to IsisCB)
+
+Smith, Robert W. “Engines of Discovery: Scientific Instruments and the History of Astronomy and Planetary Science in the United States in the Twentieth Century.” Journal for the History of Astronomy 28 (1 997): 49-77. (Link to IsisCB)
+
+Smith, Robert W. “Remaking Astronomy: Instruments and Practice in the Nineteenth and Twentieth Centuries.” In The Cambridge History of Science. Volume 5. The Modern Physical and Mathematical Sciences, edited by Mary Jo Nye, 154-173 . New York: Cambridge University Press, 2003. (Link to IsisCB)
+
+Smith, Robert W. and Patrick W. McCray. “Beyond the Hubble Space Telescope: Early Development of the Next Generation Space Telescope.” In Astrophysics in the Next Decade, edited by Harley A. Thronson, Massimo Stiavelli, and Alexander Tielens, 31-50. Springer: New York, 2009.
+
+Spitzer, Lyman Jr. “Astronomical Advantages of an Extra-terrestrial Observatory.” Douglas Aircraft Company, September 1, 1946. This report was reprinted in The Astronomy Quarterly, 7: 131-142, 1990.
+
+Sullivan, Woodruff T. III. Cosmic Noise: A History of Early Radio Astronomy. New York: Cambridge University Press, 2009. (Link to IsisCB)
+
+Swanner, Leandra. “Contested Spiritual Landscapes in Modern American Astronomy.” Journal of Religion and Society Supplement 11 (2015): 149-162, http://moses.creighton.edu/JRS/toc/SS11.html.
+
+Tucker, Wallace and Riccarod Giacconi. The X-Ray Universe. Cambridge, Mass., and London: Harvard University Press, 1985.
+
+Van Helden, Albert. “Telescope Building, 1850-1900.” In Astrophysics and Twentieth-Century Astronomy to 1950. Part A, Volume 4, edited by Owen Gingerich, 40-58. Cambridge: Cambridge University Press, 1984.
+
+Van Helden, Albert. “The Invention of the Telescope.” American Philosophical Society, Transactions 67 (1977): Part 4. (Link to IsisCB)
+
+Van Helden, Albert. “Saturn and his Anses.” Journal for the History of Astronomy 5 (1974): 105-121.
+
+Van Helden, Albert. Sidereus Nuncius or The Sidereal Messenger. Second Edition. Translated and with Commentary by Albert van Helden. Chicago: University of Chicago Press, 2015. (Link to IsisCB)
+
+Van Helden, Albert, and Thomas L. Hankins. “Introduction: Instruments in the History of Science.” Osiris 9 (1993): 1-6. (Link to IsisCB)
+
+Van Helden, Albert, Sven Dupré, Rob van Gent, and Huib Zuidervaart, eds. The Origins of the Telescope. Amsterdam: KNAW Press, 2010. (Link to IsisCB)
+
+Warner, Deborah Jean. Alvan Clark and Sons: Artists in Optics. Washington D.C.: The Smithsonian Institution Press, 1968.
+
+Watson-Sproat, Trisha Kehaulani. “Why Native Hawaiians are fighting to protect Maunakea from a telescope.” Vox (July 24, 2019), https://www.vox.com/identities/2019/7/24/20706930/mauna-kea-hawaii.
+
+Westfall, Richard S. Never at Rest: A Biography of Isaac Newton. Cambridge: Cambridge University Press, 1980. (Link to IsisCB)
+
+Willach, Rolf. “The Long Journey to the Invention of the Telescope.” American Philosophical Society, Transactions 98 (2008): 93-99.
+
+Winkler, Mary and Albert van Helden. “Johannes Hevelius and the Visual Language of of Astronomy.” In Renaissance and Revolution: Humanists, Scholars, Craftsmen and Natural Philosophers in Early Modern Europe, edited by J. V. Field and Frank A. J. L. James, 97-116. Cambridge: Cambridge University Press, 1993. (Link to IsisCB)
+
+Wright, Helen. Explorer of the Universe: A Biography of George Ellery Hale. New York: E.P. Dutton, 1966.
+
+Van Helden and Hankins, Instruments. ↩
+
+Reeves, Galileo’s Glassworks. ↩
+
+Van Helden, Sidereus Nuncius, 4. ↩
+
+Van Helden, Sidereus Nuncius, 4, and Van Helden, The Invention of the Telescope, 24. ↩
+
+Van Helden, Sidereus Nuncius, 3 and Willach, The Long Journey to the Invention of the Telescope. ↩
+
+Van Helden, “The Invention of the Telescope,” 21-28. ↩
+
+Bloom, “Borrowed Perceptions.” ↩
+
+Van Helden, Sidereus Nuncius. Important too on the telescope’s early years is Van Helden, Dupré, van Gent, and Zuidervaart (eds.), The Origins of the Telescope. ↩
+
+On the early responses to Galileo’s findings, see, among others, Bucciantini, Camerota, and Giudice, Galileo’s Telescope. ↩
+
+Caspar, Kepler, 198-201. ↩
+
+Andriesse, Huygens: The Man behind the Principle, 121-8. ↩
+
+Van Helden, “Saturn and his anses.” ↩
+
+Fara, Pandora’s Breeches, 130-144. On Johannes Hevelius, see also Winkler and van Helden, “Johannes Hevelius and the Visual Language of of Astronomy.” ↩
+
+Westfall, Never at Rest, 232-7. ↩
+
+Westfall, Never at Rest, 233. ↩
+
+Gee, Francis Watkins and the Dollond Telescope Patent Controversy. ↩
+
+On the Herschels, see Hoskin, Discoverers of the Universe: William and Caroline Herschel. An important recent work is Cunningham, The Scientific Legacy of William Herschel. ↩
+
+Bennett, “On the Power of Penetrating into Space.” ↩
+
+Hoskin, Discoverers of the Universe, 114-127 and 171-179. ↩
+
+Smith, “Raw Power,” 289. ↩
+
+Peacock, “Address,” xxxi. ↩
+
+Mollan, William Parsons, 3rdEarl of Rosse. ↩
+
+Bennett, The Divided Circle, 165. ↩
+
+Batten, Resolute and Undertaking Characters, 45-65. On Fraunhofer, see Jackson, Spectrum of Belief. ↩
+
+See, for example, Herschel, “An Address Delivered….” ↩
+
+Brewster, Treatise on Optics, 507. ↩
+
+King, The History of the Telescope, 254-255. ↩
+
+Osterbrock, Yerkes Observatory, 1892-1950. ↩
+
+Launay, “The Great Paris Exhibition Telescope.” ↩
+
+Osterbrock, The Pauper and the Prince, 55-9. ↩
+
+King, The History of the Telescope, 274. ↩
+
+On Hale, see, among others, Wright, Explorer of the Universe and Osterbrock, The Prince and the Pauper. For sharp insights on Hale, see also DeVorkin, Henry Norris Russell. ↩
+
+Smith, The Expanding Universe, 164. ↩
+
+For an important work on the development of big ground-based telescopes, see McCray, Giant Telescopes, Astronomical Ambition and the Promise of Technology. The Palomar reflector would be surpassed by a Russian telescope in 1975 at Mount Pastukhov in the Caucasus Mountains. ↩
+
+Sullivan, Cosmic Noise. ↩
+
+Agar, Science and Spectacle. ↩
+
+DeVorkin, Science with a Vengeance. ↩
+
+Tucker and Giacconi, The X-Ray Universe. On early x-ray astronomy, see also Hirsh, Glimpsing an Invisible Universe. ↩
+
+Spitzer, “Astronomical Advantages,” 139. ↩
+
+Smith, The Space Telescope, chapters 4 and 5. ↩
+
+Smith, The Space Telescope, 148. ↩
+
+Smith and McCray, “Beyond the Hubble Space Telescope.” ↩
+
+Smith, “Engines of Discovery.” ↩
+
+Danjon and Couder, Lunettes et telescopes. ↩
+
+Bennett, “On the Power of Penetrating into Space” and Warner, Alvan Clark and Sons. ↩
+
+See, for example, Smith, The Space Telescope, Agar, Science and Spectacle, and McCray, Giant Telescopes. ↩
+
+Dupré, “Introduction: Writing the History of the Telescope: Makers, Markets and Mapping,” in Morrison-Low, Dupré, Johnston and Strano, From Earth Bound to Satellite, xxiii-xxix. ↩
+
+For popular news coverage of this new controversy see Trisha Kehaulani Watson-Sproat, “Why Native Hawaiians are fighting to protect Maunakea from a telescope,” Vox (July 24, 2019), online at https://www.vox.com/identities/2019/7/24/20706930/mauna-kea-hawaii. For a historical perspective of the controversy, see Swanner, “Contested Spiritual Landscapes in Modern American Astronomy.” ↩
+
+KEYWORDS
+astronomy
+Citation + Article Archives
+Download PDF
+Contact Author
+More Information
+About
+Submission Guidelines
+Editorial Team
+List of Experts
+Privacy Policy
+About CMU LPS
+Login  /  Register
+University Libraries
+4909 Frew St.
+Pittsburgh, PA 15213
++1 412 268 2444
+© 2026, Carnegie Mellon University
+Carnegie Mellon University logo
