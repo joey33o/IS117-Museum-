@@ -1,0 +1,9 @@
+{
+  "name": "museum-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix ReferenceProject1/docs -- --host 127.0.0.1 --port 4321",
+    "build": "npm run build --prefix ReferenceProject1/docs",
+    "preview": "npm run preview --prefix ReferenceProject1/docs"
+  }
+}
