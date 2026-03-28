@@ -8,10 +8,10 @@
 
 ## Project Overview
 
-ReferenceProject1 is a single-page scroll-driven Astro application featuring a visual transition from "Terrestrial/Grunge" to "Celestial/Swiss" aesthetic as users scroll through telescope history content.
+ReferenceProject1 is a single-page scroll-driven Next.js application featuring a visual transition from "Terrestrial/Grunge" to "Celestial/Swiss" aesthetic as users scroll through telescope history content.
 
 **Tech Stack:**
-- Framework: Astro (Static)
+- Framework: Next.js
 - Animation: GSAP + ScrollTrigger
 - Styling: Tailwind CSS + CSS Variables
 - Deployment: GitHub Pages via GitHub Actions
@@ -101,6 +101,23 @@ Keep the existing single transition behavior:
 - [ ] Every visible paragraph/sentence can be traced to `ReferenceProject1/references/` files.
 - [ ] No placeholder text and no uncited/invented claims remain.
 - [ ] Existing transition still works when scrolling down and back up.
+
+---
+
+## Non-Negotiable Process Rules (Foundational Work)
+
+The process is intentionally strict for foundational work and must be followed in this exact order:
+
+1. Write a feature spec
+2. QA the spec
+3. Write a sprint doc
+4. QA the sprint doc
+5. Implement the sprint
+6. QA the implementation
+
+Do not skip steps, merge steps, or implement before the required QA pass is complete.
+
+Use this full process for foundational, ambiguous, high-impact, or multi-session work.
 
 ---
 
@@ -250,14 +267,14 @@ const telescopes = defineCollection({
 
 ### 5. Working Directory Discipline **[RECOMMENDED]**
 
-**Rule:** All Astro files in `docs/` subdirectory, NOT at repo root
+**Rule:** All Next.js files in `docs/` subdirectory, NOT at repo root
 
 **Structure:**
 ```
 Museum/                         ← repo root
-├── docs/                       ← ALL Astro work here
+├── docs/                       ← ALL Next.js work here
 │   ├── package.json
-│   ├── astro.config.mjs
+│   ├── next.config.ts
 │   ├── src/
 │   └── public/
 ├── .github/workflows/          ← deploy.yml only
@@ -277,7 +294,7 @@ Museum/                         ← repo root
 
 **Pattern:** Keep components JavaScript-free unless explicitly needed
 
-**Example - AdaptiveNav.astro:**
+**Example - `AdaptiveNav.tsx`:**
 - No JavaScript in component
 - All visual states driven by CSS variables
 - State management lives in separate script file
@@ -323,7 +340,7 @@ Museum/                         ← repo root
 - No external database
 - No Three.js/3D rendering
 - No user accounts
-- No extra pages beyond index.astro
+- No extra pages beyond app/page.tsx
 
 **Why This Matters:**
 - Prevents feature creep
@@ -418,7 +435,7 @@ jobs:
 **New Sprint:** "Sprint 11 — Performance"
 - Optimize images (WebP format, responsive sizes)
 - Add lazy loading for below-fold images
-- Configure Astro image optimization
+- Configure Next.js Image optimization
 - Minimize CSS/JS bundle size
 - Add preloading for critical resources
 - **AC:** Lighthouse performance score >90, LCP <2.5s
@@ -458,7 +475,9 @@ jobs:
 **Change in `tsconfig.json`:**
 ```json
 {
-  "extends": "astro/tsconfigs/strict"
+  "compilerOptions": {
+    "strict": true
+  }
 }
 ```
 
@@ -499,7 +518,7 @@ schema: z.object({
 #### 7. Add Search/Filter Functionality
 **Priority:** Low (only if collection grows)
 
-**New Component:** `TelescopeFilter.astro`
+**New Component:** `TelescopeFilter.tsx`
 - Filter by wavelength type
 - Sort by launch date
 - Search by keyword
@@ -528,8 +547,8 @@ schema: z.object({
 #### 9. SEO & Meta Tags Sprint
 **Priority:** Medium (for public sites)
 
-**Add to Layout.astro:**
-```astro
+**Add to app/layout.tsx metadata/head:**
+```tsx
 <meta name="description" content="..." />
 <meta property="og:title" content="..." />
 <meta property="og:image" content="..." />
@@ -629,7 +648,7 @@ schema: z.object({
 ### 1. Separation of Concerns
 - **State Management:** GSAP ScrollTrigger (1 file)
 - **Visual Styling:** CSS variables + transitions
-- **Components:** Pure presentational Astro files
+- **Components:** Pure presentational React/Next.js files
 - **Content:** Separate content collection with schema
 
 ### 2. Progressive Enhancement
@@ -647,7 +666,7 @@ schema: z.object({
 - Clear file organization
 - Explicit naming conventions
 - Type-safe content with Zod
-- Hot reload with Astro dev server
+- Hot reload with Next.js dev server
 
 ---
 
@@ -829,7 +848,7 @@ body.theme-class { --var-name: new-value; }
 
 ### 1. Over-Engineering Components
 **Bad:**
-```astro
+```tsx
 <TelescopeEntry
   showDate={true}
   showTags={true}
@@ -841,7 +860,7 @@ body.theme-class { --var-name: new-value; }
 ```
 
 **Good (from reference):**
-```astro
+```tsx
 <TelescopeEntry
   title={entry.data.title}
   description={entry.data.description}
