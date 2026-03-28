@@ -5,6 +5,7 @@ import TelescopeEntry from '../components/TelescopeEntry.astro';
 import { getCollection } from 'astro:content';
 
 const telescopes = await getCollection('telescopes');
+const figuresPage = `${import.meta.env.BASE_URL}important-figures/`;
 ---
 
 <Layout title="The Celestial Eye">
@@ -14,13 +15,31 @@ const telescopes = await getCollection('telescopes');
 
     <div class="era-copy" aria-label="Era 1 narrative text">
       <p>
-        The telescope is a simple device intended to enhance vision, making distant things appear closer. It is this that makes it useful and versatile on land and at sea. In the first period of astronomy, observations of the heavens were restricted to what could be detected with the naked eye. In the second period, the telescope provided the means to examine familiar objects in more detailed ways and to observe astronomical bodies too faint to register on the human eye. Historians are not absolutely sure who invented the telescope, but in 1608 Dutch spectacle maker Hans Lipperhey announced a new lens-based seeing instrument that made distant objects appear much closer. This is the first evidence for the telescope, and the first scientific instrument to extend one of the human senses.
+        The telescope is a simple device intended to enhance vision, making distant things appear closer. It is this that makes it useful and versatile on land and at sea. In the first period of astronomy, observations of the heavens were restricted to what could be detected with the naked eye. In the second period, the telescope provided the means to examine familiar objects in more detailed ways and to observe astronomical bodies too faint to register on the human eye. Historians are not absolutely sure who invented the telescope, but in 1608 Dutch spectacle maker Hans Lipperhey
+        <span class="mention-portrait mention-right">
+          <a class="mention-link" href={`${figuresPage}#figure-hans-lipperhey`} aria-label="Go to Hans Lipperhey in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/hans-lipperhey.svg`} alt="Placeholder portrait of Hans Lipperhey" loading="lazy" />
+          </a>
+        </span>
+        announced a new lens-based seeing instrument that made distant objects appear much closer. This is the first evidence for the telescope, and the first scientific instrument to extend one of the human senses.
       </p>
       <p>
         While instruments had long been central to astronomy, the science had been highly mathematical and directed to calculating the positions of celestial bodies. The telescope therefore initially had little to offer to astronomy as it was conventionally understood around 1610. In time, however, the device changed the field so deeply that the history of astronomy now falls into before and after the telescope. Through its use, novel phenomena were quickly revealed that had previously been invisible. The ways astronomers and natural philosophers viewed and thought about the universe were transformed through telescopic use, and the invention brought social change because the practice of astronomy was no longer restricted to the learned alone. Telescopes also became tools for everyday observation and navigation, not only instruments of specialist observatories.
       </p>
       <p>
-        After hearing what Lipperhey had revealed in the Netherlands, Galileo made his own telescope. He was not the first to observe the Moon through such an instrument, but his use quickly produced discoveries that challenged dominant assumptions. Galileo reported that the Moon was pitted with craters and mountains and was not the perfect sphere many had claimed. He identified companions to Jupiter that are now known as its moons, and he reported many more stars than are visible to the naked eye. Although Galileo became renowned for these findings, Thomas Harriot also played an important role by drawing the Moon from telescopic observations in July 1609. Harriot's drawings were more cartographical, marking differences in light and shade in ways similar to maps that mark water and land.
+        After hearing what Lipperhey had revealed in the Netherlands, Galileo
+        <span class="mention-portrait mention-left">
+          <a class="mention-link" href={`${figuresPage}#figure-galileo`} aria-label="Go to Galileo in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/galileo.svg`} alt="Placeholder portrait of Galileo" loading="lazy" />
+          </a>
+        </span>
+        made his own telescope. He was not the first to observe the Moon through such an instrument, but his use quickly produced discoveries that challenged dominant assumptions. Galileo reported that the Moon was pitted with craters and mountains and was not the perfect sphere many had claimed. He identified companions to Jupiter that are now known as its moons, and he reported many more stars than are visible to the naked eye. Although Galileo became renowned for these findings, Thomas Harriot
+        <span class="mention-portrait mention-right">
+          <a class="mention-link" href={`${figuresPage}#figure-thomas-harriot`} aria-label="Go to Thomas Harriot in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/thomas-harriot.svg`} alt="Placeholder portrait of Thomas Harriot" loading="lazy" />
+          </a>
+        </span>
+        also played an important role by drawing the Moon from telescopic observations in July 1609. Harriot's drawings were more cartographical, marking differences in light and shade in ways similar to maps that mark water and land.
       </p>
       <p>
         As use spread, telescopes found homes in observatories throughout the world, yet many instruments were made for practical use on land and sea. The work that Galileo began was continued in institutions such as the Royal Observatory at Greenwich, where telescopes supported a long tradition of observation and measurement. At the same time, telescopes entered ordinary culture. They were popular tools for people who wanted to look at the Moon more closely than had ever been possible before. This broader social visibility made the instrument readily recognizable and also made it an easy object for satire. In the eighteenth and nineteenth centuries, satirical images used the telescope to mock science, scientists, military figures, political leaders, and social problems.
@@ -29,10 +48,34 @@ const telescopes = await getCollection('telescopes');
         The making of telescopes was not a straight line of inevitable progress. Early lenses had irregularities that produced blurred images, and makers had to learn practical techniques to reduce those effects. Later, observers confronted spherical aberration and chromatic aberration: different rays and different colors did not focus at the same point. One response was to build telescopes with longer focal lengths, so instruments grew in length and became difficult to mount and steer. In the seventeenth century, good long refractors could be thirty feet or more, often requiring masts and pulleys. Astronomers also came to accept that all telescopes show some imperfections, and that an aberration-free telescope was impossible to construct in practice. The instrument was powerful, but every gain in capability came with tradeoffs in handling, cost, and reliability.
       </p>
       <p>
-        Technical innovation followed multiple paths. Kepler proposed a new refracting design in which the eyepiece used a convex lens, and this Keplerian arrangement eventually displaced the Galilean form in many settings. Reflecting telescopes then offered another strategy. Newton's successful reflector used mirrors to avoid chromatic splitting from lenses, introducing a design that became foundational. Across the eighteenth and nineteenth centuries, astronomers and instrument makers explored refractors, reflectors, achromatic lens combinations, and improved grinding and polishing methods. Some giant instruments became celebrated achievements; others were cumbersome failures that pushed available craft and materials too far. Even so, each attempt expanded practical knowledge about what telescope builders could and could not do.
+        Technical innovation followed multiple paths. Kepler
+        <span class="mention-portrait mention-left">
+          <a class="mention-link" href={`${figuresPage}#figure-kepler`} aria-label="Go to Kepler in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/kepler.svg`} alt="Placeholder portrait of Kepler" loading="lazy" />
+          </a>
+        </span>
+        proposed a new refracting design in which the eyepiece used a convex lens, and this Keplerian arrangement eventually displaced the Galilean form in many settings. Reflecting telescopes then offered another strategy. Newton
+        <span class="mention-portrait mention-right">
+          <a class="mention-link" href={`${figuresPage}#figure-newton`} aria-label="Go to Newton in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/newton.svg`} alt="Placeholder portrait of Newton" loading="lazy" />
+          </a>
+        </span>
+        's successful reflector used mirrors to avoid chromatic splitting from lenses, introducing a design that became foundational. Across the eighteenth and nineteenth centuries, astronomers and instrument makers explored refractors, reflectors, achromatic lens combinations, and improved grinding and polishing methods. Some giant instruments became celebrated achievements; others were cumbersome failures that pushed available craft and materials too far. Even so, each attempt expanded practical knowledge about what telescope builders could and could not do.
       </p>
       <p>
-        This era also shows that telescope development depended on culture, institutions, labor, and resources. Prestigious observatories used instruments as symbols of scientific standing. Independent makers and observers contributed major advances outside professional astronomy. Women such as Elisabetha Hevelius and Caroline Herschel were skilled collaborators in observation and discovery, often working through family-based access to instruments. Patrons funded ambitious constructions for status, curiosity, or national prestige, and success was never guaranteed. The history of telescopes therefore requires attention not only to optics and mechanics, but also to users, places, economies, and political context. The making of telescope history is both a technical story and a social one.
+        This era also shows that telescope development depended on culture, institutions, labor, and resources. Prestigious observatories used instruments as symbols of scientific standing. Independent makers and observers contributed major advances outside professional astronomy. Women such as Elisabetha Hevelius
+        <span class="mention-portrait mention-left">
+          <a class="mention-link" href={`${figuresPage}#figure-elisabetha-hevelius`} aria-label="Go to Elisabetha Hevelius in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/elisabetha-hevelius.svg`} alt="Placeholder portrait of Elisabetha Hevelius" loading="lazy" />
+          </a>
+        </span>
+        and Caroline Herschel
+        <span class="mention-portrait mention-right">
+          <a class="mention-link" href={`${figuresPage}#figure-caroline-herschel`} aria-label="Go to Caroline Herschel in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/caroline-herschel.svg`} alt="Placeholder portrait of Caroline Herschel" loading="lazy" />
+          </a>
+        </span>
+        were skilled collaborators in observation and discovery, often working through family-based access to instruments. Patrons funded ambitious constructions for status, curiosity, or national prestige, and success was never guaranteed. The history of telescopes therefore requires attention not only to optics and mechanics, but also to users, places, economies, and political context. The making of telescope history is both a technical story and a social one.
       </p>
       <p>
         The notion of what counted as a telescope expanded as devices grew in variety, size, capabilities, and expense. The history of telescope development is often presented as an unbroken line of triumphs in which ever more capable instruments follow from the weaknesses of predecessors. Yet detailed studies of specific instruments show that there was nothing preordained about this path, and innovative telescopes sometimes performed poorly. Large projects could become unwieldy, local climate could limit observing nights, mirror technologies could tarnish quickly, and mounting strategies could restrict useful sky coverage. These setbacks were not side notes; they were part of how practical knowledge accumulated. Builders learned where precision mattered most, which materials failed in use, and how observational goals had to be matched to reliable design, not only ambitious scale.
@@ -56,7 +99,13 @@ const telescopes = await getCollection('telescopes');
         Modern telescope history expands the meaning of a telescope beyond the early optical tube. In the mid and late nineteenth century, photographic plates and spectroscopes were added to telescopes to analyze light from distant objects, and by the end of that century astronomers rarely put their eye to an eyepiece. During the twentieth century, astronomers increasingly escaped the obscuring effects of Earth's atmosphere by launching telescopes into space. Observational astronomy was refashioned across regions of the electromagnetic spectrum, from radio to infrared, ultraviolet, X-ray, and gamma ray. This modern period retained continuity with earlier instrument traditions while reorganizing astronomy around large teams, specialized engineering, and institutions capable of sustaining expensive, long-duration missions.
       </p>
       <p>
-        The Hubble Space Telescope, launched in 1990, became the most famous example of a space-based observatory. Orbiting about 300 miles above Earth, Hubble avoids atmospheric distortion and has delivered clear views of the cosmos for decades. Named for Edwin Hubble, the observatory has made more than 1.7 million observations and contributed to over 22,000 peer-reviewed papers. Its instruments have been repeatedly replaced and upgraded through astronaut servicing missions, extending its scientific lifetime and capabilities. Hubble observes from ultraviolet through visible and into near-infrared wavelengths, and it has captured galaxies merging, examined black holes at galactic centers, tracked interstellar objects crossing the solar system, and recorded a comet impact on Jupiter. Its output is now embedded across modern astronomy textbooks.
+        The Hubble Space Telescope, launched in 1990, became the most famous example of a space-based observatory. Orbiting about 300 miles above Earth, Hubble avoids atmospheric distortion and has delivered clear views of the cosmos for decades. Named for Edwin Hubble
+        <span class="mention-portrait mention-left mention-space-era">
+          <a class="mention-link" href={`${figuresPage}#figure-edwin-hubble`} aria-label="Go to Edwin Hubble in Important Figures">
+            <img src={`${import.meta.env.BASE_URL}images/figures/edwin-hubble.svg`} alt="Placeholder portrait of Edwin Hubble" loading="lazy" />
+          </a>
+        </span>
+        , the observatory has made more than 1.7 million observations and contributed to over 22,000 peer-reviewed papers. Its instruments have been repeatedly replaced and upgraded through astronaut servicing missions, extending its scientific lifetime and capabilities. Hubble observes from ultraviolet through visible and into near-infrared wavelengths, and it has captured galaxies merging, examined black holes at galactic centers, tracked interstellar objects crossing the solar system, and recorded a comet impact on Jupiter. Its output is now embedded across modern astronomy textbooks.
       </p>
       <p>
         Hubble also illustrates how modern astronomy depends on coalition-building and long-term operations. Its development required not only scientific planning and technical design, but also sustained political support and coordination across agencies and institutions. The telescope's 2.4-meter primary mirror is smaller than mirrors on many modern ground observatories, yet its position in space and stable pointing control yield extraordinary scientific return. Servicing missions replaced aging parts and added newer instruments, turning Hubble into an evolving platform rather than a fixed one-time machine. In this way, Hubble shifted both scientific practice and organizational practice: modern observatories became infrastructures with maintenance cycles, instrument roadmaps, and communities of users distributed across the world.
@@ -92,6 +141,7 @@ const telescopes = await getCollection('telescopes');
       />
     ))}
   </section>
+
 </Layout>
 
 <style>
@@ -100,6 +150,7 @@ const telescopes = await getCollection('telescopes');
     padding: 6rem 2rem;
     max-width: 72rem;
     margin: 0 auto;
+    scroll-margin-top: 5rem;
   }
 
   #era-1 {
@@ -133,5 +184,48 @@ const telescopes = await getCollection('telescopes');
     font-size: clamp(1rem, 1.5vw, 1.15rem);
     line-height: 1.8;
     transition: color 0.3s ease, font-family 0.3s ease;
+  }
+
+  .mention-portrait {
+    width: min(42vw, 12rem);
+    margin: 0.25rem 0 0.75rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
+    box-shadow: 0 8px 18px color-mix(in srgb, var(--text-color) 16%, transparent);
+  }
+
+  .mention-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mention-link {
+    display: block;
+  }
+
+  .mention-left {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .mention-right {
+    float: right;
+    margin-left: 1rem;
+  }
+
+  .mention-space-era {
+    border-color: color-mix(in srgb, var(--text-color) 35%, transparent);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--text-color) 22%, transparent);
+  }
+
+  @media (max-width: 768px) {
+    .mention-portrait {
+      float: none;
+      display: block;
+      width: min(100%, 14rem);
+      margin: 0.5rem auto 0.9rem;
+    }
   }
 </style>

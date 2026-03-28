@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">Edwin Hubble placeholder portrait</title>
+  <desc id="desc">Placeholder image for Edwin Hubble.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8deef"/>
+      <stop offset="100%" stop-color="#98a9cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="240" fill="url(#bg)"/>
+  <circle cx="180" cy="92" r="44" fill="#3d4a68" opacity="0.22"/>
+  <rect x="96" y="146" width="168" height="52" rx="10" fill="#3d4a68" opacity="0.2"/>
+  <text x="180" y="214" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#1d2538">Edwin Hubble</text>
+</svg>

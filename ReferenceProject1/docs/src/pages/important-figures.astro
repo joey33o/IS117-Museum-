@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Important Figures | The Celestial Eye">
+  <section id="important-figures" aria-labelledby="important-figures-heading">
+    <h1 id="important-figures-heading">Important Figures</h1>
+    <p class="intro">
+      This page collects key historical figures named in the telescope-history narrative.
+      Each card includes placeholder text that can be expanded later.
+    </p>
+
+    <div class="figure-grid" aria-label="Important figures list">
+      <article class="figure-card" id="figure-hans-lipperhey">
+        <img src={`${import.meta.env.BASE_URL}images/figures/hans-lipperhey.svg`} alt="Placeholder portrait of Hans Lipperhey" loading="lazy" />
+        <h2>Hans Lipperhey</h2>
+        <p>Placeholder text: Add a short summary about Hans Lipperhey and why he matters to early telescope history.</p>
+      </article>
+
+      <article class="figure-card" id="figure-galileo">
+        <img src={`${import.meta.env.BASE_URL}images/figures/galileo.svg`} alt="Placeholder portrait of Galileo" loading="lazy" />
+        <h2>Galileo</h2>
+        <p>Placeholder text: Add a short summary about Galileo's observations and their impact on astronomy.</p>
+      </article>
+
+      <article class="figure-card" id="figure-thomas-harriot">
+        <img src={`${import.meta.env.BASE_URL}images/figures/thomas-harriot.svg`} alt="Placeholder portrait of Thomas Harriot" loading="lazy" />
+        <h2>Thomas Harriot</h2>
+        <p>Placeholder text: Add a short summary about Thomas Harriot's Moon drawings and observational contributions.</p>
+      </article>
+
+      <article class="figure-card" id="figure-kepler">
+        <img src={`${import.meta.env.BASE_URL}images/figures/kepler.svg`} alt="Placeholder portrait of Kepler" loading="lazy" />
+        <h2>Kepler</h2>
+        <p>Placeholder text: Add a short summary about Kepler's optical design ideas in telescope development.</p>
+      </article>
+
+      <article class="figure-card" id="figure-newton">
+        <img src={`${import.meta.env.BASE_URL}images/figures/newton.svg`} alt="Placeholder portrait of Newton" loading="lazy" />
+        <h2>Newton</h2>
+        <p>Placeholder text: Add a short summary about Newton's reflector design and its historical significance.</p>
+      </article>
+
+      <article class="figure-card" id="figure-elisabetha-hevelius">
+        <img src={`${import.meta.env.BASE_URL}images/figures/elisabetha-hevelius.svg`} alt="Placeholder portrait of Elisabetha Hevelius" loading="lazy" />
+        <h2>Elisabetha Hevelius</h2>
+        <p>Placeholder text: Add a short summary about Elisabetha Hevelius as a collaborator in observational astronomy.</p>
+      </article>
+
+      <article class="figure-card" id="figure-caroline-herschel">
+        <img src={`${import.meta.env.BASE_URL}images/figures/caroline-herschel.svg`} alt="Placeholder portrait of Caroline Herschel" loading="lazy" />
+        <h2>Caroline Herschel</h2>
+        <p>Placeholder text: Add a short summary about Caroline Herschel's role in observation and discovery.</p>
+      </article>
+
+      <article class="figure-card" id="figure-edwin-hubble">
+        <img src={`${import.meta.env.BASE_URL}images/figures/edwin-hubble.svg`} alt="Placeholder portrait of Edwin Hubble" loading="lazy" />
+        <h2>Edwin Hubble</h2>
+        <p>Placeholder text: Add a short summary about Edwin Hubble and why the Hubble telescope is named after him.</p>
+      </article>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  #important-figures {
+    padding: 6rem 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    scroll-margin-top: 5rem;
+  }
+
+  h1 {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 2rem;
+  }
+
+  .figure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background: color-mix(in srgb, var(--bg-color) 88%, var(--text-color) 12%);
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--text-color) 10%, transparent);
+    scroll-margin-top: 6rem;
+  }
+
+  .figure-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .figure-card h2 {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: 1.1rem;
+  }
+
+  .figure-card p {
+    margin: 0;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 0.98rem;
+  }
+</style>

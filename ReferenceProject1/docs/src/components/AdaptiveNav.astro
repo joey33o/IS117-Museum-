@@ -1,14 +1,15 @@
 ---
 // No JavaScript — all visual states are CSS-variable-driven.
 // The is-space-era class toggle is handled in Sprint 06 (TransitionTrigger.js).
+const base = import.meta.env.BASE_URL;
 ---
 
 <nav>
   <span class="wordmark">The Celestial Eye</span>
   <ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Collection</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href={`${base}#era-1`}>Era 1</a></li>
+    <li><a href={`${base}#era-2`}>Era 2</a></li>
+    <li><a href={`${base}important-figures/`}>Important Figures</a></li>
   </ul>
 </nav>
 
