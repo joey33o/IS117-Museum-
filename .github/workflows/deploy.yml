@@ -1,0 +1,61 @@
+name: Deploy Guidedrun To Pages
+
+on:
+  push:
+    branches: [Guidedrun]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: teachProject/nextjs_ai_orchestration_spec_sprint_process/package-lock.json
+
+      - name: Install dependencies
+        working-directory: teachProject/nextjs_ai_orchestration_spec_sprint_process
+        run: npm ci
+
+      - name: Run tests
+        working-directory: teachProject/nextjs_ai_orchestration_spec_sprint_process
+        run: npm run test
+
+      - name: Build static site for Pages
+        working-directory: teachProject/nextjs_ai_orchestration_spec_sprint_process
+        env:
+          NEXT_PUBLIC_BASE_PATH: /IS117-Museum-
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: teachProject/nextjs_ai_orchestration_spec_sprint_process/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
