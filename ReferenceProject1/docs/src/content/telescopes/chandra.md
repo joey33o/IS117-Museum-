@@ -1,6 +1,6 @@
 ---
 title: "Chandra X-ray Observatory"
-description: "Launched by Space Shuttle Columbia in 1999, Chandra is NASA's flagship X-ray telescope and part of the Great Observatories fleet — eight times sharper and able to detect sources twenty times fainter than any previous X-ray mission."
+description: "Launched in 1999, Chandra established a new standard for X-ray astronomy by combining high angular resolution with deep sensitivity, enabling precise study of high-energy environments that are invisible in ordinary optical light."
 image: "/images/chandra.jpg"
 ---
 

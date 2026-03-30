@@ -1,6 +1,6 @@
 ---
 title: "Hubble Space Telescope"
-description: "Launched in 1990 by Space Shuttle Discovery, Hubble orbits 300 miles above Earth and has made more than 1.7 million observations over 35 years, fundamentally changing our understanding of the cosmos."
+description: "Launched in 1990, Hubble operates above atmospheric distortion and has produced more than 1.7 million observations, creating a long baseline of high-resolution evidence across ultraviolet, visible, and near-infrared wavelengths."
 image: "/images/hubble.jpg"
 ---
 

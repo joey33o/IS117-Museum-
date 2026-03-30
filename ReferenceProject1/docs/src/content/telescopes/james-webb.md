@@ -1,6 +1,6 @@
 ---
 title: "James Webb Space Telescope"
-description: "Launched on December 25, 2021, Webb is NASA's infrared observatory orbiting 1.5 million km from Earth at the L2 point, designed to look closer to the beginning of time than any telescope before it."
+description: "Launched in 2021, Webb is a cryogenic infrared observatory at the Sun-Earth L2 point that extends observable history deeper into early galaxy formation and improves measurement of planetary-system chemistry."
 image: "/images/james-webb.jpg"
 ---
 
