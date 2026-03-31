@@ -28,6 +28,9 @@ jobs:
           submodules: false
           fetch-depth: 1
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
@@ -42,6 +45,10 @@ jobs:
       - name: Build static site for Pages
         working-directory: ReferenceProject1/docs
         run: npm run build
+
+      - name: Add .nojekyll marker
+        run: New-Item -Path "ReferenceProject1/docs/dist/.nojekyll" -ItemType File -Force
+        shell: pwsh
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

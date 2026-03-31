@@ -97,6 +97,16 @@ const figuresPage = `${import.meta.env.BASE_URL}important-figures/`;
     </section>
   </section>
 
+  <section id="space-bridge" aria-label="Transition to space era">
+    <div class="space-bridge-sticky" aria-hidden="true">
+      <div class="space-corner space-corner-tl"></div>
+      <div class="space-corner space-corner-tr"></div>
+      <div class="space-corner space-corner-bl"></div>
+      <div class="space-corner space-corner-br"></div>
+      <p id="space-bridge-text">Onward to Space</p>
+    </div>
+  </section>
+
   <!-- Single transition boundary between Era 1 and Era 2 -->
   <div id="transition-trigger" aria-hidden="true"></div>
 
@@ -180,6 +190,93 @@ const figuresPage = `${import.meta.env.BASE_URL}important-figures/`;
   #transition-trigger {
     width: 100%;
     height: 0;
+  }
+
+  #space-bridge {
+    position: relative;
+    height: 165vh;
+    margin: 0;
+    background: transparent;
+  }
+
+  .space-bridge-sticky {
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    will-change: background-color;
+    overflow: hidden;
+  }
+
+  #space-bridge-text {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: clamp(1.6rem, 5vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2b2622;
+    opacity: 0;
+    transform: translateY(18px);
+    will-change: opacity, transform;
+  }
+
+  .space-corner {
+    position: absolute;
+    width: min(52vmax, 760px);
+    aspect-ratio: 1 / 1;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    will-change: opacity, transform;
+  }
+
+  .space-corner-tl {
+    top: -8%;
+    left: -8%;
+    transform-origin: top left;
+    transform: scale(0.15);
+    background: radial-gradient(circle at 0% 0%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 32%, rgba(0, 0, 0, 0) 72%);
+  }
+
+  .space-corner-tr {
+    top: -8%;
+    right: -8%;
+    transform-origin: top right;
+    transform: scale(0.15);
+    background: radial-gradient(circle at 100% 0%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 32%, rgba(0, 0, 0, 0) 72%);
+  }
+
+  .space-corner-bl {
+    bottom: -8%;
+    left: -8%;
+    transform-origin: bottom left;
+    transform: scale(0.15);
+    background: radial-gradient(circle at 0% 100%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 32%, rgba(0, 0, 0, 0) 72%);
+  }
+
+  .space-corner-br {
+    bottom: -8%;
+    right: -8%;
+    transform-origin: bottom right;
+    transform: scale(0.15);
+    background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 32%, rgba(0, 0, 0, 0) 72%);
+  }
+
+  @media (max-width: 768px) {
+    #space-bridge {
+      height: 150vh;
+    }
+
+    #space-bridge-text {
+      letter-spacing: 0.06em;
+    }
   }
 
   h2 {

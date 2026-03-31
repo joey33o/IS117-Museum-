@@ -88,18 +88,53 @@ import Layout from '../layouts/Layout.astro';
 
   .figure-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    align-items: start;
   }
 
   .figure-card {
+    grid-column: span 4;
     border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
     border-radius: 0.75rem;
-    padding: 1rem;
+    padding: 1rem 1rem 1.1rem;
     background: color-mix(in srgb, var(--bg-color) 88%, var(--text-color) 12%);
     box-shadow: 0 6px 16px color-mix(in srgb, var(--text-color) 10%, transparent);
     scroll-margin-top: 6rem;
+  }
+
+  /* Intentional mixed card spans for a variable, editorial layout. */
+  .figure-card:nth-child(1) {
+    grid-column: span 5;
+  }
+
+  .figure-card:nth-child(2) {
+    grid-column: span 7;
+  }
+
+  .figure-card:nth-child(3) {
+    grid-column: span 4;
+  }
+
+  .figure-card:nth-child(4) {
+    grid-column: span 4;
+  }
+
+  .figure-card:nth-child(5) {
+    grid-column: span 4;
+  }
+
+  .figure-card:nth-child(6) {
+    grid-column: span 6;
+  }
+
+  .figure-card:nth-child(7) {
+    grid-column: span 3;
+  }
+
+  .figure-card:nth-child(8) {
+    grid-column: span 3;
   }
 
   .figure-card img {
@@ -108,6 +143,16 @@ import Layout from '../layouts/Layout.astro';
     height: auto;
     border-radius: 0.5rem;
     margin-bottom: 0.75rem;
+  }
+
+  .figure-card:nth-child(odd) img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .figure-card:nth-child(even) img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
   }
 
   .figure-card h2 {
@@ -123,5 +168,42 @@ import Layout from '../layouts/Layout.astro';
     color: var(--text-color);
     line-height: 1.6;
     font-size: 0.98rem;
+    text-wrap: pretty;
+  }
+
+  @media (max-width: 900px) {
+    .figure-grid {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .figure-card,
+    .figure-card:nth-child(1),
+    .figure-card:nth-child(2),
+    .figure-card:nth-child(3),
+    .figure-card:nth-child(4),
+    .figure-card:nth-child(5),
+    .figure-card:nth-child(6),
+    .figure-card:nth-child(7),
+    .figure-card:nth-child(8) {
+      grid-column: span 3;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .figure-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .figure-card,
+    .figure-card:nth-child(1),
+    .figure-card:nth-child(2),
+    .figure-card:nth-child(3),
+    .figure-card:nth-child(4),
+    .figure-card:nth-child(5),
+    .figure-card:nth-child(6),
+    .figure-card:nth-child(7),
+    .figure-card:nth-child(8) {
+      grid-column: span 1;
+    }
   }
 </style>
