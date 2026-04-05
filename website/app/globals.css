@@ -274,6 +274,217 @@ body.is-space-era .hero-atmospheric-frame::after {
   gap: 0.3rem;
 }
 
+.chronology-summary-card {
+  gap: 0.45rem;
+}
+
+.chronology-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  opacity: 0.82;
+}
+
+.chronology-meta-divider {
+  opacity: 0.65;
+}
+
+.chronology-importance {
+  margin-top: 0.1rem;
+  font-family: var(--font-ui);
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--text-color) 72%, #8d6f3f 28%);
+}
+
+.timeline-hover-card {
+  transition:
+    border-color var(--motion-fast) var(--ease-standard),
+    background-color var(--motion-fast) var(--ease-standard),
+    transform var(--motion-fast) var(--ease-standard);
+}
+
+.timeline-hover-card:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.timeline-hover-preview {
+  display: none;
+}
+
+.timeline-expand-control {
+  margin-top: 0.25rem;
+  border-top: 1px dashed color-mix(in srgb, var(--text-color) 20%, transparent);
+  padding-top: 0.45rem;
+}
+
+.timeline-expand-summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  line-height: 1.35;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 76%, #8d6f3f 24%);
+}
+
+.timeline-expand-summary::-webkit-details-marker {
+  display: none;
+}
+
+.timeline-expand-summary::after {
+  content: ' +';
+  font-weight: 700;
+}
+
+.timeline-expand-control[open] .timeline-expand-summary::after {
+  content: ' -';
+}
+
+.timeline-expand-summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.timeline-expand-body {
+  margin-top: 0.45rem;
+  max-width: 58ch;
+  line-height: 1.6;
+}
+
+.timeline-rail-shell {
+  grid-column: 5 / span 8;
+}
+
+.timeline-rail-list {
+  position: relative;
+  display: grid;
+  gap: var(--space-2);
+  list-style: none;
+  padding-left: 1.8rem;
+}
+
+.timeline-rail-list::before {
+  content: '';
+  position: absolute;
+  left: 0.56rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 1px;
+  background: color-mix(in srgb, var(--text-color) 24%, transparent);
+}
+
+.timeline-rail-item {
+  position: relative;
+}
+
+.timeline-rail-marker {
+  position: absolute;
+  left: -1.8rem;
+  top: 1.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--text-color) 42%, transparent);
+  background: color-mix(in srgb, var(--bg-color) 74%, white 26%);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--bg-color) 86%, transparent);
+  transition:
+    transform var(--motion-fast) var(--ease-standard),
+    border-color var(--motion-fast) var(--ease-standard),
+    background-color var(--motion-fast) var(--ease-standard),
+    box-shadow var(--motion-fast) var(--ease-standard);
+}
+
+.timeline-rail-item.is-active .timeline-rail-marker {
+  transform: scale(1.18);
+  border-color: color-mix(in srgb, var(--text-color) 75%, transparent);
+  background: color-mix(in srgb, var(--bg-color) 50%, #c8a866 50%);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--bg-color) 74%, transparent);
+}
+
+.timeline-hover-card.is-active {
+  border-color: color-mix(in srgb, var(--text-color) 30%, transparent);
+  background: color-mix(in srgb, var(--bg-color) 60%, white 40%);
+}
+
+body.is-space-era .timeline-rail-list::before {
+  background: color-mix(in srgb, var(--text-color) 44%, transparent);
+}
+
+body.is-space-era .timeline-rail-marker {
+  border-color: rgba(255, 255, 255, 0.75);
+  background: #0f1727;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.82);
+}
+
+body.is-space-era .timeline-rail-item.is-active .timeline-rail-marker {
+  border-color: rgba(255, 255, 255, 0.94);
+  background: #89b4ff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.86);
+}
+
+body.is-space-era .timeline-hover-card.is-active {
+  background: color-mix(in srgb, var(--bg-color) 72%, #1d2a44 28%);
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
+body.is-space-era .chronology-importance {
+  color: color-mix(in srgb, #ffffff 82%, #8fb8ff 18%);
+}
+
+body.is-space-era .timeline-expand-control {
+  border-top-color: color-mix(in srgb, #ffffff 28%, transparent);
+}
+
+body.is-space-era .timeline-expand-summary {
+  color: color-mix(in srgb, #ffffff 86%, #8fb8ff 14%);
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 721px) {
+  .timeline-hover-card {
+    overflow: hidden;
+  }
+
+  .timeline-hover-preview {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    transform: translateY(-0.25rem);
+    transition:
+      max-height var(--motion-base) var(--ease-standard),
+      opacity var(--motion-base) var(--ease-standard),
+      margin-top var(--motion-base) var(--ease-standard),
+      transform var(--motion-base) var(--ease-standard);
+  }
+
+  .timeline-hover-card:hover,
+  .timeline-hover-card:focus-visible,
+  .timeline-hover-card:focus-within {
+    border-color: color-mix(in srgb, var(--text-color) 28%, transparent);
+    background: color-mix(in srgb, var(--bg-color) 66%, white 34%);
+    transform: translateX(0.12rem);
+  }
+
+  .timeline-hover-card:hover .timeline-hover-preview,
+  .timeline-hover-card:focus-visible .timeline-hover-preview,
+  .timeline-hover-card:focus-within .timeline-hover-preview {
+    max-height: 6.2rem;
+    opacity: 0.92;
+    margin-top: 0.25rem;
+    transform: translateY(0);
+  }
+
+  body.is-space-era .timeline-hover-card:hover,
+  body.is-space-era .timeline-hover-card:focus-visible,
+  body.is-space-era .timeline-hover-card:focus-within {
+    background: color-mix(in srgb, var(--bg-color) 78%, #1a2438 22%);
+    border-color: rgba(255, 255, 255, 0.34);
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -309,5 +520,48 @@ a {
   .editorial-lead {
     max-width: 36ch;
     line-height: 1.62;
+  }
+
+  .timeline-rail-shell {
+    grid-column: 1 / -1;
+  }
+
+  .timeline-rail-list {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    padding: 1.4rem 0.25rem 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .timeline-rail-list::before {
+    left: 0.45rem;
+    right: 0.45rem;
+    top: 0.56rem;
+    bottom: auto;
+    width: auto;
+    height: 1px;
+  }
+
+  .timeline-rail-item {
+    min-width: min(86vw, 22rem);
+    scroll-snap-align: start;
+    padding-top: 0.55rem;
+  }
+
+  .timeline-rail-marker {
+    left: 1.15rem;
+    top: -0.38rem;
+  }
+
+  .timeline-hover-card,
+  .timeline-hover-card.is-active {
+    transform: none;
+  }
+
+  .timeline-hover-preview {
+    display: none !important;
   }
 }

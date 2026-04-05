@@ -1,10 +1,9 @@
 import { HeroOpening } from '@/components/content/home/hero-opening';
-import { timelineDataset } from '@/lib/content/timeline-data';
-import { getMilestoneStats, getSortedMilestones } from '@/lib/content/selectors';
+import { TimelineRail } from '@/components/content/home/timeline-rail';
+import { getMilestoneStats } from '@/lib/content/selectors';
 
 export default function Home() {
   const stats = getMilestoneStats();
-  const milestones = getSortedMilestones();
 
   return (
     <section className="space-y-10">
@@ -29,21 +28,7 @@ export default function Home() {
           </div>
         </aside>
 
-        <section className="space-y-3 md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5">
-          <h2 className="editorial-section-title font-semibold">Chronology Preview</h2>
-          <ul className="chronology-list">
-            {milestones.slice(0, 6).map((milestone) => (
-              <li key={milestone.id} className="chronology-card rounded-md border border-black/10 bg-white/40 p-4">
-                <p className="text-xs uppercase tracking-[0.12em] text-black/60">{milestone.year}</p>
-                <h3 className="editorial-card-title text-lg font-semibold">{milestone.title}</h3>
-                <p className="editorial-card-copy text-sm text-black/80">{milestone.summary}</p>
-                <p className="mt-1 text-xs text-black/60">
-                  Era: {timelineDataset.eras.find((era) => era.id === milestone.eraId)?.title ?? milestone.eraId}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <TimelineRail />
       </section>
     </section>
   );
