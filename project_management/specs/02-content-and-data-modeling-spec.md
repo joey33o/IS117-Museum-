@@ -1,39 +1,56 @@
-﻿# Spec: content and data modeling
+﻿# Spec: Content and Data Modeling
 
 ## Objective
-Define the objective for this major build step.
+Define a durable content model for eras, milestones, and citations so timeline features are data-driven rather than hardcoded in components.
 
 ## Scope
-- Describe what this step includes.
+- Create strongly typed content interfaces.
+- Establish data structures for eras and milestones.
+- Define source citation mapping model.
+- Validate content model integration readiness for component consumers.
 
 ## Non-Goals
-- Describe what this step explicitly excludes.
+- No final visual rendering behavior.
+- No hover/expand milestone interactions (covered in Spec 05).
+- No deployment workflow updates.
 
 ## Dependencies
-- List technical and process dependencies.
+- Completed Spec 01 foundation in [project_management/specs/01-foundation-and-project-setup-spec.md](project_management/specs/01-foundation-and-project-setup-spec.md).
+- Reference content in [references](references).
+- Website app workspace in [website](website).
 
 ## Implementation Tasks
-- [ ] Task 1
-- [ ] Task 2
+- [x] Complete Sprint 02a: Define content types.
+- [x] Complete Sprint 02b: Create era and milestone datasets.
+- [x] Complete Sprint 02c: Add citation and source mapping.
+- [x] Complete Sprint 02d: Validate content consumers.
 
 ## Acceptance Criteria
-- [ ] AC 1
-- [ ] AC 2
+- [x] Core interfaces/types are defined for eras, milestones, and citations.
+- [x] Data can represent concise summaries and extended detail text.
+- [x] Data shape supports timeline ordering and grouping by era.
+- [x] Build passes after content-model integration.
 
 ## Verification Steps
-1. Verification step 1
-2. Verification step 2
+1. Confirm types exist and are importable from website code.
+2. Confirm dataset files map to those types.
+3. Run build from [website](website) and verify success.
+4. Confirm sprint lifecycle tracking across planning, active, and complete.
 
 ## Deliverables
-- Deliverable 1
-- Deliverable 2
+- Content type definitions and shared contracts.
+- Era/milestone dataset structures.
+- Citation/source mapping model.
 
 ## Sprint Status Board
 ### Planned
-- [ ] Planned sprint tasks go here
+- [ ] None
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Sprint 02a: define content types
+- [x] Sprint 02b: create era and milestone datasets
+- [x] Sprint 02c: add citation and source mapping
+- [x] Sprint 02d: validate content consumers

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AdaptiveNav } from "@/components/site/adaptive-nav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,10 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <div className="app-shell">
-          <main className="app-main">{children}</main>
+          <AdaptiveNav />
+          <main id="main-content" className="app-main" tabIndex={-1}>
+            {children}
+          </main>
         </div>
       </body>
     </html>

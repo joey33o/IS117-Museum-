@@ -1,66 +1,51 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { timelineDataset } from '@/lib/content/timeline-data';
+import { getMilestoneStats, getSortedMilestones } from '@/lib/content/selectors';
 
 export default function Home() {
+  const stats = getMilestoneStats();
+  const milestones = getSortedMilestones();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <section className="space-y-8">
+      <header className="space-y-3">
+        <p className="text-sm uppercase tracking-[0.12em] text-black/70">Consumer Validation</p>
+        <h1 className="text-4xl font-semibold leading-tight">The Celestial Eye Timeline Dataset</h1>
+        <p className="max-w-3xl text-base text-black/80">
+          This page validates typed data consumption from the shared timeline model before feature-level
+          rendering is implemented.
+        </p>
+      </header>
+
+      <section className="grid gap-4 sm:grid-cols-3">
+        <article className="rounded-md border border-black/10 bg-white/50 p-4">
+          <p className="text-xs uppercase tracking-[0.12em] text-black/60">Eras</p>
+          <p className="mt-1 text-2xl font-semibold">{stats.eraCount}</p>
+        </article>
+        <article className="rounded-md border border-black/10 bg-white/50 p-4">
+          <p className="text-xs uppercase tracking-[0.12em] text-black/60">Milestones</p>
+          <p className="mt-1 text-2xl font-semibold">{stats.milestoneCount}</p>
+        </article>
+        <article className="rounded-md border border-black/10 bg-white/50 p-4">
+          <p className="text-xs uppercase tracking-[0.12em] text-black/60">Major Milestones</p>
+          <p className="mt-1 text-2xl font-semibold">{stats.majorMilestones}</p>
+        </article>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-2xl font-semibold">Chronology Preview</h2>
+        <ul className="space-y-2">
+          {milestones.slice(0, 6).map((milestone) => (
+            <li key={milestone.id} className="rounded-md border border-black/10 bg-white/40 p-4">
+              <p className="text-xs uppercase tracking-[0.12em] text-black/60">{milestone.year}</p>
+              <h3 className="text-lg font-semibold">{milestone.title}</h3>
+              <p className="text-sm text-black/80">{milestone.summary}</p>
+              <p className="mt-1 text-xs text-black/60">
+                Era: {timelineDataset.eras.find((era) => era.id === milestone.eraId)?.title ?? milestone.eraId}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </section>
   );
 }
