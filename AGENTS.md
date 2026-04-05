@@ -179,7 +179,13 @@ Create one spec file per major build step, at minimum:
 7. Accessibility and QA validation
 8. Deployment and CI/CD
 
-Files should be stored in `project_management/planning/` using ordered names such as:
+Files should be stored in `project_management/specs/` using ordered names such as:
+
+- `01-foundation-and-project-setup-spec.md`
+- `02-content-and-data-modeling-spec.md`
+- `...`
+
+Related sprint files should be stored in `project_management/planning/` using ordered names such as:
 
 - `sprint-01-<topic>.md`
 - `sprint-02-<topic>.md`
@@ -227,6 +233,25 @@ A sprint can move to `project_management/complete/` only when:
 2. Verification steps pass
 3. `npm run build` succeeds for the target app
 
+### 11.6 Sprint Segmentation Rule (Mandatory)
+
+Large tasks must be split into multiple small sprints.
+
+- One sprint should target one narrow outcome.
+- A major feature should be decomposed into multiple dependent sprints.
+- Prefer sprint slices that can be completed in focused, short execution windows.
+- Each sprint must minimize file churn and avoid mixing unrelated concerns.
+- The agent must not merge multiple major outcomes into one sprint file.
+
+Example decomposition for timeline work:
+
+1. Rail layout
+2. Summary-first cards
+3. Hover preview behavior
+4. Click/tap expansion behavior
+5. Active marker synchronization
+6. Mobile adaptation
+
 ---
 
 ## 12. Website Folder Requirement (Mandatory)
@@ -264,3 +289,69 @@ When prompted to "generate from AGENTS.md," the output is non-compliant unless:
 1. The `website/` folder exists.
 2. The web app and dependencies are contained in `website/`.
 3. Sprint specs and planning artifacts remain in `project_management/`.
+
+---
+
+## 13. Required Output Structure (Specs and Sprints)
+
+When generating from this file, the repository structure must follow this model:
+
+```text
+Museum/
+├── AGENTS.md
+├── references/
+├── project_management/
+│   ├── specs/
+│   │   ├── 00-work-segmentation-spec.md
+│   │   ├── 01-foundation-and-project-setup-spec.md
+│   │   ├── 02-content-and-data-modeling-spec.md
+│   │   ├── 03-adaptive-navigation-spec.md
+│   │   ├── 04-hero-and-opening-composition-spec.md
+│   │   ├── 05-timeline-and-milestone-interaction-spec.md
+│   │   ├── 06-scroll-transition-and-motion-behavior-spec.md
+│   │   ├── 07-accessibility-and-qa-validation-spec.md
+│   │   └── 08-deployment-and-cicd-spec.md
+│   ├── planning/
+│   │   ├── sprint-01a-init-nextjs-in-website.md
+│   │   ├── sprint-01b-configure-tailwind-and-postcss.md
+│   │   ├── sprint-01c-create-layout-and-global-tokens.md
+│   │   ├── sprint-01d-verify-build-and-root-restrictions.md
+│   │   ├── sprint-02a-define-content-types.md
+│   │   ├── sprint-02b-create-era-and-milestone-datasets.md
+│   │   ├── sprint-02c-add-citation-and-source-mapping.md
+│   │   ├── sprint-02d-validate-content-consumers.md
+│   │   ├── sprint-03a-build-sticky-nav-shell.md
+│   │   ├── sprint-03b-add-terrestrial-style-state.md
+│   │   ├── sprint-03c-add-celestial-style-state.md
+│   │   ├── sprint-03d-keyboard-and-focus-nav-validation.md
+│   │   ├── sprint-04a-hero-headline-and-lead-structure.md
+│   │   ├── sprint-04b-grid-aligned-asymmetry-layout.md
+│   │   ├── sprint-04c-atmospheric-grain-and-image-treatment.md
+│   │   ├── sprint-04d-typography-measure-and-rhythm-polish.md
+│   │   ├── sprint-05a-timeline-rail-layout.md
+│   │   ├── sprint-05b-summary-first-milestone-cards.md
+│   │   ├── sprint-05c-hover-preview-desktop.md
+│   │   ├── sprint-05d-click-tap-expand-accessible.md
+│   │   ├── sprint-05e-active-marker-sync-on-scroll.md
+│   │   ├── sprint-05f-mobile-top-rail-adaptation.md
+│   │   ├── sprint-06a-scrolltrigger-bootstrap.md
+│   │   ├── sprint-06b-toggle-is-space-era-at-threshold.md
+│   │   ├── sprint-06c-sync-css-variable-transition.md
+│   │   ├── sprint-06d-reduced-motion-fallbacks.md
+│   │   ├── sprint-07a-heading-and-landmark-audit.md
+│   │   ├── sprint-07b-focus-order-and-keyboard-flow.md
+│   │   ├── sprint-07c-contrast-validation-both-themes.md
+│   │   ├── sprint-07d-responsive-regression-checks.md
+│   │   ├── sprint-08a-next-config-static-export.md
+│   │   ├── sprint-08b-github-pages-workflow.md
+│   │   ├── sprint-08c-deploy-verification.md
+│   │   └── sprint-08d-production-behavior-smoke-test.md
+│   ├── active/
+│   │   └── (only one sprint file at a time)
+│   └── complete/
+│       └── (finished sprint files)
+└── website/
+	└── (all runnable app files and dependencies)
+```
+
+This structure is the default target when asked to generate from AGENTS.md.
