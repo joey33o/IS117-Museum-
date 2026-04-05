@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { AdaptiveNav } from "@/components/site/adaptive-nav";
+import { TransitionTrigger } from "@/components/site/transition-trigger";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <div className="app-shell">
+          <TransitionTrigger />
           <AdaptiveNav />
           <main id="main-content" className="app-main" tabIndex={-1}>
             {children}
