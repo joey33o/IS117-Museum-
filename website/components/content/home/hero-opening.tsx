@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import telescopeImage from '@/public/telescope-pic.jpg';
+
 export function HeroOpening() {
   return (
     <header className="border-b border-black/15 pb-8 pt-2 sm:pb-10">
@@ -6,10 +9,12 @@ export function HeroOpening() {
           The Celestial Eye Museum
         </p>
         <figure className="hero-atmospheric-frame md:col-span-4 md:row-span-2 md:row-start-2 lg:col-span-3 lg:col-start-1">
-          <img
-            src="/telescope-pic.jpg"
+          <Image
+            src={telescopeImage}
             alt="Historic telescope instrument"
             className="hero-atmospheric-image"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            priority
           />
         </figure>
         <h1 className="editorial-display font-semibold md:col-span-8 md:col-start-3 lg:col-span-7 lg:col-start-4">
