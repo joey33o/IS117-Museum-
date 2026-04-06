@@ -137,6 +137,7 @@ body.is-space-era .adaptive-nav-brand {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  flex-wrap: wrap;
 }
 
 .adaptive-nav-link {
@@ -179,6 +180,46 @@ body.is-space-era .adaptive-nav-link:hover {
   width: min(100%, 78rem);
   margin-inline: auto;
   padding: var(--space-5) var(--space-4) var(--space-6);
+}
+
+.responsive-section-grid {
+  align-items: start;
+}
+
+.responsive-lead {
+  max-width: 42ch;
+}
+
+.responsive-card {
+  min-height: 7.5rem;
+}
+
+.reading-bridge {
+  border: 1px dashed color-mix(in srgb, var(--text-color) 22%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--bg-color) 78%, white 22%);
+  padding: 0.95rem 1rem;
+}
+
+.reading-bridge-heading {
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-color) 74%, #8d6f3f 26%);
+}
+
+.reading-bridge-copy {
+  margin-top: 0.35rem;
+  max-width: 60ch;
+  font-size: 0.95rem;
+  line-height: 1.62;
+  color: color-mix(in srgb, var(--text-color) 84%, #000 16%);
+}
+
+.section-anchor-target {
+  scroll-margin-top: 5.75rem;
 }
 
 .eyebrow-label {
@@ -310,6 +351,11 @@ body.is-space-era .hero-atmospheric-frame::after {
 
 .timeline-hover-card:focus-visible {
   outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.timeline-hover-card:focus-within {
+  outline: 2px solid color-mix(in srgb, currentColor 75%, transparent);
   outline-offset: 2px;
 }
 
@@ -446,6 +492,19 @@ body.is-space-era .timeline-expand-summary {
   color: color-mix(in srgb, #ffffff 86%, #8fb8ff 14%);
 }
 
+body.is-space-era .reading-bridge {
+  border-color: color-mix(in srgb, #ffffff 34%, transparent);
+  background: color-mix(in srgb, var(--bg-color) 78%, #1c2740 22%);
+}
+
+body.is-space-era .reading-bridge-heading {
+  color: color-mix(in srgb, #ffffff 86%, #8fb8ff 14%);
+}
+
+body.is-space-era .reading-bridge-copy {
+  color: color-mix(in srgb, #ffffff 88%, #bdc9df 12%);
+}
+
 @media (hover: hover) and (pointer: fine) and (min-width: 721px) {
   .timeline-hover-card {
     overflow: hidden;
@@ -541,6 +600,40 @@ a {
 
   .adaptive-nav-links {
     flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .adaptive-nav-link {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+  }
+
+  .app-main {
+    padding: var(--space-4) var(--space-3) var(--space-5);
+  }
+
+  .responsive-section-grid {
+    gap: var(--space-4);
+  }
+
+  .responsive-lead {
+    max-width: 36ch;
+    line-height: 1.55;
+  }
+
+  .responsive-card {
+    min-height: 0;
+    padding: 0.9rem;
+  }
+
+  .reading-bridge {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .reading-bridge-copy {
+    max-width: 36ch;
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 
   .editorial-display {
@@ -577,7 +670,7 @@ a {
   }
 
   .timeline-rail-item {
-    min-width: min(86vw, 22rem);
+    min-width: min(88vw, 21rem);
     scroll-snap-align: start;
     padding-top: 0.55rem;
   }

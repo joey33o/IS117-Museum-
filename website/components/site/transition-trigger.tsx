@@ -9,6 +9,7 @@ export function TransitionTrigger() {
     gsap.registerPlugin(ScrollTrigger);
     const rootBody = document.body;
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const cosmicSection = document.getElementById('cosmic-instruments');
 
     const toRgb = (hex: string) => {
       const normalized = hex.replace('#', '');
@@ -41,28 +42,45 @@ export function TransitionTrigger() {
 
     const setScrollThemeProgress = (progress: number) => {
       const clamped = Math.max(0, Math.min(1, progress));
+      let textProgress = 0;
+      if (clamped > 0.58) {
+        textProgress = Math.min(1, (clamped - 0.58) / 0.42);
+      }
       rootBody.style.setProperty('--scroll-progress', clamped.toFixed(4));
       rootBody.style.setProperty('--scroll-bg-color', mixColor('#f1e7d0', '#000000', clamped));
-      rootBody.style.setProperty('--scroll-text-color', mixColor('#2b2622', '#ffffff', clamped));
+      rootBody.style.setProperty('--scroll-text-color', mixColor('#2b2622', '#ffffff', textProgress));
       rootBody.style.setProperty('--scroll-nav-blur', `${(1 - clamped) * 4}px`);
     };
 
     const bootstrapTrigger = ScrollTrigger.create({
       id: 'transition-bootstrap',
-      trigger: document.body,
-      start: 'top top',
-      end: 'bottom bottom',
+      trigger: cosmicSection ?? document.body,
+      start: cosmicSection ? 'top 70%' : 'top top',
+      end: cosmicSection ? 'bottom top' : 'bottom bottom',
       scrub: false,
+      onEnter: () => {
+        setSpaceEra(true);
+      },
+      onEnterBack: () => {
+        setSpaceEra(true);
+      },
+      onLeaveBack: () => {
+        setSpaceEra(false);
+        setScrollThemeProgress(0);
+      },
+      onLeave: () => {
+        setSpaceEra(true);
+        setScrollThemeProgress(1);
+      },
       onUpdate: (self) => {
         if (prefersReducedMotion) {
-          const isSpace = self.progress >= 0.5;
+          const isSpace = self.progress >= 0.5 || self.isActive;
           setSpaceEra(isSpace);
           setScrollThemeProgress(isSpace ? 1 : 0);
           return;
         }
 
         setScrollThemeProgress(self.progress);
-        setSpaceEra(self.progress >= 0.5);
       },
     });
 

@@ -58,7 +58,6 @@ export function TimelineRail() {
             <span className="timeline-rail-marker" aria-hidden="true" />
             <article
               className={`chronology-card chronology-summary-card timeline-hover-card rounded-md border border-black/10 bg-white/40 p-4 ${activeMilestoneId === milestone.id ? 'is-active' : ''}`}
-              tabIndex={0}
               aria-label={`${milestone.title} milestone`}
             >
               <p className="chronology-meta-row text-xs uppercase tracking-[0.12em] text-black/60">
