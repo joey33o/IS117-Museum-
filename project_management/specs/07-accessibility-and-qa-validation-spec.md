@@ -26,8 +26,12 @@ Audit and harden accessibility, navigation semantics, and cross-breakpoint quali
 - [x] Complete Sprint 07c: Contrast validation both themes.
 - [x] Complete Sprint 07d: Responsive regression checks.
 - [x] Complete Sprint 07e: Era reading bridges.
-- [ ] Complete Sprint 07f: Create dedicated eras page.
-- [ ] Complete Sprint 07g: Cosmic blue transition palette.
+- [x] Complete Sprint 07f: Create dedicated eras page.
+- [x] Complete Sprint 07g: Cosmic blue transition palette.
+- [x] Complete Sprint 07h: Eras editorial layout enrichment.
+- [x] Complete Sprint 07i: Eras layout rebalance.
+- [x] Complete Sprint 07j: Eras header and transition refinements.
+- [x] Complete Sprint 07k: Home timeline reintroduction.
 
 ## Acceptance Criteria
 - [ ] Landmarks and heading order are semantically coherent.
@@ -44,12 +48,11 @@ Audit and harden accessibility, navigation semantics, and cross-breakpoint quali
 
 ## Deliverables
 - Accessibility and QA refinements across nav, headings, and contrast.
-- Completed sprint records for 07a through 07g.
+- Completed sprint records for 07a through 07k.
 
 ## Sprint Status Board
 ### Planned
-- [ ] Sprint 07f: create dedicated eras page
-- [ ] Sprint 07g: cosmic blue transition palette
+- [ ] None
 
 ### Active
 - [ ] None
@@ -60,3 +63,9 @@ Audit and harden accessibility, navigation semantics, and cross-breakpoint quali
 - [x] Sprint 07c: contrast validation both themes
 - [x] Sprint 07d: responsive regression checks
 - [x] Sprint 07e: era reading bridges
+- [x] Sprint 07f: create dedicated eras page
+- [x] Sprint 07g: cosmic blue transition palette
+- [x] Sprint 07h: eras editorial layout enrichment
+- [x] Sprint 07i: eras layout rebalance
+- [x] Sprint 07j: eras header and transition refinements
+- [x] Sprint 07k: home timeline reintroduction

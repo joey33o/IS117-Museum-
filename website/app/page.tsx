@@ -1,31 +1,75 @@
 import { HeroOpening } from '@/components/content/home/hero-opening';
 import { TimelineRail } from '@/components/content/home/timeline-rail';
-import { getMilestoneStats, getSortedMilestones } from '@/lib/content/selectors';
+import { getMilestoneStats } from '@/lib/content/selectors';
 
 export default function Home() {
   const stats = getMilestoneStats();
-  const milestones = getSortedMilestones();
-  const cosmicHighlights = milestones.filter((milestone) => milestone.year >= 1990).slice(0, 3);
-  const figures = [
-    { name: 'Galileo Galilei', role: 'Established telescopic evidence in planetary observation.' },
-    { name: 'Thomas Harriot', role: 'Produced early telescopic lunar drawings.' },
-    { name: 'Nancy Grace Roman', role: 'Advanced space telescope mission strategy at NASA.' },
-    { name: 'Riccardo Giacconi', role: 'Pioneered X-ray astronomy and influenced Chandra-era science.' },
+  const eraEntryCards = [
+    {
+      title: 'First Lenses and Proof',
+      description: 'How observation became credible evidence through repeatability and method.',
+      href: '/eras#era1-first-lenses',
+      era: 'Earthbound Observers',
+    },
+    {
+      title: 'Observatory Culture',
+      description: 'The record-keeping discipline that changed astronomy from episodes to systems.',
+      href: '/eras#era1-observatory-culture',
+      era: 'Earthbound Observers',
+    },
+    {
+      title: 'Instrument Standards',
+      description: 'Calibration, precision, and the limits that defined the end of terrestrial-only observing.',
+      href: '/eras#era1-instrument-standard',
+      era: 'Earthbound Observers',
+    },
+    {
+      title: 'Orbital Shift',
+      description: 'Why moving beyond atmosphere fundamentally changed what telescopes could measure.',
+      href: '/eras#era2-orbital-shift',
+      era: 'Cosmic Instruments',
+    },
+    {
+      title: 'New Spectra',
+      description: 'How infrared and X-ray observatories expanded the universe beyond visible-light assumptions.',
+      href: '/eras#era2-spectrum-expansion',
+      era: 'Cosmic Instruments',
+    },
+    {
+      title: 'Networked Observatories',
+      description: 'Global coordination, linked arrays, and shared data pipelines as modern evidence practice.',
+      href: '/eras#era2-networked-observatories',
+      era: 'Cosmic Instruments',
+    },
   ];
 
   return (
     <section className="space-y-10">
       <HeroOpening />
 
-      <section id="earthbound-observers" aria-labelledby="earthbound-heading" className="section-anchor-target responsive-section-grid grid gap-6 md:grid-cols-12 md:gap-8">
-        <aside className="space-y-4 md:col-span-4 md:pt-2 lg:col-span-3">
-          <h2 id="earthbound-heading" className="editorial-section-title font-semibold">
-            Earthbound Observers
+      <section className="responsive-section-grid grid gap-4 md:grid-cols-12 md:gap-8" aria-labelledby="home-chronology-heading">
+        <div className="space-y-3 md:col-span-4 lg:col-span-3">
+          <h2 id="home-chronology-heading" className="editorial-section-title font-semibold">
+            Orientation Timeline
           </h2>
           <p className="responsive-lead text-sm text-black/70">
-            From lens experiments to observatory discipline, these milestones map astronomy before full orbital infrastructure.
+            Follow the arc from early evidence culture to networked observatories, then jump into the matching reading sections.
           </p>
-          <h3 className="eyebrow-label text-black/65">Collection Metrics</h3>
+        </div>
+        <div className="md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5">
+          <TimelineRail />
+        </div>
+      </section>
+
+      <section aria-labelledby="overview-heading" className="responsive-section-grid grid gap-6 md:grid-cols-12 md:gap-8">
+        <aside className="space-y-4 md:col-span-4 md:pt-2 lg:col-span-3">
+          <h2 id="overview-heading" className="editorial-section-title font-semibold">
+            Start With the Eras
+          </h2>
+          <p className="responsive-lead text-sm text-black/70">
+            Home now serves as orientation. Follow a card into a dedicated reading section and continue through Era 1 and Era 2 in sequence.
+          </p>
+          <h3 className="eyebrow-label text-black/65">Collection Snapshot</h3>
           <div className="space-y-3">
             <article className="rounded-md border border-black/10 bg-white/50 p-4">
               <p className="text-xs uppercase tracking-[0.12em] text-black/60">Eras</p>
@@ -42,58 +86,36 @@ export default function Home() {
           </div>
         </aside>
 
-        <div className="space-y-3 md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5">
-          <TimelineRail />
-          <article className="reading-bridge">
-            <h3 className="reading-bridge-heading">What Changed</h3>
-            <p className="reading-bridge-copy">
-              As telescope craft matured, astronomy shifted from isolated sightings to disciplined comparison over time.
-              The question was no longer only what appears in the sky, but how reliably the same instrument can prove it.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="cosmic-instruments" aria-labelledby="cosmic-heading" className="section-anchor-target responsive-section-grid grid gap-4 md:grid-cols-12 md:gap-8">
-        <div className="space-y-3 md:col-span-4 lg:col-span-3">
-          <h2 id="cosmic-heading" className="editorial-section-title font-semibold">
-            Cosmic Instruments
-          </h2>
-          <p className="responsive-lead text-sm text-black/70">Space-based and distributed observatories pushed beyond atmospheric limits and expanded measurement across the electromagnetic spectrum.</p>
-        </div>
-        <ul className="space-y-2 md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5" aria-label="Cosmic instrument highlights">
-          {cosmicHighlights.map((milestone) => (
-            <li key={milestone.id} className="responsive-card rounded-md border border-black/10 bg-white/40 p-4">
-              <p className="text-xs uppercase tracking-[0.12em] text-black/60">{milestone.year}</p>
-              <h3 className="editorial-card-title text-lg font-semibold">{milestone.title}</h3>
-              <p className="editorial-card-copy text-sm text-black/80">{milestone.summary}</p>
-            </li>
-          ))}
-          <li className="reading-bridge">
-            <h3 className="reading-bridge-heading">Why It Mattered</h3>
-            <p className="reading-bridge-copy">
-              Once observatories moved beyond Earth atmosphere and into global networks, evidence gained breadth and depth at once.
-              The modern era is defined by connected instruments that read one universe through many coordinated lenses.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="important-figures" aria-labelledby="figures-heading" className="section-anchor-target responsive-section-grid grid gap-4 md:grid-cols-12 md:gap-8">
-        <div className="space-y-3 md:col-span-4 lg:col-span-3">
-          <h2 id="figures-heading" className="editorial-section-title font-semibold">
-            Important Figures
-          </h2>
-          <p className="responsive-lead text-sm text-black/70">Key contributors whose work shaped evidence standards, instruments, and observational method.</p>
-        </div>
-        <ul className="space-y-2 md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5" aria-label="Important figures in telescope history">
-          {figures.map((figure) => (
-            <li key={figure.name} className="responsive-card rounded-md border border-black/10 bg-white/40 p-4">
-              <h3 className="text-lg font-semibold">{figure.name}</h3>
-              <p className="text-sm text-black/80">{figure.role}</p>
+        <ul className="grid gap-3 md:col-span-8 md:col-start-5 md:grid-cols-2 lg:col-span-7 lg:col-start-5" aria-label="Era section entry cards">
+          {eraEntryCards.map((card) => (
+            <li key={card.href} className="responsive-card rounded-md border border-black/10 bg-white/45 p-4">
+              <p className="text-xs uppercase tracking-[0.12em] text-black/60">{card.era}</p>
+              <h3 className="mt-1 text-lg font-semibold">{card.title}</h3>
+              <p className="mt-2 text-sm text-black/80">{card.description}</p>
+              <a href={card.href} className="eyebrow-label mt-3 inline-block text-black/75">
+                Read this section
+              </a>
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="responsive-section-grid grid gap-4 md:grid-cols-12 md:gap-8" aria-labelledby="reading-guidance-heading">
+        <div className="space-y-3 md:col-span-4 lg:col-span-3">
+          <h2 id="reading-guidance-heading" className="editorial-section-title font-semibold">
+            Reading Guidance
+          </h2>
+        </div>
+        <article className="reading-bridge md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5">
+          <h3 className="reading-bridge-heading">Recommended Path</h3>
+          <p className="reading-bridge-copy">
+            Begin with Earthbound Observers framing, then continue in order through instrument standards before entering the orbital and networked sections.
+            Each era is written as a complete chapter with optional deeper context, designed for approximately five to ten minutes of reading time.
+          </p>
+          <a href="/eras#era1-framing" className="eyebrow-label mt-3 inline-block text-black/75">
+            Begin full era reading
+          </a>
+        </article>
       </section>
     </section>
   );

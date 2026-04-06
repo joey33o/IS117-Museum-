@@ -27,26 +27,26 @@ Create a dedicated long-form eras route where Era 1 and Era 2 each provide a ful
 - Existing transition logic in [website/components/site/transition-trigger.tsx](website/components/site/transition-trigger.tsx).
 
 ## Implementation Tasks
-- [ ] Move sprint file to active before execution.
-- [ ] Create dedicated eras page route and migrate Era 1 + Era 2 reading sections.
-- [ ] Expand each era into long-form narrative sections targeting approximately 5-10 minutes read time each.
-- [ ] Add stable subsection anchors for era topics (for example, framing, milestones, people, bridge/future).
-- [ ] Update home page cards to deep-link to specific era section anchors on the eras route.
-- [ ] Keep transition continuity between eras within the dedicated page.
-- [ ] Add lightweight orientation aids (section labels or local table of contents) without heavy UI complexity.
-- [ ] Validate static-export-safe routing behavior.
-- [ ] Run build from website and verify success.
-- [ ] Move sprint file to complete after verification.
+- [x] Move sprint file to active before execution.
+- [x] Create dedicated eras page route and migrate Era 1 + Era 2 reading sections.
+- [x] Expand each era into long-form narrative sections targeting approximately 5-10 minutes read time each.
+- [x] Add stable subsection anchors for era topics (for example, framing, milestones, people, bridge/future).
+- [x] Update home page cards to deep-link to specific era section anchors on the eras route.
+- [x] Keep transition continuity between eras within the dedicated page.
+- [x] Add lightweight orientation aids (section labels or local table of contents) without heavy UI complexity.
+- [x] Validate static-export-safe routing behavior.
+- [x] Run build from website and verify success.
+- [x] Move sprint file to complete after verification.
 
 ## Acceptance Criteria
-- [ ] Era 1 and Era 2 exist on a dedicated page separate from home.
-- [ ] Era 1 reading length supports approximately 5-10 minutes.
-- [ ] Era 2 reading length supports approximately 5-10 minutes.
-- [ ] Home page cards deep-link to specific section anchors on the eras route.
-- [ ] Era transition remains smooth and readable in dedicated route.
-- [ ] Home page no longer carries full era reading load.
-- [ ] Curatorial framing and interpretation quality targets are present in both eras.
-- [ ] npm run build succeeds from website.
+- [x] Era 1 and Era 2 exist on a dedicated page separate from home.
+- [x] Era 1 reading length supports approximately 5-10 minutes.
+- [x] Era 2 reading length supports approximately 5-10 minutes.
+- [x] Home page cards deep-link to specific section anchors on the eras route.
+- [x] Era transition remains smooth and readable in dedicated route.
+- [x] Home page no longer carries full era reading load.
+- [x] Curatorial framing and interpretation quality targets are present in both eras.
+- [x] npm run build succeeds from website.
 
 ## Verification Steps
 1. Confirm dedicated eras route renders both long-form era sections.
@@ -64,10 +64,10 @@ Create a dedicated long-form eras route where Era 1 and Era 2 each provide a ful
 
 ## Sprint Status Board
 ### Planned
-- [ ] Implement and verify dedicated eras page migration
+- [ ] None
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Implement and verify dedicated eras page migration

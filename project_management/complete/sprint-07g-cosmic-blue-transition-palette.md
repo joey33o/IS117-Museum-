@@ -18,19 +18,19 @@ Upgrade the terrestrial-to-cosmic transition from grayscale darkening to a cohes
 - Transition progress logic in [website/components/site/transition-trigger.tsx](website/components/site/transition-trigger.tsx).
 
 ## Implementation Tasks
-- [ ] Move sprint file to active before execution.
-- [ ] Define cosmic blue token palette and fallback values.
-- [ ] Update transition interpolation to blend through new palette values.
-- [ ] Update key components (nav/cards/markers/bridges) to consume new tokens consistently.
-- [ ] Validate readability/contrast before-during-after transition.
-- [ ] Run build from website and verify success.
-- [ ] Move sprint file to complete after verification.
+- [x] Move sprint file to active before execution.
+- [x] Define cosmic blue token palette and fallback values.
+- [x] Update transition interpolation to blend through new palette values.
+- [x] Update key components (nav/cards/markers/bridges) to consume new tokens consistently.
+- [x] Validate readability/contrast before-during-after transition.
+- [x] Run build from website and verify success.
+- [x] Move sprint file to complete after verification.
 
 ## Acceptance Criteria
-- [ ] Cosmic mode uses a cohesive blue palette rather than pure black/white.
-- [ ] Transition no longer causes elements to appear to disappear.
-- [ ] Readability remains clear during transition progression.
-- [ ] npm run build succeeds from website.
+- [x] Cosmic mode uses a cohesive blue palette rather than pure black/white.
+- [x] Transition no longer causes elements to appear to disappear.
+- [x] Readability remains clear during transition progression.
+- [x] npm run build succeeds from website.
 
 ## Verification Steps
 1. Confirm tokenized cosmic palette is active in celestial mode.
@@ -45,10 +45,10 @@ Upgrade the terrestrial-to-cosmic transition from grayscale darkening to a cohes
 
 ## Sprint Status Board
 ### Planned
-- [ ] Implement and verify cosmic-blue transition palette
+- [ ] None
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Implement and verify cosmic-blue transition palette

@@ -9,7 +9,11 @@ export function TransitionTrigger() {
     gsap.registerPlugin(ScrollTrigger);
     const rootBody = document.body;
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isErasRoute = /\/eras\/?$/.test(window.location.pathname);
+    const eraOneSection = document.getElementById('earthbound-observers');
+    const eraBridge = document.getElementById('era1-bridge');
     const cosmicSection = document.getElementById('cosmic-instruments');
+    const eraTwoMidpoint = document.getElementById('era2-spectrum-expansion');
 
     const toRgb = (hex: string) => {
       const normalized = hex.replace('#', '');
@@ -46,17 +50,44 @@ export function TransitionTrigger() {
       if (clamped > 0.58) {
         textProgress = Math.min(1, (clamped - 0.58) / 0.42);
       }
+
+      let accentProgress = 0;
+      if (clamped > 0.2) {
+        accentProgress = Math.min(1, (clamped - 0.2) / 0.8);
+      }
+
       rootBody.style.setProperty('--scroll-progress', clamped.toFixed(4));
-      rootBody.style.setProperty('--scroll-bg-color', mixColor('#f1e7d0', '#000000', clamped));
-      rootBody.style.setProperty('--scroll-text-color', mixColor('#2b2622', '#ffffff', textProgress));
+      rootBody.style.setProperty('--scroll-bg-color', mixColor('#f1e7d0', '#071326', clamped));
+      rootBody.style.setProperty('--scroll-text-color', mixColor('#2b2622', '#eaf1ff', textProgress));
+      rootBody.style.setProperty('--scroll-surface-color', mixColor('#f7efdc', '#10233f', clamped));
+      rootBody.style.setProperty('--scroll-muted-text-color', mixColor('#5b5146', '#b9c9e8', clamped));
+      rootBody.style.setProperty('--scroll-border-color', mixColor('#a88a57', '#6f8fc5', accentProgress));
+      rootBody.style.setProperty('--scroll-accent-color', mixColor('#8d6f3f', '#8fb8ff', accentProgress));
       rootBody.style.setProperty('--scroll-nav-blur', `${(1 - clamped) * 4}px`);
     };
 
+    if (!isErasRoute || !eraOneSection || !cosmicSection) {
+      setSpaceEra(false);
+      setScrollThemeProgress(0);
+      return () => {
+        setSpaceEra(false);
+        rootBody.style.removeProperty('--scroll-progress');
+        rootBody.style.removeProperty('--scroll-bg-color');
+        rootBody.style.removeProperty('--scroll-text-color');
+        rootBody.style.removeProperty('--scroll-surface-color');
+        rootBody.style.removeProperty('--scroll-muted-text-color');
+        rootBody.style.removeProperty('--scroll-border-color');
+        rootBody.style.removeProperty('--scroll-accent-color');
+        rootBody.style.removeProperty('--scroll-nav-blur');
+      };
+    }
+
     const bootstrapTrigger = ScrollTrigger.create({
       id: 'transition-bootstrap',
-      trigger: cosmicSection ?? document.body,
-      start: cosmicSection ? 'top 70%' : 'top top',
-      end: cosmicSection ? 'bottom top' : 'bottom bottom',
+      trigger: eraBridge ?? eraOneSection,
+      start: 'top 82%',
+      endTrigger: eraTwoMidpoint ?? cosmicSection,
+      end: 'top 35%',
       scrub: false,
       onEnter: () => {
         setSpaceEra(true);
@@ -91,6 +122,10 @@ export function TransitionTrigger() {
       rootBody.style.removeProperty('--scroll-progress');
       rootBody.style.removeProperty('--scroll-bg-color');
       rootBody.style.removeProperty('--scroll-text-color');
+      rootBody.style.removeProperty('--scroll-surface-color');
+      rootBody.style.removeProperty('--scroll-muted-text-color');
+      rootBody.style.removeProperty('--scroll-border-color');
+      rootBody.style.removeProperty('--scroll-accent-color');
       rootBody.style.removeProperty('--scroll-nav-blur');
       bootstrapTrigger.kill();
     };
