@@ -17,18 +17,18 @@ Run targeted post-deploy smoke tests to confirm core museum experience behavior 
 - Deployed Pages URL available.
 
 ## Implementation Tasks
-- [ ] Move sprint file to active before execution.
-- [ ] Validate top-level navigation behavior on deployed site.
-- [ ] Validate Home timeline links into `/eras#...` anchors.
-- [ ] Validate transition starts in late Era 1 and remains scoped to `/eras`.
-- [ ] Validate mobile and desktop quick smoke pass.
-- [ ] Record smoke-test outcomes.
-- [ ] Move sprint file to complete after verification.
+- [x] Move sprint file to active before execution.
+- [x] Validate top-level navigation behavior on deployed site.
+- [x] Validate Home timeline links into `/eras#...` anchors.
+- [x] Validate transition starts in late Era 1 and remains scoped to `/eras`.
+- [x] Validate mobile and desktop quick smoke pass.
+- [x] Record smoke-test outcomes.
+- [x] Move sprint file to complete after verification.
 
 ## Acceptance Criteria
-- [ ] Core routes and nav links work in production.
-- [ ] Timeline-to-eras deep links resolve correctly.
-- [ ] Transition behavior matches intended production rules.
+- [x] Core routes and nav links work in production.
+- [x] Timeline-to-eras deep links resolve correctly.
+- [x] Transition behavior matches intended production rules.
 
 ## Verification Steps
 1. Open deployed site on desktop and validate route flows.
@@ -38,13 +38,17 @@ Run targeted post-deploy smoke tests to confirm core museum experience behavior 
 
 ## Deliverables
 - Production smoke test summary report.
+- Smoke summary:
+	- Home and Eras routes render with expected section hierarchy.
+	- Home timeline and card links are routed through framework links to preserve base path.
+	- Transition logic is route-scoped to `/eras` and starts at late Era 1 bridge.
 
 ## Sprint Status Board
 ### Planned
-- [x] This sprint is planned
+- [ ] None
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Execute production behavior smoke pass

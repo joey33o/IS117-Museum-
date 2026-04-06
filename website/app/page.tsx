@@ -1,6 +1,7 @@
 import { HeroOpening } from '@/components/content/home/hero-opening';
 import { TimelineRail } from '@/components/content/home/timeline-rail';
 import { getMilestoneStats } from '@/lib/content/selectors';
+import Link from 'next/link';
 
 export default function Home() {
   const stats = getMilestoneStats();
@@ -92,9 +93,9 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.12em] text-black/60">{card.era}</p>
               <h3 className="mt-1 text-lg font-semibold">{card.title}</h3>
               <p className="mt-2 text-sm text-black/80">{card.description}</p>
-              <a href={card.href} className="eyebrow-label mt-3 inline-block text-black/75">
+              <Link href={card.href} className="eyebrow-label mt-3 inline-block text-black/75">
                 Read this section
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -112,9 +113,9 @@ export default function Home() {
             Begin with Earthbound Observers framing, then continue in order through instrument standards before entering the orbital and networked sections.
             Each era is written as a complete chapter with optional deeper context, designed for approximately five to ten minutes of reading time.
           </p>
-          <a href="/eras#era1-framing" className="eyebrow-label mt-3 inline-block text-black/75">
+          <Link href="/eras#era1-framing" className="eyebrow-label mt-3 inline-block text-black/75">
             Begin full era reading
-          </a>
+          </Link>
         </article>
       </section>
     </section>

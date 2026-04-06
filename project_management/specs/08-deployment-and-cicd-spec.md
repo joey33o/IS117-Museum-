@@ -21,14 +21,14 @@ Prepare and validate static deployment for GitHub Pages with reproducible CI bui
 ## Implementation Tasks
 - [x] Complete Sprint 08a: Next config static export.
 - [x] Complete Sprint 08b: GitHub Pages workflow.
-- [ ] Complete Sprint 08c: Deploy verification.
-- [ ] Complete Sprint 08d: Production behavior smoke test.
+- [x] Complete Sprint 08c: Deploy verification.
+- [x] Complete Sprint 08d: Production behavior smoke test.
 
 ## Acceptance Criteria
 - [x] Static export configuration is present and build succeeds.
 - [x] CI workflow exists to build and deploy Pages artifact.
-- [ ] Deployment verification confirms expected Pages URL behavior.
-- [ ] Production smoke checks pass on deployed site.
+- [x] Deployment verification confirms expected Pages URL behavior.
+- [x] Production smoke checks pass on deployed site.
 
 ## Verification Steps
 1. Run `npm run build` from [website](website) and confirm static routes are generated.
@@ -39,13 +39,12 @@ Prepare and validate static deployment for GitHub Pages with reproducible CI bui
 ## Deliverables
 - Static-export-ready [website/next.config.ts](website/next.config.ts).
 - Pages workflow at [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
-- Deployment verification report (pending Sprint 08c).
-- Production smoke test report (pending Sprint 08d).
+- Deployment verification report (Sprint 08c complete).
+- Production smoke test report (Sprint 08d complete).
 
 ## Sprint Status Board
 ### Planned
-- [ ] Sprint 08c: deploy verification
-- [ ] Sprint 08d: production behavior smoke test
+- [ ] None
 
 ### Active
 - [ ] None
@@ -53,3 +52,5 @@ Prepare and validate static deployment for GitHub Pages with reproducible CI bui
 ### Completed
 - [x] Sprint 08a: next config static export
 - [x] Sprint 08b: github pages workflow
+- [x] Sprint 08c: deploy verification
+- [x] Sprint 08d: production behavior smoke test

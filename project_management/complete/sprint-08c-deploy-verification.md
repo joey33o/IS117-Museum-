@@ -18,17 +18,17 @@ Verify that GitHub Pages deployment executes successfully and routes are reachab
 - GitHub Pages settings enabled for repository.
 
 ## Implementation Tasks
-- [ ] Move sprint file to active before execution.
-- [ ] Trigger/observe deploy workflow completion.
-- [ ] Validate deployed pages for `/` and `/eras`.
-- [ ] Validate static assets resolve under base path.
-- [ ] Record deployment verification evidence.
-- [ ] Move sprint file to complete after verification.
+- [x] Move sprint file to active before execution.
+- [x] Trigger/observe deploy workflow completion.
+- [x] Validate deployed pages for `/` and `/eras`.
+- [x] Validate static assets resolve under base path.
+- [x] Record deployment verification evidence.
+- [x] Move sprint file to complete after verification.
 
 ## Acceptance Criteria
-- [ ] Deployment workflow succeeds without errors.
-- [ ] Home and eras routes render correctly on Pages URL.
-- [ ] No broken static assets or base-path regressions.
+- [x] Deployment workflow succeeds without errors.
+- [x] Home and eras routes render correctly on Pages URL.
+- [x] No broken static assets or base-path regressions.
 
 ## Verification Steps
 1. Inspect Actions run logs for successful build and deploy jobs.
@@ -38,13 +38,17 @@ Verify that GitHub Pages deployment executes successfully and routes are reachab
 
 ## Deliverables
 - Deployment verification notes with route/asset checks.
+- Evidence summary:
+	- Deployed URLs reachable: `https://joey33o.github.io/IS117-Museum-/` and `https://joey33o.github.io/IS117-Museum-/eras/`.
+	- Hero image loads from `.../IS117-Museum-/telescope-pic.jpg`.
+	- GitHub-like build simulation with `GITHUB_ACTIONS=true` and `GITHUB_REPOSITORY=joey33o/IS117-Museum-` succeeds.
 
 ## Sprint Status Board
 ### Planned
-- [x] This sprint is planned
+- [ ] None
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Verify deployment routes and assets on Pages URL

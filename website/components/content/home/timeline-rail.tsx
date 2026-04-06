@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export function TimelineRail() {
   const timelineStops = [
@@ -132,7 +133,7 @@ export function TimelineRail() {
             data-timeline-id={milestone.id}
           >
             <span className="timeline-rail-marker" aria-hidden="true" />
-            <a
+            <Link
               href={milestone.href}
               className={`chronology-card chronology-summary-card timeline-hover-card rounded-md border border-black/10 bg-white/40 p-4 ${activeMilestoneId === milestone.id ? 'is-active' : ''}`}
               aria-label={`${milestone.title} milestone`}
@@ -151,7 +152,7 @@ export function TimelineRail() {
               </p>
               <p className="timeline-hover-preview text-sm text-black/75">Read this section in the full eras route.</p>
               <span className="timeline-expand-summary mt-1 inline-block">Read this section</span>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
