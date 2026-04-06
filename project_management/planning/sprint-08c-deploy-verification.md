@@ -1,36 +1,47 @@
 ﻿# Sprint: deploy verification
 
 ## Objective
-Deliver one narrow, focused outcome.
+Verify that GitHub Pages deployment executes successfully and routes are reachable with correct asset loading.
 
 ## Scope
-- In-scope item 1
-- In-scope item 2
+- Confirm workflow run completion on target branch.
+- Validate deployed `/` and `/eras` routes are accessible.
+- Validate assets load correctly under repository base path.
 
 ## Non-Goals
-- Out-of-scope item 1
+- No redesign or content rewrites.
+- No major CI architecture changes.
 
 ## Dependencies
-- Dependency 1
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+- Static export config in [website/next.config.ts](website/next.config.ts).
+- GitHub Pages settings enabled for repository.
 
 ## Implementation Tasks
-- [ ] Task 1
-- [ ] Task 2
+- [ ] Move sprint file to active before execution.
+- [ ] Trigger/observe deploy workflow completion.
+- [ ] Validate deployed pages for `/` and `/eras`.
+- [ ] Validate static assets resolve under base path.
+- [ ] Record deployment verification evidence.
+- [ ] Move sprint file to complete after verification.
 
 ## Acceptance Criteria
-- [ ] AC 1
-- [ ] AC 2
+- [ ] Deployment workflow succeeds without errors.
+- [ ] Home and eras routes render correctly on Pages URL.
+- [ ] No broken static assets or base-path regressions.
 
 ## Verification Steps
-1. Verification step 1
-2. Verification step 2
+1. Inspect Actions run logs for successful build and deploy jobs.
+2. Open deployed Pages URL and verify `/` and `/eras`.
+3. Check browser console/network for 404 asset errors.
+4. Capture brief verification notes.
 
 ## Deliverables
-- Deliverable 1
+- Deployment verification notes with route/asset checks.
 
 ## Sprint Status Board
 ### Planned
-- [ ] This sprint is planned
+- [x] This sprint is planned
 
 ### Active
 - [ ] None
