@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useScroll } from 'framer-motion';
 
 import type { ConstellationSlide as ConstellationSlideType } from '@/lib/content/constellations-data';
+import { resolvePublicAsset } from '@/lib/public-asset';
 
 import { ConstellationParallaxBackground } from './constellation-parallax-background';
 import { ConstellationSceneCard } from './constellation-scene-card';
@@ -12,6 +13,7 @@ import { ConstellationSlideContext } from './constellation-slide-context';
 export function ConstellationSlide({ slide, index }: { slide: ConstellationSlideType; index: number }) {
   const sectionRef = useRef<HTMLElement>(null);
   const labelId = `constellation-${slide.id}-heading`;
+  const imageSrc = resolvePublicAsset(slide.imageSrc);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start end', 'end end'],
@@ -30,12 +32,12 @@ export function ConstellationSlide({ slide, index }: { slide: ConstellationSlide
       >
         <img
           aria-hidden="true"
-          src={slide.imageSrc}
+          src={imageSrc}
           alt=""
           className="constellation-reference-section-fill"
         />
         <div className="constellation-reference-stage">
-          <ConstellationParallaxBackground src={slide.imageSrc} alt={slide.imageAlt} mode={index === 0 ? 'opening' : 'standard'} />
+          <ConstellationParallaxBackground src={imageSrc} alt={slide.imageAlt} mode={index === 0 ? 'opening' : 'standard'} />
 
           <div className="constellation-reference-copy">
             <div className="mx-auto w-full max-w-[78rem] px-4">
