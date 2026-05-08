@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 
 const navItems = [
   { href: '/', label: 'Home' },
+  { href: '/constellations', label: 'Constellations' },
   { href: '/eras#earthbound-observers', label: 'Earthbound Observers' },
   { href: '/eras#cosmic-instruments', label: 'Cosmic Instruments' },
   { href: '/eras#era2-open-questions', label: 'Future Questions' },
@@ -15,6 +16,8 @@ const navItems = [
 export function AdaptiveNav() {
   const pathname = usePathname();
   const [activeHash, setActiveHash] = useState('');
+
+  const isPresentationRoute = /^\/constellations\/?$/.test(pathname);
 
   useEffect(() => {
     const updateHash = () => {
@@ -27,6 +30,10 @@ export function AdaptiveNav() {
       window.removeEventListener('hashchange', updateHash);
     };
   }, []);
+
+  if (isPresentationRoute) {
+    return null;
+  }
 
   const isItemActive = (href: string) => {
     if (href === '/') {
