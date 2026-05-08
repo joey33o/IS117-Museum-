@@ -28,6 +28,12 @@ export function ConstellationSlide({ slide, index }: { slide: ConstellationSlide
         style={{ zIndex: index }}
         aria-labelledby={labelId}
       >
+        <img
+          aria-hidden="true"
+          src={slide.imageSrc}
+          alt=""
+          className="constellation-reference-section-fill"
+        />
         <div className="constellation-reference-stage">
           <ConstellationParallaxBackground src={slide.imageSrc} alt={slide.imageAlt} mode={index === 0 ? 'opening' : 'standard'} />
 
