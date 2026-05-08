@@ -17,8 +17,6 @@ export function AdaptiveNav() {
   const pathname = usePathname();
   const [activeHash, setActiveHash] = useState('');
 
-  const isPresentationRoute = /^\/constellations\/?$/.test(pathname);
-
   useEffect(() => {
     const updateHash = () => {
       setActiveHash(window.location.hash || '');
@@ -30,10 +28,6 @@ export function AdaptiveNav() {
       window.removeEventListener('hashchange', updateHash);
     };
   }, []);
-
-  if (isPresentationRoute) {
-    return null;
-  }
 
   const isItemActive = (href: string) => {
     if (href === '/') {

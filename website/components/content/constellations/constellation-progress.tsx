@@ -6,55 +6,27 @@ export function ConstellationProgress({ slidesCount }: { slidesCount: number }) 
   const [position, setPosition] = useState(0);
 
   useEffect(() => {
-    let frameId = 0;
-
-    const updatePosition = () => {
-      const sections = Array.from(
-        document.querySelectorAll<HTMLElement>('[data-constellation-slide]')
-      );
-
-      if (!sections.length) {
+    const updatePosition = (event: Event) => {
+      const detail = (event as CustomEvent<{ position: number }>).detail;
+      if (!detail) {
         return;
       }
 
-      const viewportHeight = window.innerHeight;
-      let nextPosition = 0;
-
-      sections.forEach((section, index) => {
-        const top = section.getBoundingClientRect().top;
-
-        if (top <= viewportHeight) {
-          const normalizedTop = Math.min(Math.max(top, 0), viewportHeight);
-          nextPosition = Math.max(nextPosition, index - normalizedTop / viewportHeight);
-        }
-      });
-
-      const clampedPosition = Math.min(sections.length - 1, Math.max(0, nextPosition));
-      setPosition((current) => (
-        Math.abs(current - clampedPosition) < 0.001 ? current : clampedPosition
-      ));
+      const clampedPosition = Math.min(slidesCount - 1, Math.max(0, detail.position));
+      setPosition((current) => (Math.abs(current - clampedPosition) < 0.001 ? current : clampedPosition));
     };
 
-    const requestUpdate = () => {
-      cancelAnimationFrame(frameId);
-      frameId = window.requestAnimationFrame(updatePosition);
-    };
-
-    requestUpdate();
-    window.addEventListener('scroll', requestUpdate, { passive: true });
-    window.addEventListener('resize', requestUpdate);
+    window.addEventListener('constellation:position', updatePosition);
 
     return () => {
-      cancelAnimationFrame(frameId);
-      window.removeEventListener('scroll', requestUpdate);
-      window.removeEventListener('resize', requestUpdate);
+      window.removeEventListener('constellation:position', updatePosition);
     };
   }, [slidesCount]);
 
   const activeIndex = Math.round(position);
 
   const goToSlide = (index: number) => {
-    const slide = document.querySelector<HTMLElement>(`[data-constellation-index="${index}"]`);
+    const slide = document.querySelector<HTMLElement>(`[data-constellation-slide][data-constellation-index="${index}"]`);
     slide?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
