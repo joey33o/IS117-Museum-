@@ -13,11 +13,32 @@ export function TransitionTrigger() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isEarthboundRoute = /\/eras\/earthbound-observers\/?$/.test(pathname);
+    const isCosmicRoute = /\/eras\/cosmic-instruments\/?$/.test(pathname);
     const isErasRoute = /\/eras\/?$/.test(pathname);
     const eraOneSection = document.getElementById('earthbound-observers');
     const eraBridge = document.getElementById('era1-bridge');
     const cosmicSection = document.getElementById('cosmic-instruments');
     const eraTwoMidpoint = document.getElementById('era2-spectrum-expansion');
+
+    if (isCosmicRoute) {
+      setSpaceEra(true);
+      setScrollThemeProgress(1);
+      return () => {
+        setSpaceEra(false);
+        clearScrollTheme();
+      };
+    }
+
+    if (isEarthboundRoute) {
+      setSpaceEra(false);
+      setScrollThemeProgress(0);
+      clearScrollTheme();
+      return () => {
+        setSpaceEra(false);
+        clearScrollTheme();
+      };
+    }
 
     if (!isErasRoute || !eraOneSection || !cosmicSection) {
       setSpaceEra(false);

@@ -367,6 +367,235 @@ body.is-space-era .adaptive-nav-link:hover {
   background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 70%, var(--scroll-accent-color, var(--accent-color)) 30%);
 }
 
+.era-exhibit {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 2.4vw, 2rem) clamp(3rem, 7vw, 6rem);
+}
+
+.era-exhibit-inner {
+  width: min(100%, 112rem);
+  margin-inline: auto;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.era-exhibit--cosmic {
+  color: #eaf1ff;
+  background:
+    linear-gradient(180deg, rgba(7, 19, 38, 0.96), rgba(5, 12, 25, 1)),
+    #071326;
+}
+
+.era-runway {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.era-runway-heading {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 72rem;
+}
+
+.era-anchor-grid,
+.era-feature-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.era-wide-card {
+  border: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 26%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 86%, white 14%);
+  box-shadow: 0 16px 40px rgba(43, 38, 34, 0.08);
+}
+
+.era-exhibit--cosmic .era-wide-card,
+.era-exhibit--cosmic .era-surface,
+.era-exhibit--cosmic .era-note,
+.era-exhibit--cosmic .era-debate-card,
+.era-exhibit--cosmic .era-object-label,
+.era-exhibit--cosmic .era-question-panel {
+  border-color: rgba(196, 218, 255, 0.24);
+  background: rgba(16, 35, 63, 0.78);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.era-anchor-card,
+.era-hub-card,
+.era-exhibit-card {
+  display: grid;
+  gap: 0.7rem;
+  padding: clamp(1rem, 2vw, 1.45rem);
+}
+
+.era-hero-image-frame,
+.era-inline-image-frame {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 28%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 82%, white 18%);
+  box-shadow: 0 18px 48px rgba(43, 38, 34, 0.1);
+}
+
+.era-exhibit--cosmic .era-hero-image-frame,
+.era-exhibit--cosmic .era-inline-image-frame {
+  border-color: rgba(196, 218, 255, 0.22);
+  background: rgba(16, 35, 63, 0.68);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.28);
+}
+
+.era-hero-image,
+.era-inline-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  filter: var(--img-filter);
+}
+
+.era-hero-image {
+  aspect-ratio: 16 / 9;
+  min-height: min(58vh, 31rem);
+}
+
+.era-inline-image {
+  aspect-ratio: 16 / 9;
+  max-height: 26rem;
+}
+
+.era-anchor-card {
+  min-height: 10rem;
+  transition:
+    transform var(--motion-fast) var(--ease-standard),
+    border-color var(--motion-fast) var(--ease-standard);
+}
+
+.era-anchor-card:hover,
+.era-anchor-card:focus-visible {
+  transform: translateY(-0.12rem);
+  border-color: color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 52%, transparent);
+}
+
+.era-core-grid {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.era-key-insight {
+  padding: clamp(1rem, 2vw, 1.35rem);
+}
+
+.era-wide-section,
+.era-card-row,
+.era-card-stack,
+.era-wide-callout {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.era-wide-section {
+  max-width: min(100%, 72rem);
+}
+
+.era-card-row,
+.era-card-stack,
+.era-wide-callout {
+  max-width: min(100%, 112rem);
+}
+
+.era-section-heading {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 60rem;
+}
+
+.era-measure {
+  max-width: 74ch;
+}
+
+.era-exhibit-card {
+  align-content: start;
+  overflow: hidden;
+}
+
+.era-exhibit-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: var(--img-filter);
+  min-height: 13rem;
+}
+
+.era-exhibit-card-copy {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.era-mission-list {
+  display: grid;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.era-wide-callout {
+  border: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 28%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 86%, white 14%);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  box-shadow: 0 16px 40px rgba(43, 38, 34, 0.08);
+}
+
+.era-exhibit--cosmic .era-wide-callout {
+  border-color: rgba(196, 218, 255, 0.24);
+  background: rgba(16, 35, 63, 0.78);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.era-end-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 32%, transparent);
+}
+
+.era-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border-radius: var(--radius-md);
+  padding: 0.7rem 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.era-button--primary {
+  border: 1px solid color-mix(in srgb, var(--scroll-text-color, var(--text-color)) 85%, transparent);
+  background: color-mix(in srgb, var(--scroll-text-color, var(--text-color)) 88%, transparent);
+  color: var(--scroll-bg-color, var(--bg-color));
+}
+
+.era-button--secondary {
+  border: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 54%, transparent);
+  background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 70%, transparent);
+  color: color-mix(in srgb, var(--scroll-text-color, var(--text-color)) 88%, transparent);
+}
+
+.era-button:focus-visible,
+.era-anchor-card:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .section-anchor-target {
   scroll-margin-top: 5.75rem;
 }
@@ -988,6 +1217,16 @@ a {
   .era-breakout {
     max-width: none;
   }
+
+  .era-exhibit {
+    padding-inline: var(--space-3);
+  }
+
+  .era-anchor-card,
+  .era-hub-card,
+  .era-exhibit-card {
+    min-height: 0;
+  }
 }
 
 @media (min-width: 721px) {
@@ -1011,5 +1250,22 @@ a {
 
   .era-spectrum-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .era-anchor-grid,
+  .era-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .era-hub .era-anchor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .era-feature-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .era-core-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.55fr);
   }
 }

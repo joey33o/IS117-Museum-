@@ -8,9 +8,9 @@ import { usePathname } from 'next/navigation';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/constellations', label: 'Constellations' },
-  { href: '/eras#earthbound-observers', label: 'Earthbound Observers' },
-  { href: '/eras#cosmic-instruments', label: 'Cosmic Instruments' },
-  { href: '/eras#era2-open-questions', label: 'Future Questions' },
+  { href: '/eras/earthbound-observers', label: 'Earthbound Observers' },
+  { href: '/eras/cosmic-instruments', label: 'Cosmic Instruments' },
+  { href: '/eras/cosmic-instruments#era2-open-questions', label: 'Future Questions' },
 ];
 
 export function AdaptiveNav() {
@@ -27,7 +27,7 @@ export function AdaptiveNav() {
     return () => {
       window.removeEventListener('hashchange', updateHash);
     };
-  }, []);
+  }, [pathname]);
 
   const isItemActive = (href: string) => {
     if (href === '/') {
