@@ -14,6 +14,10 @@ export function EraRunway({ content }: { content: EraPageContent }) {
         <p className="eyebrow-label era-meta">Estimated reading time: {content.readingTime}</p>
       </div>
 
+      <figure className="era-hero-image-frame">
+        <img src={content.heroImageSrc} alt={content.heroImageAlt} className="era-hero-image" />
+      </figure>
+
       <nav className="era-anchor-grid" aria-label={`${content.title} exhibit sections`}>
         {content.anchorCards.map((card) => (
           <Link key={card.href} href={card.href} className="era-wide-card era-anchor-card">

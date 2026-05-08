@@ -89,6 +89,13 @@ export default function EarthboundObserversPage() {
         </section>
 
         <SectionAnchor id="era1-observatory-culture" title="Observatory Culture">
+          <figure className="era-inline-image-frame">
+            <img
+              src={earthboundEra.featureCards[2].imageSrc}
+              alt={earthboundEra.featureCards[2].imageAlt}
+              className="era-inline-image"
+            />
+          </figure>
           <p>
             Observatory culture turned isolated observation into an organized knowledge system. Once institutions prioritized recurring measurement,
             logs became as important as telescopes themselves. Dates, angles, environmental conditions, and comparative notes converted individual
@@ -119,6 +126,13 @@ export default function EarthboundObserversPage() {
               details="Incremental improvements in lens grinding, mount stability, and calibration practice turned small optical differences into usable scientific evidence."
             />
             <div className="space-y-3">
+              <figure className="era-inline-image-frame">
+                <img
+                  src={earthboundEra.featureCards[3].imageSrc}
+                  alt={earthboundEra.featureCards[3].imageAlt}
+                  className="era-inline-image"
+                />
+              </figure>
               <p>
                 Precision in this era emerged through gradual standardization: better lens grinding, more stable mounts, improved tracking,
                 and calibration routines that made one night comparable to another. Standardization was not glamorous, but it was transformative.

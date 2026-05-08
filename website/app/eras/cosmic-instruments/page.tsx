@@ -70,6 +70,13 @@ export default function CosmicInstrumentsPage() {
         </SectionAnchor>
 
         <SectionAnchor id="era2-spectrum-expansion" title="Spectrum Expansion">
+          <figure className="era-inline-image-frame">
+            <img
+              src={cosmicEra.featureCards[1].imageSrc}
+              alt={cosmicEra.featureCards[1].imageAlt}
+              className="era-inline-image"
+            />
+          </figure>
           <div className="era-spectrum-grid" role="list" aria-label="Spectrum key">
             <article className="era-surface p-3" role="listitem">
               <p className="era-meta text-xs uppercase tracking-[0.12em]">Infrared</p>
@@ -112,6 +119,13 @@ export default function CosmicInstrumentsPage() {
         </section>
 
         <SectionAnchor id="era2-networked-observatories" title="Networked Observatories">
+          <figure className="era-inline-image-frame">
+            <img
+              src={cosmicEra.featureCards[3].imageSrc}
+              alt={cosmicEra.featureCards[3].imageAlt}
+              className="era-inline-image"
+            />
+          </figure>
           <p>
             Modern astronomy increasingly relies on networked observatories that coordinate observations across continents and platforms.
             Interferometry, synchronized scheduling, and shared protocols allow multiple telescopes to behave as a single larger instrument.

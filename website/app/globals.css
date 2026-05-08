@@ -431,6 +431,40 @@ body.is-space-era .adaptive-nav-link:hover {
   padding: clamp(1rem, 2vw, 1.45rem);
 }
 
+.era-hero-image-frame,
+.era-inline-image-frame {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--scroll-border-color, var(--border-color)) 28%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--scroll-surface-color, var(--surface-color)) 82%, white 18%);
+  box-shadow: 0 18px 48px rgba(43, 38, 34, 0.1);
+}
+
+.era-exhibit--cosmic .era-hero-image-frame,
+.era-exhibit--cosmic .era-inline-image-frame {
+  border-color: rgba(196, 218, 255, 0.22);
+  background: rgba(16, 35, 63, 0.68);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.28);
+}
+
+.era-hero-image,
+.era-inline-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  filter: var(--img-filter);
+}
+
+.era-hero-image {
+  aspect-ratio: 16 / 9;
+  min-height: min(58vh, 31rem);
+}
+
+.era-inline-image {
+  aspect-ratio: 16 / 9;
+  max-height: 26rem;
+}
+
 .era-anchor-card {
   min-height: 10rem;
   transition:
@@ -492,6 +526,7 @@ body.is-space-era .adaptive-nav-link:hover {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   filter: var(--img-filter);
+  min-height: 13rem;
 }
 
 .era-exhibit-card-copy {
