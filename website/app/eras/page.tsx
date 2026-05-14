@@ -8,17 +8,17 @@ export default function ErasHubPage() {
       <div className="era-exhibit-inner">
         <header className="era-runway" aria-labelledby="eras-page-heading">
           <div className="era-runway-heading">
-            <p className="eyebrow-label era-meta">Reading Routes</p>
+            <p className="eyebrow-label era-meta">Exhibitions</p>
             <h1 id="eras-page-heading" className="editorial-display font-semibold leading-[1.1]">
               Two ways astronomy learned to prove the sky
             </h1>
             <p className="editorial-lead era-meta">
-              Choose a focused exhibit route. Start with Earthbound Observers for the evidence culture that made telescope claims credible,
+              Choose a focused exhibition. Start with Earthbound Observers for the evidence culture that made telescope claims credible,
               then continue to Cosmic Instruments for orbital, spectral, and networked observation.
             </p>
           </div>
 
-          <div className="era-anchor-grid" aria-label="Era route options">
+          <div className="era-anchor-grid" aria-label="Era exhibition options">
             {ERA_PAGES.map((era) => (
               <article key={era.id} className="era-wide-card era-hub-card">
                 <p className="era-note-label">{era.eyebrow}</p>
@@ -39,7 +39,7 @@ export default function ErasHubPage() {
             Read Era 1, continue into Era 2, then move into Constellations.
           </h2>
           <p className="era-body era-measure text-[15px] leading-7">
-            The routes now behave like separate exhibit rooms. Each page stands alone, but the end buttons preserve the intended museum path.
+            The exhibitions now behave like separate exhibit rooms. Each page stands alone, but the end buttons preserve the intended museum path.
           </p>
         </section>
       </div>

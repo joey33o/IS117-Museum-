@@ -3,6 +3,7 @@ import { EraExhibitCard } from '@/components/content/eras/era-exhibit-card';
 import {
   CuratorNote,
   DebateCard,
+  ExhibitionSources,
   MilestoneRibbon,
   PullQuote,
   SectionAnchor,
@@ -15,6 +16,14 @@ const keyMissions = timelineDataset.milestones
   .filter((milestone) => milestone.year >= 1990)
   .sort((left, right) => left.year - right.year)
   .slice(0, 5);
+
+const cosmicSources = [
+  'Smith, Robert W. "Telescope." Encyclopedia of the History of Science, Carnegie Mellon University Libraries, 2026, references/telescopeHisotry.txt. Accessed 5 Apr. 2026.',
+  '"Hubble Overview." NASA, references/hubbleTele.txt. Accessed 5 Apr. 2026.',
+  '"James Webb Space Telescope Fact Sheet." NASA, references/JamesWebbTele.txt. Accessed 5 Apr. 2026.',
+  '"Chandra Hardware: Telescope System." NASA Chandra X-Ray Observatory Center, references/CLandraTele.txt. Accessed 5 Apr. 2026.',
+  '"Overview: Chandra X-ray Observatory." NASA, references/MoreClandra.txt. Accessed 5 Apr. 2026.',
+];
 
 export default function CosmicInstrumentsPage() {
   return (
@@ -128,7 +137,7 @@ export default function CosmicInstrumentsPage() {
           </figure>
           <p>
             Modern astronomy increasingly relies on networked observatories that coordinate observations across continents and platforms.
-            Interferometry, synchronized scheduling, and shared protocols allow multiple telescopes to behave as a single larger instrument.
+            Radio astronomy, synchronized scheduling, and shared protocols allow multiple observatories to behave as a larger evidence system.
             This networked model improves coverage, triangulation, and confidence, especially for transient events or complex targets.
           </p>
           <p>
@@ -139,7 +148,7 @@ export default function CosmicInstrumentsPage() {
           <DebateCard
             title="Prestige Instrument vs Networked Evidence"
             claim="Breakthrough authority should remain tied to singular iconic instruments."
-            response="Coordinated arrays and shared data standards now produce the most reliable and reproducible findings."
+            response="Coordinated observatories and shared data standards now make many discoveries more reproducible and easier to compare."
           />
         </SectionAnchor>
 
@@ -185,6 +194,8 @@ export default function CosmicInstrumentsPage() {
             </ul>
           </section>
         </SectionAnchor>
+
+        <ExhibitionSources sources={cosmicSources} />
 
         <EraEndNav
           primaryHref="/constellations"

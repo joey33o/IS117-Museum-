@@ -3,6 +3,7 @@ import { EraExhibitCard } from '@/components/content/eras/era-exhibit-card';
 import {
   CuratorNote,
   DebateCard,
+  ExhibitionSources,
   MilestoneRibbon,
   ObjectLabel,
   PullQuote,
@@ -10,6 +11,11 @@ import {
 } from '@/components/content/eras/era-page-elements';
 import { EraRunway } from '@/components/content/eras/era-runway';
 import { earthboundEra } from '@/lib/content/era-pages-data';
+
+const earthboundSources = [
+  'Smith, Robert W. "Telescope." Encyclopedia of the History of Science, Carnegie Mellon University Libraries, 2026, references/telescopeHisotry.txt. Accessed 5 Apr. 2026.',
+  '"The History of the Telescope." Royal Museums Greenwich, references/2Historyoftelescope.txt. Accessed 5 Apr. 2026.',
+];
 
 export default function EarthboundObserversPage() {
   return (
@@ -167,11 +173,13 @@ export default function EarthboundObserversPage() {
           </div>
         </SectionAnchor>
 
+        <ExhibitionSources sources={earthboundSources} />
+
         <EraEndNav
           primaryHref="/eras/cosmic-instruments"
           primaryLabel="Continue to Cosmic Instruments"
-          secondaryHref="/eras"
-          secondaryLabel="Back to Era hub"
+          secondaryHref="/"
+          secondaryLabel="Back to Home"
         />
       </div>
     </article>

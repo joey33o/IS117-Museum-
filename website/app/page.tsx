@@ -68,7 +68,7 @@ export default function Home() {
             Start With the Eras
           </h2>
           <p className="responsive-lead text-sm text-black/70">
-            Home now serves as orientation. Follow a card into a dedicated reading section and continue through Era 1 and Era 2 in sequence.
+            Home now serves as orientation. Follow a card into a dedicated exhibition section and continue through Era 1 and Era 2 in sequence.
           </p>
           <h3 className="eyebrow-label text-black/65">Collection Snapshot</h3>
           <div className="space-y-3">
@@ -114,7 +114,7 @@ export default function Home() {
             Each era is written as a complete chapter with optional deeper context, designed for approximately five to ten minutes of reading time.
           </p>
           <Link href="/eras/earthbound-observers#era1-framing" className="eyebrow-label mt-3 inline-block text-black/75">
-            Begin full era reading
+            Begin the exhibition
           </Link>
         </article>
       </section>
