@@ -92,8 +92,9 @@ body {
 }
 
 .adaptive-nav-shell {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 40;
   width: 100%;
   border-bottom: 1px solid var(--scroll-border-color, var(--nav-border-terrestrial));
@@ -169,6 +170,8 @@ body.is-space-era .adaptive-nav-brand {
 }
 
 .adaptive-nav-link.is-active {
+  background: color-mix(in srgb, #8d6f3f 22%, transparent);
+  color: #2b2622;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.2em;
@@ -180,6 +183,11 @@ body:not(.is-space-era) .adaptive-nav-link:hover {
 
 body.is-space-era .adaptive-nav-link {
   color: color-mix(in srgb, var(--scroll-text-color, #eaf1ff) 90%, transparent);
+}
+
+body.is-space-era .adaptive-nav-link.is-active {
+  background: color-mix(in srgb, #8fb8ff 24%, transparent);
+  color: #ffffff;
 }
 
 body.is-space-era .adaptive-nav-link:hover {
@@ -197,7 +205,7 @@ body.is-space-era .adaptive-nav-link:hover {
   flex: 1;
   width: min(100%, 78rem);
   margin-inline: auto;
-  padding: var(--space-5) var(--space-4) var(--space-6);
+  padding: calc(var(--space-5) + 3.25rem) var(--space-4) var(--space-6);
 }
 
 .responsive-section-grid {
@@ -1130,7 +1138,7 @@ a {
   }
 
   .app-main {
-    padding: var(--space-4) var(--space-3) var(--space-5);
+    padding: calc(var(--space-4) + 6.75rem) var(--space-3) var(--space-5);
   }
 
   .responsive-section-grid {

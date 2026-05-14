@@ -23,8 +23,51 @@ export function AdaptiveNav() {
     };
 
     updateHash();
+
+    const hashTargets = navItems
+      .map((item) => {
+        const hashIndex = item.href.indexOf('#');
+        if (hashIndex === -1) {
+          return null;
+        }
+
+        const expectedPath = item.href.slice(0, hashIndex) || '/';
+        const expectedHash = item.href.slice(hashIndex);
+
+        if (expectedPath !== pathname) {
+          return null;
+        }
+
+        return document.getElementById(expectedHash.slice(1));
+      })
+      .filter((target): target is HTMLElement => Boolean(target));
+
+    const observer = hashTargets.length
+      ? new IntersectionObserver(
+          (entries) => {
+            const visibleEntry = entries
+              .filter((entry) => entry.isIntersecting)
+              .sort((left, right) => right.intersectionRatio - left.intersectionRatio)[0];
+
+            if (visibleEntry?.target.id) {
+              setActiveHash(`#${visibleEntry.target.id}`);
+            } else if (!window.location.hash) {
+              setActiveHash('');
+            }
+          },
+          {
+            root: null,
+            rootMargin: '-28% 0px -58% 0px',
+            threshold: [0.1, 0.35, 0.6],
+          },
+        )
+      : null;
+
+    hashTargets.forEach((target) => observer?.observe(target));
+
     window.addEventListener('hashchange', updateHash);
     return () => {
+      observer?.disconnect();
       window.removeEventListener('hashchange', updateHash);
     };
   }, [pathname]);
@@ -41,7 +84,17 @@ export function AdaptiveNav() {
       return pathname === expectedPath && activeHash === expectedHash;
     }
 
-    return pathname === href;
+    const hasActiveSectionOnPath = navItems.some((item) => {
+      const itemHashIndex = item.href.indexOf('#');
+      if (itemHashIndex === -1) {
+        return false;
+      }
+
+      const itemPath = item.href.slice(0, itemHashIndex) || '/';
+      return itemPath === pathname && item.href.slice(itemHashIndex) === activeHash;
+    });
+
+    return pathname === href && !hasActiveSectionOnPath;
   };
 
   return (
