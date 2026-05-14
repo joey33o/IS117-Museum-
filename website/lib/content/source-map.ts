@@ -9,6 +9,13 @@ export const sourceCitations: SourceCitation[] = [
     accessedOn: '2026-04-05',
   },
   {
+    id: 'cmu-telescope-history',
+    label: 'Carnegie Mellon University - Encyclopedia of the History of Science: Telescope',
+    sourcePath: 'references/telescopeHisotry.txt',
+    note: 'Long-form telescope history, instrument practices, observatories, radio astronomy, and space telescopes.',
+    accessedOn: '2026-04-05',
+  },
+  {
     id: 'nasa-hubble-overview',
     label: 'NASA - Hubble overview',
     sourcePath: 'references/hubbleTele.txt',
@@ -30,10 +37,10 @@ export const sourceCitations: SourceCitation[] = [
     accessedOn: '2026-04-05',
   },
   {
-    id: 'event-horizon',
-    label: 'Event Horizon Telescope reference material',
-    sourcePath: 'references/EventHorizontelescope.txt',
-    note: 'Global array imaging and black-hole era milestone context.',
+    id: 'chandra-overview',
+    label: 'NASA - Overview: Chandra X-ray Observatory',
+    sourcePath: 'references/MoreClandra.txt',
+    note: 'Mission overview, X-ray astronomy context, and scientific role.',
     accessedOn: '2026-04-05',
   },
 ];

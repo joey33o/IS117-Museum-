@@ -1,4 +1,4 @@
-import { resolveCitationIds, sourceCitations } from './source-map';
+import { resolveCitationIds } from './source-map';
 import type {
   Era,
   Milestone,
@@ -58,7 +58,7 @@ const milestoneSeeds: MilestoneSeed[] = [
     details:
       'This 1608 demonstration is the earliest well-documented evidence of telescope invention and marks the beginning of instrument-assisted visual science.',
     importance: 'major',
-    citationIds: ['royal-observatory-history'],
+    citationIds: ['royal-observatory-history', 'cmu-telescope-history'],
   },
   {
     id: 'harriot-1609',
@@ -70,7 +70,7 @@ const milestoneSeeds: MilestoneSeed[] = [
     details:
       'Harriot recorded light and shadow as mapped terrain, showing how telescopes could convert observation into comparative visual analysis.',
     importance: 'supporting',
-    citationIds: ['royal-observatory-history'],
+    citationIds: ['royal-observatory-history', 'cmu-telescope-history'],
   },
   {
     id: 'galileo-1610',
@@ -82,7 +82,7 @@ const milestoneSeeds: MilestoneSeed[] = [
     details:
       'His telescopic findings widened acceptance of observational proof in astronomy and helped reshape the scientific model of the universe.',
     importance: 'major',
-    citationIds: ['royal-observatory-history'],
+    citationIds: ['royal-observatory-history', 'cmu-telescope-history'],
   },
   {
     id: 'observatory-standardization-1700s',
@@ -94,7 +94,7 @@ const milestoneSeeds: MilestoneSeed[] = [
     details:
       'As telescopes spread through observatories, astronomical practices became more standardized, repeatable, and globally comparable.',
     importance: 'supporting',
-    citationIds: ['royal-observatory-history'],
+    citationIds: ['royal-observatory-history', 'cmu-telescope-history'],
   },
   {
     id: 'hubble-1990',
@@ -118,7 +118,7 @@ const milestoneSeeds: MilestoneSeed[] = [
     details:
       'Its mirror system required extreme polishing and alignment tolerances, enabling observations of phenomena not visible with optical telescopes.',
     importance: 'major',
-    citationIds: ['chandra-hardware'],
+    citationIds: ['chandra-hardware', 'chandra-overview'],
   },
   {
     id: 'webb-2021',
@@ -133,16 +133,16 @@ const milestoneSeeds: MilestoneSeed[] = [
     citationIds: ['nasa-webb-fact-sheet'],
   },
   {
-    id: 'event-horizon-2019',
+    id: 'networked-radio-observatories',
     eraId: 'modern-era',
-    year: 2019,
-    title: 'Event Horizon Telescope Images a Black Hole',
+    year: 2010,
+    title: 'Networked Observatories Expand Radio Astronomy',
     summary:
-      'A global telescope array produced the first direct image of a black hole environment.',
+      'Radio and multi-observatory systems showed how astronomy could combine signals beyond one site or one instrument.',
     details:
-      'The Event Horizon Telescope demonstrated how distributed observatories can act as one instrument to resolve extreme-scale cosmic targets.',
+      'Shared observing systems widened astronomical evidence by coordinating instruments, wavelengths, and institutional labor.',
     importance: 'major',
-    citationIds: ['event-horizon'],
+    citationIds: ['cmu-telescope-history'],
   },
 ];
 

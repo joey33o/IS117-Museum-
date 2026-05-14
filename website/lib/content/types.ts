@@ -9,10 +9,11 @@ export type MilestoneImportance = 'major' | 'supporting';
 
 export type SourceCitationId =
   | 'royal-observatory-history'
+  | 'cmu-telescope-history'
   | 'nasa-hubble-overview'
   | 'nasa-webb-fact-sheet'
   | 'chandra-hardware'
-  | 'event-horizon';
+  | 'chandra-overview';
 
 export interface SourceCitation {
   id: SourceCitationId;

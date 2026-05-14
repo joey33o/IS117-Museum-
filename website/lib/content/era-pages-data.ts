@@ -146,11 +146,11 @@ export const cosmicEra: EraPageContent = {
       imageAlt: 'James Webb-style segmented mirror telescope in deep space.',
     },
     {
-      title: 'Event Horizon Telescope',
+      title: 'Radio Observatory Networks',
       kicker: 'Distributed observation',
-      description: 'A global array that showed how separate observatories can operate as one planetary-scale instrument.',
+      description: 'Linked radio observatories show how separate sites can expand astronomy beyond a single instrument or location.',
       imageSrc: publicAsset('/eras/era2-radio-array.png'),
-      imageAlt: 'Radio telescope array under a night sky connected by subtle light paths.',
+      imageAlt: 'Radio telescope array under a night sky.',
     },
   ],
 };

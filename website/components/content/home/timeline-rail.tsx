@@ -122,7 +122,7 @@ export function TimelineRail() {
         </h2>
         <p className="eyebrow-label text-black/65">From Earthbound Proof to Cosmic Networks</p>
         <p className="text-sm text-black/75">
-          Each milestone opens a focused section in the dedicated eras reading route.
+          Each milestone opens a focused section in the dedicated era exhibition.
         </p>
       </header>
       <ul className="timeline-rail-list" aria-label="Telescope history milestones">
@@ -150,7 +150,7 @@ export function TimelineRail() {
               <p className="chronology-importance text-xs uppercase tracking-[0.1em] text-black/65">
                 {milestone.importance === 'major' ? 'Major Milestone' : 'Supporting Milestone'}
               </p>
-              <p className="timeline-hover-preview text-sm text-black/75">Read this section in the full eras route.</p>
+              <p className="timeline-hover-preview text-sm text-black/75">Read this section in the full era exhibition.</p>
               <span className="timeline-expand-summary mt-1 inline-block">Read this section</span>
             </Link>
           </li>

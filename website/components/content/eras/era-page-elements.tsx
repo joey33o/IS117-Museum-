@@ -60,3 +60,21 @@ export function ObjectLabel({ title, details }: { title: string; details: string
     </aside>
   );
 }
+
+export function ExhibitionSources({ sources }: { sources: string[] }) {
+  return (
+    <section className="era-sources era-wide-callout" aria-labelledby="exhibition-sources-heading">
+      <p className="era-note-label">Exhibition Sources</p>
+      <h2 id="exhibition-sources-heading" className="editorial-section-title font-semibold">
+        Works Cited
+      </h2>
+      <ol className="era-source-list">
+        {sources.map((source) => (
+          <li key={source} className="era-body text-sm leading-6">
+            {source}
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
