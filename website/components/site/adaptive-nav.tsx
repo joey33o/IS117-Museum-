@@ -7,9 +7,9 @@ import { usePathname } from 'next/navigation';
 
 const navItems = [
   { href: '/', label: 'Home' },
-  { href: '/constellations', label: 'Constellations' },
   { href: '/eras/earthbound-observers', label: 'Earthbound Observers' },
   { href: '/eras/cosmic-instruments', label: 'Cosmic Instruments' },
+  { href: '/constellations', label: 'Constellations' },
   { href: '/eras/cosmic-instruments#era2-open-questions', label: 'Future Questions' },
 ];
 
