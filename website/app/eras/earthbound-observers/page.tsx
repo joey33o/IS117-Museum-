@@ -170,8 +170,8 @@ export default function EarthboundObserversPage() {
         <EraEndNav
           primaryHref="/eras/cosmic-instruments"
           primaryLabel="Continue to Cosmic Instruments"
-          secondaryHref="/eras"
-          secondaryLabel="Back to Era hub"
+          secondaryHref="/"
+          secondaryLabel="Back to Home"
         />
       </div>
     </article>
