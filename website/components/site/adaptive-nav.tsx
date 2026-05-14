@@ -5,17 +5,34 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+type NavItem = {
+  href: string;
+  label: string;
+  sectionId?: string;
+};
+
 const navItems = [
   { href: '/', label: 'Home' },
-  { href: '/eras/earthbound-observers', label: 'Earthbound Observers' },
-  { href: '/eras/cosmic-instruments', label: 'Cosmic Instruments' },
+  { href: '/eras/earthbound-observers', label: 'Earthbound Observers', sectionId: 'earthbound-observers' },
+  { href: '/eras/cosmic-instruments', label: 'Cosmic Instruments', sectionId: 'cosmic-instruments' },
   { href: '/constellations', label: 'Constellations' },
-  { href: '/eras/cosmic-instruments#era2-open-questions', label: 'Future Questions' },
-];
+  { href: '/eras/cosmic-instruments#era2-open-questions', label: 'Future Questions', sectionId: 'era2-open-questions' },
+] satisfies NavItem[];
+
+const normalizePath = (path: string) => {
+  if (path === '/') {
+    return path;
+  }
+
+  return path.replace(/\/+$/, '');
+};
+
+const getItemPath = (href: string) => normalizePath(href.split('#')[0] || '/');
 
 export function AdaptiveNav() {
-  const pathname = usePathname();
+  const pathname = normalizePath(usePathname());
   const [activeHash, setActiveHash] = useState('');
+  const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
 
   useEffect(() => {
     const updateHash = () => {
@@ -24,77 +41,71 @@ export function AdaptiveNav() {
 
     updateHash();
 
-    const hashTargets = navItems
+    const sectionTargets = navItems
+      .filter((item) => getItemPath(item.href) === pathname && item.sectionId)
       .map((item) => {
-        const hashIndex = item.href.indexOf('#');
-        if (hashIndex === -1) {
-          return null;
-        }
-
-        const expectedPath = item.href.slice(0, hashIndex) || '/';
-        const expectedHash = item.href.slice(hashIndex);
-
-        if (expectedPath !== pathname) {
-          return null;
-        }
-
-        return document.getElementById(expectedHash.slice(1));
+        const element = document.getElementById(item.sectionId as string);
+        return element ? { id: item.sectionId as string, element } : null;
       })
-      .filter((target): target is HTMLElement => Boolean(target));
+      .filter((target): target is { id: string; element: HTMLElement } => Boolean(target));
 
-    const observer = hashTargets.length
-      ? new IntersectionObserver(
-          (entries) => {
-            const visibleEntry = entries
-              .filter((entry) => entry.isIntersecting)
-              .sort((left, right) => right.intersectionRatio - left.intersectionRatio)[0];
+    let animationFrame = 0;
 
-            if (visibleEntry?.target.id) {
-              setActiveHash(`#${visibleEntry.target.id}`);
-            } else if (!window.location.hash) {
-              setActiveHash('');
-            }
-          },
-          {
-            root: null,
-            rootMargin: '-28% 0px -58% 0px',
-            threshold: [0.1, 0.35, 0.6],
-          },
-        )
-      : null;
+    const updateActiveSection = () => {
+      if (!sectionTargets.length) {
+        setActiveSectionId(null);
+        return;
+      }
 
-    hashTargets.forEach((target) => observer?.observe(target));
+      const viewportMarker = window.innerHeight * 0.38;
+      const currentTarget =
+        sectionTargets
+          .map((target) => ({
+            ...target,
+            top: target.element.getBoundingClientRect().top,
+          }))
+          .filter((target) => target.top <= viewportMarker)
+          .sort((left, right) => right.top - left.top)[0] ?? sectionTargets[0];
+
+      setActiveSectionId(currentTarget.id);
+    };
+
+    const requestActiveSectionUpdate = () => {
+      window.cancelAnimationFrame(animationFrame);
+      animationFrame = window.requestAnimationFrame(updateActiveSection);
+    };
+
+    updateActiveSection();
 
     window.addEventListener('hashchange', updateHash);
+    window.addEventListener('scroll', requestActiveSectionUpdate, { passive: true });
+    window.addEventListener('resize', requestActiveSectionUpdate);
+
     return () => {
-      observer?.disconnect();
+      window.cancelAnimationFrame(animationFrame);
       window.removeEventListener('hashchange', updateHash);
+      window.removeEventListener('scroll', requestActiveSectionUpdate);
+      window.removeEventListener('resize', requestActiveSectionUpdate);
     };
   }, [pathname]);
 
-  const isItemActive = (href: string) => {
-    if (href === '/') {
+  const isItemActive = (item: NavItem) => {
+    if (activeSectionId && item.sectionId) {
+      return item.sectionId === activeSectionId;
+    }
+
+    if (item.href === '/') {
       return pathname === '/' && activeHash === '';
     }
 
-    const hashIndex = href.indexOf('#');
+    const hashIndex = item.href.indexOf('#');
     if (hashIndex !== -1) {
-      const expectedPath = href.slice(0, hashIndex) || '/';
-      const expectedHash = href.slice(hashIndex);
-      return pathname === expectedPath && activeHash === expectedHash;
+      const expectedPath = item.href.slice(0, hashIndex) || '/';
+      const expectedHash = item.href.slice(hashIndex);
+      return pathname === normalizePath(expectedPath) && activeHash === expectedHash;
     }
 
-    const hasActiveSectionOnPath = navItems.some((item) => {
-      const itemHashIndex = item.href.indexOf('#');
-      if (itemHashIndex === -1) {
-        return false;
-      }
-
-      const itemPath = item.href.slice(0, itemHashIndex) || '/';
-      return itemPath === pathname && item.href.slice(itemHashIndex) === activeHash;
-    });
-
-    return pathname === href && !hasActiveSectionOnPath;
+    return pathname === getItemPath(item.href);
   };
 
   return (
@@ -108,7 +119,7 @@ export function AdaptiveNav() {
         </Link>
         <nav aria-label="Primary" className="adaptive-nav-links">
           {navItems.map((item) => {
-            const active = isItemActive(item.href);
+            const active = isItemActive(item);
             return (
               <Link
                 key={item.href}
