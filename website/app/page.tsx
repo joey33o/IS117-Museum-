@@ -9,37 +9,37 @@ export default function Home() {
     {
       title: 'First Lenses and Proof',
       description: 'How observation became credible evidence through repeatability and method.',
-      href: '/eras/earthbound-observers#era1-first-lenses',
+      href: '/eras/earthbound-observers/#era1-first-lenses',
       era: 'Earthbound Observers',
     },
     {
       title: 'Observatory Culture',
       description: 'The record-keeping discipline that changed astronomy from episodes to systems.',
-      href: '/eras/earthbound-observers#era1-observatory-culture',
+      href: '/eras/earthbound-observers/#era1-observatory-culture',
       era: 'Earthbound Observers',
     },
     {
       title: 'Instrument Standards',
       description: 'Calibration, precision, and the limits that defined the end of terrestrial-only observing.',
-      href: '/eras/earthbound-observers#era1-instrument-standard',
+      href: '/eras/earthbound-observers/#era1-instrument-standard',
       era: 'Earthbound Observers',
     },
     {
       title: 'Orbital Shift',
       description: 'Why moving beyond atmosphere fundamentally changed what telescopes could measure.',
-      href: '/eras/cosmic-instruments#era2-orbital-shift',
+      href: '/eras/cosmic-instruments/#era2-orbital-shift',
       era: 'Cosmic Instruments',
     },
     {
       title: 'New Spectra',
       description: 'How infrared and X-ray observatories expanded the universe beyond visible-light assumptions.',
-      href: '/eras/cosmic-instruments#era2-spectrum-expansion',
+      href: '/eras/cosmic-instruments/#era2-spectrum-expansion',
       era: 'Cosmic Instruments',
     },
     {
       title: 'Networked Observatories',
       description: 'Global coordination, linked arrays, and shared data pipelines as modern evidence practice.',
-      href: '/eras/cosmic-instruments#era2-networked-observatories',
+      href: '/eras/cosmic-instruments/#era2-networked-observatories',
       era: 'Cosmic Instruments',
     },
   ];
