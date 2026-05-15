@@ -16,7 +16,6 @@ const navItems = [
   { href: '/eras/earthbound-observers', label: 'Earthbound Observers', sectionId: 'earthbound-observers' },
   { href: '/eras/cosmic-instruments', label: 'Cosmic Instruments', sectionId: 'cosmic-instruments' },
   { href: '/constellations', label: 'Constellations' },
-  { href: '/eras/cosmic-instruments#era2-open-questions', label: 'Future Questions', sectionId: 'era2-open-questions' },
 ] satisfies NavItem[];
 
 const normalizePath = (path: string) => {

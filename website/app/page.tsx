@@ -113,10 +113,13 @@ export default function Home() {
             Begin with Earthbound Observers framing, then continue in order through instrument standards before entering the orbital and networked sections.
             Each era is written as a complete chapter with optional deeper context, designed for approximately five to ten minutes of reading time.
           </p>
-          <Link href="/eras/earthbound-observers#era1-framing" className="eyebrow-label mt-3 inline-block text-black/75">
-            Begin the exhibition
-          </Link>
         </article>
+      </section>
+
+      <section className="era-end-nav" aria-label="Begin exhibition">
+        <Link href="/eras/earthbound-observers" className="era-button era-button--primary">
+          Begin Exhibition
+        </Link>
       </section>
     </section>
   );
